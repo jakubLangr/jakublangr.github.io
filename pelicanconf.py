@@ -5,7 +5,7 @@ AUTHOR = u'Jakub Langr'
 SITENAME = u"Jakub Langr's Blog"
 SITEURL = ''
 
-TIMEZONE = 'Europe/Paris'
+TIMEZONE = 'Europe/Prague'
 
 DEFAULT_LANG = u'en'
 
@@ -16,7 +16,7 @@ LINKS =  (('Pelican', 'http://docs.notmyidea.org/alexis/pelican/'),
           ('You can modify those links in your config file', '#'),)
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
+SOCIAL = (('LinkedIn', 'http://linkedin.com/in/jakublangr'),
           ('Another social link', '#'),)
 
 DEFAULT_PAGINATION = 10
