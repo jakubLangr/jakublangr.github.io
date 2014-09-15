@@ -1,7 +1,7 @@
 Title: About Me
 Date: 2014-09-14 20:00
 Tags: me, CV
-Category: Misc
+Category: About
 Slug: about
 Author: Jakub Langr
 Summary: About Me
