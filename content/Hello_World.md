@@ -43,7 +43,7 @@ One of the plots here can help elucidate why my team might have been all over th
 
 ## Decomposed time-series plot
 
-![yay!](http://upload.wikimedia.org/wikipedia/commons/b/b0/NewTux.svg 'Linux!')
+![yay!](https://dl.dropboxusercontent.com/u/30848031/blog/gjp_modelling_ts_decomposition.svg 'Timeseries decomposition of ice-area')
 
 One interesting element of the decomposition is the trend, which I was expecting to see fairly clear evidence of global warming, but instead I really found out "just" evidence of climate change. Though, of course, I am no climatologist, so perhaps that interesting dip in the year 2000 had some other (spurious?) reasons. 
 
