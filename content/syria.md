@@ -4,7 +4,7 @@ Tags: modeling, GDELT, interactive, Syria
 Category: Hacking
 Slug: tracking-crisis
 Author: Jakub Langr
-Summary:  Exploring the power of Big Data approach (GDELT) to the conflict in Syria and getting unconventional insights into the Syrian civil war. 
+Summary:  Exploring the power of Big Data approach (GDELT) applied to the civil war in Syria to get unconventional insights into the Syrian civil war and the terror tactics of ISIS.
 
 
 As I was working as a contractor this summer, I came across a very interesting project called [GDELT](http://www.gdeltproject.org/) -- Global Database of Events, Language and Tone. This project I think is best described by the official website statement: "GDELT Project monitors the world's broadcast, print, and web news from nearly every corner of every country in over 100 languages and identifies the people, locations, organizations, counts, themes, sources, and events driving our global society every second of every day, creating a free open platform for computing on the entire world."

@@ -25,6 +25,12 @@ DEFAULT_PAGINATION = 10
 
 DEFAULT_DATE_FORMAT = ('%d/%m/%Y')
 
+GOOGLE_ANALYTICS = 'UA-55040887-1'
+GOOGLE_ANALYTICS_DOMAIN = 'jakublangr.com'
+
+DISQUS_SITENAME = 'jakublangr'
+
+
 '''
 
 ### SPECIFIC TO BT3 FLAT
@@ -50,9 +56,6 @@ SITE_THUMBNAIL = 'https://dl.dropboxusercontent.com/u/299446/logo.png'
 SITE_THUMBNAIL_TEXT = "Jakub Langr's Blog"
 SITESUBTITLE = 'About data and all things awesome'
 
-#DISQUS_SITENAME = 'networktsukkomime'
-#GOOGLE_ANALYTICS = ''
-#GOOGLE_ANALYTICS_DOMAIN = 'networktsukkomi.me'
 
 ### Plugin-specific settings
 
