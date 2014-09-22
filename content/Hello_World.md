@@ -1,4 +1,4 @@
-Title: Hello World! What are you planning?
+Title: Predictions R hard
 Date: 2014-09-14 21:00
 Tags: modeling, timeseries, R, statistics
 Category: Statistics
@@ -14,7 +14,7 @@ I have joined GJP mid-Season 3 (hence I haven't participated fully) and then I t
 
 Despite this mess-up, I joined a project and met my amazing fellow forecasters in my team. At the time of joining, I already knew that I will be putting numeric probabilistic values on how the world might soon turn out to be (e.g. will there be a direct Russia-Ukraine confrontation in Crimea). All of these questions are well-defined using a very sophisticated set of definitions, but making the evaluation criteria very flexible and as to allow GJP Team to 'resolve' each question in the spirit rather than the letter of the question.
 
-Number of these questions have allowed for use of publicly available datasets and so I would like to offer some code that I used to ease up my work as a forecaster. This particular example is relates to a question that resolved yesterday: Whether on a certain date the area of ice will of Arctic sea be more than some amount.
+Number of these questions have allowed for use of publicly available datasets and so I would like to offer some code that I used to ease up my work as a forecaster. This particular example is relates to a question that resolved yesterday: If on a certain date the area of ice on the Arctic sea will be more than what it was last year.
 
 The following R code downloads, cleans and plots some time-series representation of the record ed data of the ice for the past couple of years. It is _super-simple_, but I was able to do it from question to quantitative probabilities in about 30 minutes, so this is just to demonstrate that even such simple code can help you make a much more solid prediction. This was necessary, because my team's forecasts were all over the place (among 9 forecasters we ranged 5-80%) and statistical modeling is a great way how to deal with data that is normally quite counter-intuitive and complex.
 
