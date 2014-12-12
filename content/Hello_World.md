@@ -1,7 +1,7 @@
 Title: Predictions R hard
 Date: 2014-09-14 21:00
-Tags: modeling, timeseries, R, statistics
-Category: Statistics
+Tags: modeling, R, statistics, GJP
+Category: technical
 Slug: hello-world
 Author: Jakub Langr
 Summary: Quick and dirty statistical modeling in R for social scientists, decision makers and enthusiasts. Insights from my involvement in a US intelligence project.

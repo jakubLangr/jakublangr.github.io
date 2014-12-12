@@ -1,7 +1,7 @@
 Title: Tracking the CrISIS in Syria
 Date: 2014-09-22 21:00
-Tags: modeling, GDELT, interactive, Syria
-Category: Hacking
+Tags: modeling, GDELT, R, Syria
+Category: technical
 Slug: tracking-crisis
 Author: Jakub Langr
 Summary:  Exploring the power of Big Data approach (GDELT) applied to the civil war in Syria to get unconventional insights into the Syrian civil war and the terror tactics of ISIS.

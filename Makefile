@@ -16,7 +16,7 @@ SSH_PORT=22
 SSH_USER=root
 SSH_TARGET_DIR=/var/www
 
-DROPBOX_DIR=../../Public
+DROPBOX_DIR=~/Dropbox/Public/
 
 help:
 	@echo 'Makefile for a pelican Web site                                        '

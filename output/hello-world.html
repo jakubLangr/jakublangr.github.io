@@ -7,11 +7,12 @@
 	<link rel="stylesheet" type="text/css" href="/theme/css/pygments.css">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:800,400,300|Inconsolata' rel='stylesheet' type='text/css'>
 
-	<link href="/" type="application/atom+xml" rel="alternate" title="Jakub Langr's Blog ATOM Feed" />
-	
-			<title>Jakub Langr's Blog</title>
+	<link href="http://www.jakublangr.com/" type="application/atom+xml" rel="alternate" title="Jakub Langr's Blog ATOM Feed" />
+		<link href="http://www.jakublangr.com/feed/index.html" type="application/atom+xml" rel="alternate" title="Jakub Langr's Blog RSS Feed" />
+
+		<title>Jakub Langr's Blog</title>
 		<meta charset="utf-8" />
-	</head>
+</head>
 <body>
 	<section id="sidebar">
 		<figure id="user_logo">
@@ -22,22 +23,25 @@
 			<h1 id="user"><a href="/" class="">Jakub Langr</a></h1>
 			<h2></h2>
 			<ul>
-																										<li><a href="http://linkedin.com/in/jakublangr">LinkedIn</a></li>
-									<li><a href="https://github.com/jakubLangr">GitHub</a></li>
-									<li><a href="mailto:james.langr@gmail.com">Mail</a></li>
-									<li><a href="/about.html">About</a></li>
-							</ul>
+					<li><a href="http://linkedin.com/in/jakublangr">LinkedIn</a></li>
+					<li><a href="https://github.com/jakubLangr">GitHub</a></li>
+					<li><a href="mailto:james.langr@gmail.com">Mail</a></li>
+					<li><a href="/about.html">About</a></li>
+			</ul>
 		</div>
 		<footer>
 			<address>
+				All content (cc) Jakub Langr, licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.
+
 				Powered by <a href="http://pelican.notmyidea.org/">Pelican</a>,
 				theme by <a href="https://github.com/wting/pelican-svbtle">wting</a>.
+				<br> 
 			</address>
 		</footer>
 	</section>
 
 	<section id="posts">
-			<header>
+	<header>
 		<h1>Jakub Langr's blog</h1>
 		<h3>Posted 14/09/2014</h3>
 	</header>
@@ -52,16 +56,16 @@
 <p>Despite this mess-up, I joined a project and met my amazing fellow forecasters in my team. At the time of joining, I already knew that I will be putting numeric probabilistic values on how the world might soon turn out to be (e.g. will there be a direct Russia-Ukraine confrontation in Crimea). All of these questions are well-defined using a very sophisticated set of definitions, but making the evaluation criteria very flexible and as to allow GJP Team to 'resolve' each question in the spirit rather than the letter of the question.</p>
 <p>Number of these questions have allowed for use of publicly available datasets and so I would like to offer some code that I used to ease up my work as a forecaster. This particular example is relates to a question that resolved yesterday: If on a certain date the area of ice on the Arctic sea will be more than what it was last year.</p>
 <p>The following R code downloads, cleans and plots some time-series representation of the record ed data of the ice for the past couple of years. It is <em>super-simple</em>, but I was able to do it from question to quantitative probabilities in about 30 minutes, so this is just to demonstrate that even such simple code can help you make a much more solid prediction. This was necessary, because my team's forecasts were all over the place (among 9 forecasters we ranged 5-80%) and statistical modeling is a great way how to deal with data that is normally quite counter-intuitive and complex.</p>
-<div class="codehilite"><pre>library<span class="p">(</span><span class="s">&#39;TTR&#39;</span><span class="p">)</span>
-library<span class="p">(</span><span class="s">&#39;reshape&#39;</span><span class="p">)</span>
-library<span class="p">(</span><span class="s">&#39;tseries&#39;</span><span class="p">)</span>
-library<span class="p">(</span><span class="s">&#39;forecast&#39;</span><span class="p">)</span>
+<div class="highlight"><pre><span class="kn">library</span><span class="p">(</span><span class="s">&#39;TTR&#39;</span><span class="p">)</span>
+<span class="kn">library</span><span class="p">(</span><span class="s">&#39;reshape&#39;</span><span class="p">)</span>
+<span class="kn">library</span><span class="p">(</span><span class="s">&#39;tseries&#39;</span><span class="p">)</span>
+<span class="kn">library</span><span class="p">(</span><span class="s">&#39;forecast&#39;</span><span class="p">)</span>
 
 
 <span class="c1"># Loading, cleaning (missing values are by default assigned value of -9999)</span>
 read.csv<span class="p">(</span><span class="s">&#39;http://www.ijis.iarc.uaf.edu/seaice/extent/plot_v2.csv&#39;</span><span class="p">)</span> <span class="o">-&gt;</span> data
-replace<span class="p">(</span>data<span class="p">,</span>data<span class="o">==</span><span class="s">&#39;-9999&#39;</span><span class="p">,</span><span class="kc">NA</span><span class="p">)</span> <span class="o">-&gt;</span> data
-colSums<span class="p">(</span>is.na<span class="p">(</span>data<span class="p">))</span>
+<span class="kp">replace</span><span class="p">(</span>data<span class="p">,</span>data<span class="o">==</span><span class="s">&#39;-9999&#39;</span><span class="p">,</span><span class="kc">NA</span><span class="p">)</span> <span class="o">-&gt;</span> data
+<span class="kp">colSums</span><span class="p">(</span><span class="kp">is.na</span><span class="p">(</span>data<span class="p">))</span>
 
 <span class="c1"># Melt changes the columns (there is a column for each year) into just one column &#39;value&#39;</span>
 data_ts <span class="o">&lt;-</span> melt<span class="p">(</span>data<span class="p">[,</span><span class="m">3</span><span class="o">:</span><span class="m">18</span><span class="p">])</span>
@@ -71,25 +75,25 @@ data_ts <span class="o">=</span> na.remove<span class="p">(</span>ts<span class=
 <span class="c1"># Decomposes the time-series plots the decomposition and the forecast (as well as prints it)</span>
 decomposed_ts <span class="o">=</span> decompose<span class="p">(</span>data_ts<span class="p">)</span>
 plot<span class="p">(</span>decomposed_ts<span class="p">)</span>
-ts_forecast <span class="o">=</span> HoltWinters<span class="p">(</span>data_ts<span class="p">,</span>gamma<span class="o">=</span><span class="k-Variable">F</span><span class="p">)</span>
+ts_forecast <span class="o">=</span> HoltWinters<span class="p">(</span>data_ts<span class="p">,</span>gamma<span class="o">=</span><span class="bp">F</span><span class="p">)</span>
 forecasts <span class="o">=</span> forecast.HoltWinters<span class="p">(</span>ts_forecast<span class="p">,</span>h<span class="o">=</span><span class="m">8</span><span class="p">)</span>
 forecasts
 plot.forecast<span class="p">(</span>forecasts<span class="p">)</span>
-data<span class="p">[</span><span class="m">250</span><span class="o">:</span><span class="m">260</span><span class="p">,</span>c<span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="m">2</span><span class="p">,</span><span class="m">18</span><span class="p">)]</span>
+data<span class="p">[</span><span class="m">250</span><span class="o">:</span><span class="m">260</span><span class="p">,</span><span class="kt">c</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="m">2</span><span class="p">,</span><span class="m">18</span><span class="p">)]</span>
 </pre></div>
 
 
 <p>For GJP purposes, the confidence intervals produced by this model are especially useful, because they give you an idea of how confident you can be in your predictions:</p>
-<div class="codehilite"><pre><span class="o">&gt;</span> <span class="n">forecasts</span> 
-<span class="n">Point</span> <span class="n">Forecast</span> <span class="n">Lo</span> <span class="mi">80</span> <span class="n">Hi</span> <span class="mi">80</span> <span class="n">Lo</span> <span class="mi">95</span> <span class="n">Hi</span> <span class="mi">95</span> 
-<span class="mf">16.73710</span> <span class="mi">4981786</span> <span class="mi">4920648</span> <span class="mi">5042924</span> <span class="mi">4888284</span> <span class="mi">5075288</span> 
-<span class="mf">16.73995</span> <span class="mi">4963324</span> <span class="mi">4867154</span> <span class="mi">5059494</span> <span class="mi">4816245</span> <span class="mi">5110403</span> 
-<span class="mf">16.74279</span> <span class="mi">4944862</span> <span class="mi">4814956</span> <span class="mi">5074768</span> <span class="mi">4746188</span> <span class="mi">5143536</span> 
-<span class="mf">16.74564</span> <span class="mi">4926399</span> <span class="mi">4762199</span> <span class="mi">5090600</span> <span class="mi">4675277</span> <span class="mi">5177522</span> 
-<span class="mf">16.74849</span> <span class="mi">4907937</span> <span class="mi">4708313</span> <span class="mi">5107562</span> <span class="mi">4602638</span> <span class="mi">5213237</span> 
-<span class="mf">16.75134</span> <span class="mi">4889475</span> <span class="mi">4653078</span> <span class="mi">5125872</span> <span class="mi">4527937</span> <span class="mi">5251014</span> 
-<span class="mf">16.75419</span> <span class="mi">4871013</span> <span class="mi">4596412</span> <span class="mi">5145614</span> <span class="mi">4451047</span> <span class="mi">5290979</span> 
-<span class="mf">16.75704</span> <span class="mi">4852551</span> <span class="mi">4538291</span> <span class="mi">5166811</span> <span class="mi">4371932</span> <span class="mi">5333170</span> 
+<div class="highlight"><pre><span class="o">&gt;</span> forecasts 
+Point Forecast Lo <span class="m">80</span> Hi <span class="m">80</span> Lo <span class="m">95</span> Hi <span class="m">95</span> 
+<span class="m">16.73710</span> <span class="m">4981786</span> <span class="m">4920648</span> <span class="m">5042924</span> <span class="m">4888284</span> <span class="m">5075288</span> 
+<span class="m">16.73995</span> <span class="m">4963324</span> <span class="m">4867154</span> <span class="m">5059494</span> <span class="m">4816245</span> <span class="m">5110403</span> 
+<span class="m">16.74279</span> <span class="m">4944862</span> <span class="m">4814956</span> <span class="m">5074768</span> <span class="m">4746188</span> <span class="m">5143536</span> 
+<span class="m">16.74564</span> <span class="m">4926399</span> <span class="m">4762199</span> <span class="m">5090600</span> <span class="m">4675277</span> <span class="m">5177522</span> 
+<span class="m">16.74849</span> <span class="m">4907937</span> <span class="m">4708313</span> <span class="m">5107562</span> <span class="m">4602638</span> <span class="m">5213237</span> 
+<span class="m">16.75134</span> <span class="m">4889475</span> <span class="m">4653078</span> <span class="m">5125872</span> <span class="m">4527937</span> <span class="m">5251014</span> 
+<span class="m">16.75419</span> <span class="m">4871013</span> <span class="m">4596412</span> <span class="m">5145614</span> <span class="m">4451047</span> <span class="m">5290979</span> 
+<span class="m">16.75704</span> <span class="m">4852551</span> <span class="m">4538291</span> <span class="m">5166811</span> <span class="m">4371932</span> <span class="m">5333170</span> 
 </pre></div>
 
 
@@ -113,21 +117,21 @@ data<span class="p">[</span><span class="m">250</span><span class="o">:</span><s
 <p>Feedback? Comments? Question? I am happy to hear it! Contact me at james [dot] langr [at] gmail [dot] com.</p>
 
 		<div id="article_meta">
-							Category:
-					<a href="./category/statistics.html">Statistics</a>
-										<br />Tags:
-									<a href="./tag/modeling.html">modeling</a>
-									<a href="./tag/timeseries.html">timeseries</a>
-									<a href="./tag/r.html">R</a>
-									<a href="./tag/statistics.html">statistics</a>
-									</div>
+				Category:
+					<a href="./category/technical.html">technical</a>
+				<br />Tags:
+					<a href="./tag/modeling.html">modeling</a>
+					<a href="./tag/r.html">R</a>
+					<a href="./tag/statistics.html">statistics</a>
+					<a href="./tag/gjp.html">GJP</a>
+		</div>
 	</article>
 
 	<footer>
 		<a href="./" class="button_accent">&larr;&nbsp;&nbsp;&nbsp;Back to blog</a>
 	</footer>
 
-		<div id="comments">
+	<div id="comments">
 		<h2>Comments</h2>
 		<div id="disqus_thread"></div>
 		<script type="text/javascript">
@@ -140,10 +144,10 @@ data<span class="p">[</span><span class="m">250</span><span class="o">:</span><s
 		</script>
 		<noscript>Please enable JavaScript to view <a href="http://disqus.com/?ref_noscript">comments</a>.</noscript>
 	</div>
-	
+
 	</section>
 
-	<script type="text/javascript">
+<script type="text/javascript">
 	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
 	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
 	</script>

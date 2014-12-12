@@ -7,7 +7,7 @@ SITENAME = u"Jakub Langr's Blog"
 SITEURL = ''
 THEME = "pelican-themes/svbtle"
 
-TIMEZONE = 'Europe/Prague'
+TIMEZONE = 'Europe/London'
 
 DEFAULT_LANG = u'en'
 
@@ -30,6 +30,27 @@ GOOGLE_ANALYTICS_DOMAIN = 'jakublangr.com'
 
 DISQUS_SITENAME = 'jakublangr'
 
+RELATIVE_URLS = True
+
+#PLUGIN_PATHS = ["./plugins","plugins","./pelican-plugins","pelican-plugins","/media/jakub/4408A47308A46620/Users/jakub/Desktop/Dropbox/Programming/myBlog/pelican-plugins"]
+PLUGIN_PATH = 'pelican-plugins'
+PLUGINS = ['render_math','better_code_samples']
+
+#SITE_THUMBNAIL = 'https://dl.dropboxusercontent.com/u/299446/logo.png'
+#SITE_THUMBNAIL_TEXT = "Jakub Langr's Blog"
+SITESUBTITLE = 'About data and all things awesome'
+
+
+# Feed generation is usually not desired when developing
+FEED_RSS = 'feed/index.html'
+FEED_ATOM = 'feed/atom/index.html'
+FEED_ALL_RSS = False
+FEED_ALL_ATOM = False
+TRANSLATION_FEED_RSS = False
+TRANSLATION_FEED_ATOM = False
+
+FEED_DOMAIN = "http://www.jakublangr.com"
+
 
 '''
 
@@ -43,18 +64,8 @@ TEMPLATE_PAGES = {'blog.html': 'blog.html'}
 STATIC_PATHS = ['images', 'extra/CNAME']
 EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'}}
 
-# Feed generation is usually not desired when developing
-FEED_RSS = 'feed/index.html'
-FEED_ATOM = 'feed/atom/index.html'
-FEED_ALL_RSS = False
-FEED_ALL_ATOM = False
-TRANSLATION_FEED_RSS = False
-TRANSLATION_FEED_ATOM = False
 
 SWIFTYPE = ''
-SITE_THUMBNAIL = 'https://dl.dropboxusercontent.com/u/299446/logo.png'
-SITE_THUMBNAIL_TEXT = "Jakub Langr's Blog"
-SITESUBTITLE = 'About data and all things awesome'
 
 
 ### Plugin-specific settings
@@ -77,7 +88,6 @@ SITEMAP = {
 }
 
 
-RELATIVE_URLS = True
 
 
 

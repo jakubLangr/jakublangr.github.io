@@ -7,11 +7,12 @@
 	<link rel="stylesheet" type="text/css" href="/theme/css/pygments.css">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:800,400,300|Inconsolata' rel='stylesheet' type='text/css'>
 
-	<link href="/" type="application/atom+xml" rel="alternate" title="Jakub Langr's Blog ATOM Feed" />
-	
-			<title>Jakub Langr's Blog</title>
+	<link href="http://www.jakublangr.com/" type="application/atom+xml" rel="alternate" title="Jakub Langr's Blog ATOM Feed" />
+		<link href="http://www.jakublangr.com/feed/index.html" type="application/atom+xml" rel="alternate" title="Jakub Langr's Blog RSS Feed" />
+
+		<title>Jakub Langr's Blog</title>
 		<meta charset="utf-8" />
-	</head>
+</head>
 <body>
 	<section id="sidebar">
 		<figure id="user_logo">
@@ -22,22 +23,25 @@
 			<h1 id="user"><a href="/" class="">Jakub Langr</a></h1>
 			<h2></h2>
 			<ul>
-																										<li><a href="http://linkedin.com/in/jakublangr">LinkedIn</a></li>
-									<li><a href="https://github.com/jakubLangr">GitHub</a></li>
-									<li><a href="mailto:james.langr@gmail.com">Mail</a></li>
-									<li><a href="/about.html">About</a></li>
-							</ul>
+					<li><a href="http://linkedin.com/in/jakublangr">LinkedIn</a></li>
+					<li><a href="https://github.com/jakubLangr">GitHub</a></li>
+					<li><a href="mailto:james.langr@gmail.com">Mail</a></li>
+					<li><a href="/about.html">About</a></li>
+			</ul>
 		</div>
 		<footer>
 			<address>
+				All content (cc) Jakub Langr, licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.
+
 				Powered by <a href="http://pelican.notmyidea.org/">Pelican</a>,
 				theme by <a href="https://github.com/wting/pelican-svbtle">wting</a>.
+				<br> 
 			</address>
 		</footer>
 	</section>
 
 	<section id="posts">
-			<header>
+	<header>
 		<h1>Jakub Langr's blog</h1>
 		<h3>Posted 22/09/2014</h3>
 	</header>
@@ -50,11 +54,11 @@
 <p>As I was working as a contractor this summer, I came across a very interesting project called <a href="http://www.gdeltproject.org/">GDELT</a> -- Global Database of Events, Language and Tone. This project I think is best described by the official website statement: "GDELT Project monitors the world's broadcast, print, and web news from nearly every corner of every country in over 100 languages and identifies the people, locations, organizations, counts, themes, sources, and events driving our global society every second of every day, creating a free open platform for computing on the entire world."</p>
 <p>In addition to that, as a part of <a href="../hello-world.html">Good Judgement Project</a>, I was made to forecast on Syria and ISIS' actions. As I was going through the articles describing what is happening in Syria, I became to wonder: what is the bigger picture? To what extent is this hype all just because <strong>now</strong> ISIS is the headline-grabber in the West? (But of course, no one cares until it becomes a story in the public consciousness.) That's when GDELT comes into the picture. I wanted to try it as I came across it, but since I was finishing my data science project, I did not quite have the time. I was awe-struck by the complexity and potential of it so I knew I wanted to give a go. I have not really used R all that extensively in about a year since my internship, but I am not afraid of large analytics, so I decided to refresh those skills.</p>
 <p>Fortunately, Google was so nice as to host this almost 100 GB dataset on <a href="http://googlecloudplatform.blogspot.cz/2014/05/worlds-largest-event-dataset-now-publicly-available-in-google-bigquery.html">its cloud for free</a>, for which I love Google. Not only that, but Google also loaded this dataset so that it can be queried using <a href="http://en.wikipedia.org/wiki/BigQuertracky">BigQuery</a> using public-facing APIs or a web interface. We can then query GDELT using SQL-like language as shown below and subsequently export the dataset as a CSV:</p>
-<div class="codehilite"><pre><span class="n">SELECT</span> <span class="o">*</span> <span class="n">FROM</span> <span class="p">[</span><span class="n">gdelt</span><span class="o">-</span><span class="n">bq</span><span class="o">:</span><span class="n">full</span><span class="p">.</span><span class="n">events</span><span class="p">]</span> <span class="n">WHERE</span> <span class="p">(</span> 
-<span class="p">(</span><span class="n">MonthYear</span><span class="o">&gt;=</span><span class="mi">201303</span> <span class="o">&amp;&amp;</span> <span class="n">Year</span><span class="o">&lt;=</span><span class="mi">2015</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="n">NumSources</span><span class="o">&gt;=</span><span class="mi">2</span> <span class="o">&amp;&amp;</span> <span class="n">GoldsteinScale</span><span class="o">&lt;</span><span class="mf">0.0</span> <span class="n">AND</span>
-<span class="p">((</span><span class="n">Actor1Geo_CountryCode</span><span class="o">==</span><span class="s">&quot;SY&quot;</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="n">Actor1Code</span><span class="o">==</span><span class="s">&quot;IMG&quot;</span> <span class="o">||</span> <span class="n">Actor1Code</span><span class="o">==</span><span class="s">&quot;REB&quot;</span><span class="p">))</span>
-<span class="o">||</span> <span class="p">(</span><span class="n">Actor2Geo_CountryCode</span><span class="o">==</span><span class="s">&quot;SY&quot;</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="n">Actor2Code</span><span class="o">==</span><span class="s">&quot;IMG&quot;</span> <span class="o">||</span> <span class="n">Actor2Code</span><span class="o">==</span><span class="s">&quot;REB&quot;</span><span class="p">))</span> <span class="p">)</span>
-<span class="p">)</span> <span class="n">ORDER</span> <span class="n">BY</span> <span class="n">Year</span><span class="p">;</span>
+<div class="highlight"><pre><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="p">[</span><span class="n">gdelt</span><span class="o">-</span><span class="n">bq</span><span class="p">:</span><span class="k">full</span><span class="p">.</span><span class="n">events</span><span class="p">]</span> <span class="k">WHERE</span> <span class="p">(</span> 
+<span class="p">(</span><span class="n">MonthYear</span><span class="o">&gt;=</span><span class="mi">201303</span> <span class="o">&amp;&amp;</span> <span class="k">Year</span><span class="o">&lt;=</span><span class="mi">2015</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="n">NumSources</span><span class="o">&gt;=</span><span class="mi">2</span> <span class="o">&amp;&amp;</span> <span class="n">GoldsteinScale</span><span class="o">&lt;</span><span class="mi">0</span><span class="p">.</span><span class="mi">0</span> <span class="k">AND</span>
+<span class="p">((</span><span class="n">Actor1Geo_CountryCode</span><span class="o">==</span><span class="ss">&quot;SY&quot;</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="n">Actor1Code</span><span class="o">==</span><span class="ss">&quot;IMG&quot;</span> <span class="o">||</span> <span class="n">Actor1Code</span><span class="o">==</span><span class="ss">&quot;REB&quot;</span><span class="p">))</span>
+<span class="o">||</span> <span class="p">(</span><span class="n">Actor2Geo_CountryCode</span><span class="o">==</span><span class="ss">&quot;SY&quot;</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="n">Actor2Code</span><span class="o">==</span><span class="ss">&quot;IMG&quot;</span> <span class="o">||</span> <span class="n">Actor2Code</span><span class="o">==</span><span class="ss">&quot;REB&quot;</span><span class="p">))</span> <span class="p">)</span>
+<span class="p">)</span> <span class="k">ORDER</span> <span class="k">BY</span> <span class="k">Year</span><span class="p">;</span>
 </pre></div>
 
 
@@ -149,21 +153,21 @@ For some events it is hard, if not impossible, to correctly specify precise coor
 <p>Want the R script? Want to give feedback? Comments? Question? I am happy to hear it! Contact me at james [dot] langr [at] gmail [dot] com.</p>
 
 		<div id="article_meta">
-							Category:
-					<a href="./category/hacking.html">Hacking</a>
-										<br />Tags:
-									<a href="./tag/modeling.html">modeling</a>
-									<a href="./tag/gdelt.html">GDELT</a>
-									<a href="./tag/interactive.html">interactive</a>
-									<a href="./tag/syria.html">Syria</a>
-									</div>
+				Category:
+					<a href="./category/technical.html">technical</a>
+				<br />Tags:
+					<a href="./tag/modeling.html">modeling</a>
+					<a href="./tag/gdelt.html">GDELT</a>
+					<a href="./tag/r.html">R</a>
+					<a href="./tag/syria.html">Syria</a>
+		</div>
 	</article>
 
 	<footer>
 		<a href="./" class="button_accent">&larr;&nbsp;&nbsp;&nbsp;Back to blog</a>
 	</footer>
 
-		<div id="comments">
+	<div id="comments">
 		<h2>Comments</h2>
 		<div id="disqus_thread"></div>
 		<script type="text/javascript">
@@ -176,10 +180,10 @@ For some events it is hard, if not impossible, to correctly specify precise coor
 		</script>
 		<noscript>Please enable JavaScript to view <a href="http://disqus.com/?ref_noscript">comments</a>.</noscript>
 	</div>
-	
+
 	</section>
 
-	<script type="text/javascript">
+<script type="text/javascript">
 	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
 	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
 	</script>

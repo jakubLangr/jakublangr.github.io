@@ -14,4 +14,4 @@ I love to hack data and I worked in a data science position for a half a year at
 
 If you want to, feel free to get in touch at james [dot] langr [at] gmail [dot] com or via the LinkedIn profile in links! 
 
-My resume available [here](https://dl.dropboxusercontent.com/u/30848031/%5BCV%5DJakub_langr_v15.3.pdf).
+My resume available [here](http://goo.gl/sEUFMa).
