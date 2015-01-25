@@ -19,7 +19,8 @@ SOCIAL =  (('Pelican', 'http://docs.notmyidea.org/alexis/pelican/'),
 LINKS = (('LinkedIn', 'http://linkedin.com/in/jakublangr'),
           ('GitHub', 'https://github.com/jakubLangr'),
           ('Mail','mailto:james.langr@gmail.com'),
-          ('About', '/about.html'))
+          ('About', '/about.html'),
+          ('R Bloggers', 'http://r-bloggers.com'))
 
 DEFAULT_PAGINATION = 10
 
@@ -32,9 +33,9 @@ DISQUS_SITENAME = 'jakublangr'
 
 RELATIVE_URLS = True
 
-#PLUGIN_PATHS = ["./plugins","plugins","./pelican-plugins","pelican-plugins","/media/jakub/4408A47308A46620/Users/jakub/Desktop/Dropbox/Programming/myBlog/pelican-plugins"]
-PLUGIN_PATH = 'pelican-plugins'
-PLUGINS = ['render_math','better_code_samples']
+
+PLUGIN_PATHS = ['pelican-plugins']
+PLUGINS = ['render_math']
 
 #SITE_THUMBNAIL = 'https://dl.dropboxusercontent.com/u/299446/logo.png'
 #SITE_THUMBNAIL_TEXT = "Jakub Langr's Blog"
