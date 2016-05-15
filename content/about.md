@@ -8,7 +8,7 @@ Summary: About Me
 
 ![Me](https://dl.dropboxusercontent.com/u/30848031/blog/WebSummit_011.JPG "Welcome to my blog!")
 
-Welcome to my blog! I am a final year undergraduate at University of Oxford studying mostly economics, but really just spending loads of time on [Cousera.org](http://cousera.org) and similar awesome MOOC sites (I mean, I have to love them, I already finished 12 courses...) playing with machine learning, data science, statistics, computer science and all the things awesome.
+Welcome to my blog! I am a final year undergraduate at University of Oxford studying mostly economics, but really just spending loads of time on [Coursera.org](http://coursera.org) and similar awesome MOOC sites (I mean, I have to love them, I already finished 12 courses...) playing with machine learning, data science, statistics, computer science and all the things awesome.
 
 I love to hack data and I worked in a data science position for a half a year at Pearson Plc, but I also have full-time like experience from international consultancies and NGOs. 
 

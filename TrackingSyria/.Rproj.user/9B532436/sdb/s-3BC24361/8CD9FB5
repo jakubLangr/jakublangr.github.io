@@ -1,0 +1,16 @@
+{
+    "contents" : "library(ggplot2)\nlibrary(ggmap)\n\nfilepath = \"results-20140921-223252.csv\"\n\nread.csv(filepath,na.strings=\"null\") -> data\n\ndata = data[data$Actor1Geo_Lat!=35,]\ndata = data[data$Actor2Geo_Lat!=35,]\n\ncolSums(is.na(data))/dim(data)[1]\nmap = get_map(location=\"Syria\",zoom=7)\nmapPoints <- ggmap(map) + geom_point(aes(x=Actor1Geo_Long,y=Actor1Geo_Lat,size=abs(GoldsteinScale)),data=data,alpha=.1,col=\"red\") + geom_point(aes(x=Actor2Geo_Long,y=Actor2Geo_Lat,size=abs(GoldsteinScale)),data=data,alpha=.1,col=\"red\")\nmapPoints\n\ndata$MonthYear = as.factor(data$MonthYear)\n\nfor(i in levels(data$MonthYear)){\n  print(i)\n  subset = data[data$MonthYear==i,]\n  mapPoints <- ggmap(map) + geom_point(aes(x=Actor1Geo_Long,y=Actor1Geo_Lat,size=abs(GoldsteinScale)),data=subset,alpha=.1,col=\"red\") + geom_point(aes(x=Actor2Geo_Long,y=Actor2Geo_Lat,size=abs(GoldsteinScale)),data=subset,alpha=.1,col=\"red\")\n  mapPoints\n  ggsave(as.character(paste(i,\".png\",sep=\"\")))\n}",
+    "created" : 1411310516323.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3148650191",
+    "id" : "8CD9FB5",
+    "lastKnownWriteTime" : 1411333782,
+    "path" : "C:/Users/jakub/Desktop/Dropbox/Programming/TrackingSyria/Syria_Script.R",
+    "project_path" : "Syria_Script.R",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}
