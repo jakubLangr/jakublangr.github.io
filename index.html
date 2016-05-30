@@ -1,141 +1,314 @@
-<!DOCTYPE html>
-<html lang="en">
+    <!-- Banner -->
+      <section id="banner">
+
+        <!--
+          ".inner" is set up as an inline-block so it automatically expands
+          in both directions to fit whatever's inside it. This means it won't
+          automatically wrap lines, so be sure to use line breaks where
+          appropriate (<br />).
+        -->
+        <div class="inner">
+
+          <header>
+            <h2>JAKUB LANGR</h2>
+          </header>
+          <p><strong>Welcome</strong> to<br />
+          my personal site about <br />
+          data science life.
+          <footer>
+            <ul class="buttons vertical">
+              <li><a href="#main" class="button fit scrolly">I probably don't care...</a></li>
+            </ul>
+          </footer>
+
+        </div>
+
+      </section><html>
 <head>
-	<link rel="stylesheet" type="text/css" href="/theme/css/style.css">
-	<!--<link rel="stylesheet/less" type="text/css" href="/theme/css/style.less">-->
-	<!--<script src="/theme/js/less.js" type="text/javascript"></script>-->
-	<link rel="stylesheet" type="text/css" href="/theme/css/pygments.css">
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:800,400,300|Inconsolata' rel='stylesheet' type='text/css'>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.dropotron.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/skel-layers.min.js"></script>
+    <script src="/js/init.js"></script>
+    <link rel="stylesheet" href="/css/pygment.css" />
+    <noscript>
+        <link rel="stylesheet" href="/css/skel.css" />
+        <link rel="stylesheet" href="/css/style.css" />
+        <link rel="stylesheet" href="/css/style-noscript.css" />
+    </noscript>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link  href="http://fonts.googleapis.com/css?family=Anonymous+Pro:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css" >
+    <!--[if lte IE 8]><link rel="stylesheet" href="/css/ie/v8.css" /><![endif]-->
+    <!--[if lte IE 9]><link rel="stylesheet" href="/css/ie/v9.css" /><![endif]-->
+        <link href="http://www.jakublangr.com/feed/index.html" type="application/atom+xml" rel="alternate" title="Jakub Langr's Blog-Feed" />
 
-	<link href="http://www.jakublangr.com/" type="application/atom+xml" rel="alternate" title="Jakub Langr's Blog ATOM Feed" />
-		<link href="http://www.jakublangr.com/feed/index.html" type="application/atom+xml" rel="alternate" title="Jakub Langr's Blog RSS Feed" />
-
-		<title>Jakub Langr's Blog</title>
-		<meta charset="utf-8" />
+    <title>Jakub Langr's Blog Data n stuff</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width">
 </head>
-<body>
-	<section id="sidebar">
-		<figure id="user_logo">
-			<a href="/"><div class="logo">&nbsp;</div></a>
-		</figure>
 
-		<div class="user_meta">
-			<h1 id="user"><a href="/" class="">Jakub Langr</a></h1>
-			<h2></h2>
-			<ul>
-					<li><a href="http://linkedin.com/in/jakublangr">LinkedIn</a></li>
-					<li><a href="https://github.com/jakubLangr">GitHub</a></li>
-					<li><a href="mailto:james.langr@gmail.com">Mail</a></li>
-					<li><a href="/about.html">About</a></li>
-					<li><a href="http://r-bloggers.com">R Bloggers</a></li>
-			</ul>
-		</div>
-		<footer>
-			<address>
-				All content (cc) Jakub Langr, licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.
+<body class="index loading">
 
-				Powered by <a href="http://pelican.notmyidea.org/">Pelican</a>,
-				theme by <a href="https://github.com/wting/pelican-svbtle">wting</a>.
-				<br> 
-			</address>
-		</footer>
-	</section>
 
-	<section id="posts">
-	<header>
-		<h1>Jakub Langr's blog</h1>
-		<h3>
-			<script type="text/javascript">
-				var currentDate = new Date();
-				var day = currentDate.getDate();
-				var monthNames = [ "Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sep", "Oct", "Nov", "Dec" ];
-				var month = monthNames[currentDate.getMonth()].toUpperCase();
-				var year = currentDate.getFullYear();
-				document.write(month + " " + day + ", " + year);
-			</script>
-		</h3>
-	</header>
 
-	<dl>
-		<ol>
-				<li>
-					<h1 class="title">
-						<a href="./gjp-part2.html" rel="bookmark" title="Permalink to ...especially about the future">...especially about the future</a>
-					</h1>
-					<abbr class="published" title="2015-09-14T21:00:00+01:00">14/09/2015</abbr>
-				<div class="entry-content"> <p>A year ago, I wrote about the Good Judgment Project -- an attempt to use prediction markets to study our understanding of forecasting of geo-political events. I was lucky to be selected as one of the participants in this project and now I am eager to share my thoughts.</p> </div>
-				</li>
-				<li>
-					<h1 class="title">
-						<a href="./eec-2015.html" rel="bookmark" title="Permalink to Speaking at European Economic Congress 2015">Speaking at European Economic Congress 2015</a>
-					</h1>
-					<abbr class="published" title="2015-06-30T21:00:00+01:00">30/06/2015</abbr>
-				<div class="entry-content"> <p>Here I will sort of think about the challenges of spurring social change and entrepreneurship in Europe based on my experience of speaking at an international conference. But above all, this will be a personal post (hence my opinions only).</p> </div>
-				</li>
-				<li>
-					<h1 class="title">
-						<a href="./moocs-part1.html" rel="bookmark" title="Permalink to On MOOCs: Projects, Practice and Perspective">On MOOCs: Projects, Practice and Perspective</a>
-					</h1>
-					<abbr class="published" title="2015-01-23T21:00:00+00:00">23/01/2015</abbr>
-				<div class="entry-content"> <p>I said I will stop at finishing 14 online courses... and I am doing three MOOCs again. Or a review of my online learning journey, projects I have done, reviews of great and good courses, my (brief) take on practices. <strong>UPDATED</strong>.</p> </div>
-				</li>
-				<li>
-					<h1 class="title">
-						<a href="./underspecification-socsci.html" rel="bookmark" title="Permalink to On Randomness in (Social) Science">On Randomness in (Social) Science</a>
-					</h1>
-					<abbr class="published" title="2014-12-06T04:00:00+00:00">06/12/2014</abbr>
-				<div class="entry-content"> <p>Slightly technical, but relatively simple introduction to randomness and why it has to be everywhere around us. (Also check out the cool new LaTeX plug-in.)</p> </div>
-				</li>
-				<li>
-					<h1 class="title">
-						<a href="./web-summit-dublin-14.html" rel="bookmark" title="Permalink to Web Summit Dublin 2014">Web Summit Dublin 2014</a>
-					</h1>
-					<abbr class="published" title="2014-11-14T20:00:00+00:00">14/11/2014</abbr>
-				<div class="entry-content"> <p>An amazing week filled with learning about tech and startups, in the presence of inspiring people, cool businesses and most importantly fellow scholars--probably the most awesome group of people in existence.</p> </div>
-				</li>
-				<li>
-					<h1 class="title">
-						<a href="./hack-zurich-14.html" rel="bookmark" title="Permalink to #hackZurich 2014: A hackhathon to remember">#hackZurich 2014: A hackhathon to remember</a>
-					</h1>
-					<abbr class="published" title="2014-10-12T20:00:00+01:00">12/10/2014</abbr>
-				<div class="entry-content"> <p>My experiences at #hachZurich (http://hackzurich.com/): 30+ hours of coding, 5 hours of sleep, 14 hours of transportation door-to-door and back. One epic weekend.</p> </div>
-				</li>
-				<li>
-					<h1 class="title">
-						<a href="./tracking-crisis.html" rel="bookmark" title="Permalink to Tracking the CrISIS in Syria">Tracking the CrISIS in Syria</a>
-					</h1>
-					<abbr class="published" title="2014-09-22T21:00:00+01:00">22/09/2014</abbr>
-				<div class="entry-content"> <p>Exploring the power of Big Data approach (GDELT) applied to the civil war in Syria to get unconventional insights into the Syrian civil war and the terror tactics of ISIS.</p> </div>
-				</li>
-				<li>
-					<h1 class="title">
-						<a href="./hello-world.html" rel="bookmark" title="Permalink to Predictions R hard">Predictions R hard</a>
-					</h1>
-					<abbr class="published" title="2014-09-14T21:00:00+01:00">14/09/2014</abbr>
-				<div class="entry-content"> <p>Quick and dirty statistical modeling in R for social scientists, decision makers and enthusiasts. Insights from my involvement in a US intelligence project.</p> </div>
-				</li>
-				<li>
-					<h1 class="title">
-						<a href="./about.html" rel="bookmark" title="Permalink to About Me">About Me</a>
-					</h1>
-					<abbr class="published" title="2014-09-14T20:00:00+01:00">14/09/2014</abbr>
-				<div class="entry-content"> <p>About Me</p> </div>
-				</li>
-		</ol>
-	</dl>
+    <!-- Header -->
+    <header id="header" class="alt">
+        <h1 class="logo">
+            <a href=".">Jakub Langr's Blog </span></a>
+        </h1>
+        <nav id="nav">
+            <ul>
+                <!-- <li class="current"><a href="index.html">Welcome</a></li> -->
+                <li class="submenu">
+                    <a href="./">Blog</a>
+                    <ul>
+                            <li >
+                                <a href="./category/about/">About</a>
+                            </li>
+                            <li >
+                                <a href="./category/non-technical/">non-technical</a>
+                            </li>
+                            <li >
+                                <a href="./category/technical/">technical</a>
+                            </li>
+                    </ul>
+                </li>
+                <li><a href="#" class="button special">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<p class="paginator">
-</p>
-	</section>
+<!-- Main -->
+<article id="main">
 
-<script type="text/javascript">
-	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-	</script>
-	<script type="text/javascript">
-		try {
-			var pageTracker = _gat._getTracker("UA-55040887-1");
-			pageTracker._trackPageview();
-		} catch(err) {}</script>
+<!--
+  <header class="special container">
+    <span class="icon fa-bar-chart-o"></span>
+    <h2>As this is my <strong>twentieth</strong> freebie for HTML5 UP<br />
+    I decided to give it a really creative name.</h2>
+    <p>Turns out <strong>Twenty</strong> was the best I could come up with. Anyway, lame name aside,<br />
+    it's minimally designed, fully responsive, built on HTML5/CSS3/<strong>skel</strong>,
+    and, like all my stuff,<br />
+    released for free under the <a href="http://html5up.net/license">Creative Commons Attribution 3.0</a> license. Have fun!</p>
+  </header>
+-->
+  <!-- One -->
+  <section class="wrapper style2 container special-alt">
+    <div class="row half">
+      <div class="8u">
+
+        <header>
+          <h2>Ok, but I have <strong>lots</strong> of fun stuff on here: data nerdery, dank conferences, taking up space. Waddaya say?</h2>
+        </header>
+        <p> Also some sick fake latin text. Yo, check this out: sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu comteger ut fermentum lorem. Lorem ipsum dolor sit amet. Sed tristique purus vitae volutpat ultrices. eu elit eget commodo. Sed tristique purus vitae volutpat ultrices</p>
+        <footer>
+          <ul class="buttons">
+            <li><a href="#" class="button">Nah, <strong> definitely </strong> don't care</a></li>
+          </ul>
+        </footer>
+
+      </div>
+      <div class="4u skel-cell-important">
+
+        <ul class="feature-icons">
+          <li><span class="icon fa-clock-o"><span class="label">Feature 1</span></span></li>
+          <li><span class="icon fa-volume-up"><span class="label">Feature 2</span></span></li>
+          <li><span class="icon fa-laptop"><span class="label">Feature 3</span></span></li>
+          <li><span class="icon fa-inbox"><span class="label">Feature 4</span></span></li>
+          <li><span class="icon fa-lock"><span class="label">Feature 5</span></span></li>
+          <li><span class="icon fa-cog"><span class="label">Feature 6</span></span></li>
+        </ul>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Two -->
+  <section class="wrapper style1 container special">
+    <div class="row">
+
+      <div class="4u">
+
+        <section>
+          <span class="icon feature fa-"></span>
+          <header>
+            <a href="./kaggle-2016.html" rel='bookmark'><h3>Kaggle Struggle</h3></a>
+          </header>
+          <p> My trip to the <1% of data scientists. Or in the the world of competitive data science and back again. Aka: three (relative) successes and a fail. Also how not to spend a lot of money on your data problem. I need to start writing better summaries.
+          <!-- For those of you that are not compete data nerds, I occasionally venture into the world of Kaggle: a competitive data science website where everyone from the --> </p>
+          <footer>
+              <ul class="buttons">
+                  <li><a href="./kaggle-2016.html" class="button small">Read More</a></li>
+              </ul>
+          </footer>
+        </section>
+
+      </div>
+      <div class="4u">
+
+        <section>
+          <span class="icon feature fa-"></span>
+          <header>
+            <a href="./gjp-part2.html" rel='bookmark'><h3>...especially about the future</h3></a>
+          </header>
+          <p> A year ago, I wrote about the Good Judgment Project -- an attempt to use prediction markets to study our understanding of forecasting of geo-political events. I was lucky to be selected as one of the participants in this project and now I am eager to share
+          <!-- A year has passed since I started to make predictions for this fascinating project run by Philip Tetlock a man that has dedicated about 30 years of his life to understanding geo-political forec --> </p>
+          <footer>
+              <ul class="buttons">
+                  <li><a href="./gjp-part2.html" class="button small">Read More</a></li>
+              </ul>
+          </footer>
+        </section>
+
+      </div>
+      <div class="4u">
+
+        <section>
+          <span class="icon feature fa-"></span>
+          <header>
+            <a href="./eec-2015.html" rel='bookmark'><h3>Speaking at European Economic Congress 2015</h3></a>
+          </header>
+          <p> Here I will sort of think about the challenges of spurring social change and entrepreneurship in Europe based on my experience of speaking at an international conference. But above all, this will be a personal post (plus some personal thoughts).
+          <!-- I was recently invited to speak at European Economic Congress in Poland partially thanks to the fact that I was working at Aspen Institute Prague back in the summer of 2011. When I saw the line --> </p>
+          <footer>
+              <ul class="buttons">
+                  <li><a href="./eec-2015.html" class="button small">Read More</a></li>
+              </ul>
+          </footer>
+        </section>
+
+      </div>
+      <div class="4u">
+
+        <section>
+          <span class="icon feature fa-"></span>
+          <header>
+            <a href="./moocs-part1.html" rel='bookmark'><h3>On MOOCs: Projects, Practice and Perspective</h3></a>
+          </header>
+          <p> I said I will stop at finishing 14 online courses... and I am doing three MOOCs again. Review of my learning journey, projects I have done, reviews of great and good courses, my (brief) take on practices. UPDATED.
+          <!-- It has been quite a while since I started my first MOOC at Coursera. I think now is the time to reflect on the courses I have finished, what I have learned as well as what to recommend to my fe --> </p>
+          <footer>
+              <ul class="buttons">
+                  <li><a href="./moocs-part1.html" class="button small">Read More</a></li>
+              </ul>
+          </footer>
+        </section>
+
+      </div>
+      <div class="4u">
+
+        <section>
+          <span class="icon feature fa-"></span>
+          <header>
+            <a href="./underspecification-socsci.html" rel='bookmark'><h3>On Randomness in (Social) Science</h3></a>
+          </header>
+          <p> Slightly technical, but relatively simple introduction to randomness and why it has to be everywhere around us. (Also check out the cool new LaTeX plug-in.)
+          <!-- A while back I was mentioning how I was confused by the randomness as an emergent property of human systems, and so I have been giving this some thought, which I --> </p>
+          <footer>
+              <ul class="buttons">
+                  <li><a href="./underspecification-socsci.html" class="button small">Read More</a></li>
+              </ul>
+          </footer>
+        </section>
+
+      </div>
+      <div class="4u">
+
+        <section>
+          <span class="icon feature fa-"></span>
+          <header>
+            <a href="./web-summit-dublin-14.html" rel='bookmark'><h3>Web Summit Dublin 2014</h3></a>
+          </header>
+          <p> An amazing week filled with learning about tech and startups, in the presence of inspiring people, cool businesses and most importantly fellow scholars--probably the most awesome group of people in existence.
+          <!-- So I rarely get this emotional about an event, but Web Summit definitely is an experience I will never forget. I was incredibly lucky to be <a href="http://blog.websummit.net/student-blog-annou --> </p>
+          <footer>
+              <ul class="buttons">
+                  <li><a href="./web-summit-dublin-14.html" class="button small">Read More</a></li>
+              </ul>
+          </footer>
+        </section>
+
+      </div>
+
+    </div> <!-- /.row -->
+
+
+<div class="row ">
+
+    <div class="4u pagination-left">
+        <section>
+            <header>
+                &nbsp;
+            </header>
+        </section>
+    </div>
+
+    <div class="4u pagination-middle">
+        <section>
+            <header>Page 1 / 2</header>
+        </section>
+    </div>
+
+    <div class="4u pagination-right">
+        <section>
+            <header>
+                <a href="./index2.html">Older posts&nbsp;&rarr;</a>
+            </header>
+        </section>
+    </div>
+
+</div>
+
+
+  </section> <!-- /section -->
+
+</article>
+
+<!--  You could include coolstuff.html by removing the non-programming words and wrapping it in  -->
+<!-- CTA -->
+<section id="cta">
+
+    <header>
+        <h2>Ready to do <strong>something</strong>?</h2>
+        <p>Proin a ullamcorper elit, et sagittis turpis integer ut fermentum.</p>
+    </header>
+    <footer>
+        <ul class="buttons">
+            <li><a href="/about.html" class="button special">Get in touch!</a></li>
+            <li><a href="https://www.youtube.com/watch?v=a1Y73sPHKxw" class="button">LOL Wut</a></li>
+        </ul>
+    </footer>
+
+</section>
+
+<!-- Footer -->
+<footer id="footer">
+
+    <ul class="icons">
+        <li>
+          <a href="http://linkedin.com/in/jakublangr" class="icon circle fa fa-LinkedIn"><span class="label">LinkedIn</span></a>
+        </li>
+        <li>
+          <a href="https://github.com/jakubLangr" class="icon circle fa fa-GitHub"><span class="label">GitHub</span></a>
+        </li>
+        <li>
+          <a href="mailto:james.langr@gmail.com" class="icon circle fa fa-envelope"><span class="label">envelope</span></a>
+        </li>
+        <li>
+          <a href="/about.html" class="icon circle fa fa-Info"><span class="label">Info</span></a>
+        </li>
+        <li>
+          <a href="http://r-bloggers.com" class="icon circle fa fa-blog"><span class="label">blog</span></a>
+        </li>
+    </ul>
+
+    <span class="copyright">&copy; Untitled. All rights reserved. Design: <a href="http://html5up.net">HTML5 UP</a>.</span>
+
+</footer>
 </body>
 </html>
