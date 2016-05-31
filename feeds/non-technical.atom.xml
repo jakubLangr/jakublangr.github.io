@@ -25,9 +25,9 @@ sting as the project I have been using much during GJP--but they will "soon" be 
 &lt;table&gt;
     &lt;tr&gt;
     &lt;td&gt;
-        &lt;img src='images/IMG_20150420_175640.jpg' alt='Katowice' style="height: 10%; width: auto"&gt;      
+        &lt;img src='images/IMG_20150420_175640.jpg' alt='Katowice' style="width: 99%; height: auto "&gt;     
     &lt;/td&gt;&lt;td&gt;
-        &lt;img src="images/IMG_20150420_103638.jpg" alt="President speaking" style="height: 10%; width: auto"&gt; 
+        &lt;img src="images/IMG_20150420_103638.jpg" alt="President speaking" style="width: 99%; height: auto "&gt; 
     &lt;/td&gt;&lt;/tr&gt;
 &lt;/table&gt;
 
