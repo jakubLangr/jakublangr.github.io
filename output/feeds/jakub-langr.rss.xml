@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0"><channel><title>Jakub Langr's Blog</title><link>jakublangr.com/</link><description>About data and all things awesome</description><lastBuildDate>Tue, 03 May 2016 21:00:00 +0100</lastBuildDate><item><title>Kaggle Struggle</title><link>jakublangr.com/kaggle-2016.html</link><description>&lt;p&gt;For those of you that are not compete data nerds, I occasionally venture into the world of &lt;a href="http://www.kaggle.com"&gt;Kaggle&lt;/a&gt;: a competitive data science website where everyone from the top Data Science experts to the people who are just starting out compete against each other in the hopes of getting money (statistically unlikely), fame and massive amounts of fake nerd points (very important).&lt;/p&gt;
 &lt;h1&gt;My life on Kaggle&lt;/h1&gt;
-&lt;p&gt;&lt;img alt="my life" src="http://s3.amazonaws.com/theoatmeal-img/comics/working_home/6.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;div align="center"&gt;
+&lt;img src="http://s3.amazonaws.com/theoatmeal-img/comics/working_home/6.png" alt='my life on Kaggle' style="width: 95%; height: auto "&gt;
+&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;I have so far participated in four different competitions: &lt;a href="https://www.kaggle.com/c/liberty-mutual-group-property-inspection-prediction"&gt;Liberty Property Inspection Prediction&lt;/a&gt;, &lt;a href="https://www.kaggle.com/c/springleaf-marketing-response"&gt;Springleaf Marketing Response&lt;/a&gt;, &lt;a href="https://www.kaggle.com/c/bnp-paribas-cardif-claims-management"&gt;BNP Paribas Claims Management&lt;/a&gt; and &lt;a href="https://www.kaggle.com/c/santander-customer-satisfaction"&gt;Santander Customer Satisfaction&lt;/a&gt;. All of these were fairly different competitions and I have learned loads of different things. &lt;/p&gt;
 &lt;p&gt;In many cases, Kaggle is great: no more data archeology like in most commercial datasets. But this is not a rant about how when you bring an extra team on a project you should document the changes they made. Or about how when you start/stop sharding your database and you have variable names that indicate this, these should be updated as well. Or indeed that columns have swapped names or names that have nothing to do with what they contain for historical reasons. Not that I am bitter or anything.&lt;/p&gt;
 &lt;h1&gt;Okay, okay... but I still don't get it.&lt;/h1&gt;
@@ -18,11 +20,11 @@
 &lt;table align="center"&gt; 
 &lt;tr&gt;
     &lt;td&gt;
-    &lt;img src='images/april_aws.png' alt="April" height="35%" width="85%" align="center"&gt;
+    &lt;img src='images/april_aws.png' alt="April" style="width: 95%; height: auto "align="center"&gt;
     &lt;/td&gt;
 &lt;/tr&gt;&lt;tr&gt;
     &lt;td&gt;
-    &lt;img src="images/may_aws.png" height="38%" alt='May' width="85%" align="center"&gt;
+    &lt;img src="images/may_aws.png" height="38%" alt='May' style="width: 95%; height: auto " align="center"&gt;
     &lt;/td&gt;
 &lt;/tr&gt;&lt;/table&gt;
 
@@ -31,7 +33,7 @@
 &lt;p&gt;I don't feel like I am using AWS excessively even. But perhaps it was all worth it: &lt;/p&gt;
 &lt;div align="center"&gt;
 &lt;a href="https://www.kaggle.com/jakublangr"&gt;
-&lt;img src="images/kaggle_status.png" style="align-content: center"&gt; &lt;br&gt; 
+&lt;img src="images/kaggle_status.png" style="align-content: center; width: 65%; height: auto"&gt; &lt;br&gt; 
 &lt;/a&gt; Top .929%, aww yeah! 
 &lt;/div&gt;
 
@@ -54,7 +56,7 @@ sting as the project I have been using much during GJP--but they will "soon" be 
 &lt;p&gt;Perhaps we should just stick to talking to each other for now.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jakub Langr</dc:creator><pubDate>Mon, 14 Sep 2015 21:00:00 +0100</pubDate><guid isPermaLink="false">tag:,2015-09-14:jakublangr.com/gjp-part2.html</guid><category>prediction markets</category></item><item><title>Speaking at European Economic Congress 2015</title><link>jakublangr.com/eec-2015.html</link><description>&lt;p&gt;I was recently invited to speak at European Economic Congress in Poland partially thanks to the fact that I was working at Aspen Institute Prague back in the summer of 2011. When I saw the line-up for my panel I was a bit terrified: why should anyone care what I had to say. &lt;/p&gt;
 &lt;div align="center"&gt;
 &lt;img src="https://dl.dropboxusercontent.com/u/30848031/blog/panel.png" alt="Panel line up" align='center'
-style="height 30%; width: auto " /&gt;
+ style="width: 95%; height: auto " /&gt;
 &lt;/div&gt;
 
 &lt;h1&gt;To Poland!&lt;/h1&gt;
@@ -63,9 +65,9 @@ style="height 30%; width: auto " /&gt;
 &lt;table&gt;
     &lt;tr&gt;
     &lt;td&gt;
-        &lt;img src='images/IMG_20150420_175640.jpg' alt='Katowice' style="height: 10%; width: auto"&gt;      
+        &lt;img src='images/IMG_20150420_175640.jpg' alt='Katowice' style="width: 99%; height: auto "&gt;     
     &lt;/td&gt;&lt;td&gt;
-        &lt;img src="images/IMG_20150420_103638.jpg" alt="President speaking" style="height: 10%; width: auto"&gt; 
+        &lt;img src="images/IMG_20150420_103638.jpg" alt="President speaking" style="width: 99%; height: auto "&gt; 
     &lt;/td&gt;&lt;/tr&gt;
 &lt;/table&gt;
 
@@ -77,16 +79,16 @@ style="height 30%; width: auto " /&gt;
 &lt;table&gt;
     &lt;tr&gt;
     &lt;td &gt;
-        &lt;img src='images/240627_940.jpg' alt='Panel 3' style="width: 15%; height: auto "&gt;       
+        &lt;img src='images/240627_940.jpg' alt='Panel 3' style="width: 95%; height: auto "&gt;       
     &lt;/td&gt;&lt;td &gt;
-        &lt;img src="images/240621_940.jpg" alt="Panel 2" style="width: 15%; height: auto " &gt;
+        &lt;img src="images/240621_940.jpg" alt="Panel 2" style="width: 95%; height: auto " &gt;
     &lt;/td&gt;&lt;/tr&gt;
 &lt;/table&gt;
 
 &lt;div align="center"&gt;
-&lt;img src='images/20150421_102200.jpg' alt='Panel 1' style="width: 15%; height: auto "&gt;      
+&lt;img src='images/20150421_102200.jpg' alt='Panel 1' style="width: 95%; height: auto "&gt;      
 &lt;br &gt;
-&lt;img src="images/20150421_102129.jpg" alt="Panel 4" style="width: 15%; height: auto "&gt; 
+&lt;img src="images/20150421_102129.jpg" alt="Panel 4" style="width: 95%; height: auto "&gt; 
 &lt;/div&gt;
 
 &lt;p&gt;&lt;br &gt; 

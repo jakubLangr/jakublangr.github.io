@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Jakub Langr's Blog</title><link href="jakublangr.com/" rel="alternate"></link><link href="http://www.jakublangr.com/feeds/technical.atom.xml" rel="self"></link><id>jakublangr.com/</id><updated>2016-05-03T21:00:00+01:00</updated><entry><title>Kaggle Struggle</title><link href="jakublangr.com/kaggle-2016.html" rel="alternate"></link><published>2016-05-03T21:00:00+01:00</published><author><name>Jakub Langr</name></author><id>tag:,2016-05-03:jakublangr.com/kaggle-2016.html</id><summary type="html">&lt;p&gt;For those of you that are not compete data nerds, I occasionally venture into the world of &lt;a href="http://www.kaggle.com"&gt;Kaggle&lt;/a&gt;: a competitive data science website where everyone from the top Data Science experts to the people who are just starting out compete against each other in the hopes of getting money (statistically unlikely), fame and massive amounts of fake nerd points (very important).&lt;/p&gt;
 &lt;h1&gt;My life on Kaggle&lt;/h1&gt;
-&lt;p&gt;&lt;img alt="my life" src="http://s3.amazonaws.com/theoatmeal-img/comics/working_home/6.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;div align="center"&gt;
+&lt;img src="http://s3.amazonaws.com/theoatmeal-img/comics/working_home/6.png" alt='my life on Kaggle' style="width: 95%; height: auto "&gt;
+&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;I have so far participated in four different competitions: &lt;a href="https://www.kaggle.com/c/liberty-mutual-group-property-inspection-prediction"&gt;Liberty Property Inspection Prediction&lt;/a&gt;, &lt;a href="https://www.kaggle.com/c/springleaf-marketing-response"&gt;Springleaf Marketing Response&lt;/a&gt;, &lt;a href="https://www.kaggle.com/c/bnp-paribas-cardif-claims-management"&gt;BNP Paribas Claims Management&lt;/a&gt; and &lt;a href="https://www.kaggle.com/c/santander-customer-satisfaction"&gt;Santander Customer Satisfaction&lt;/a&gt;. All of these were fairly different competitions and I have learned loads of different things. &lt;/p&gt;
 &lt;p&gt;In many cases, Kaggle is great: no more data archeology like in most commercial datasets. But this is not a rant about how when you bring an extra team on a project you should document the changes they made. Or about how when you start/stop sharding your database and you have variable names that indicate this, these should be updated as well. Or indeed that columns have swapped names or names that have nothing to do with what they contain for historical reasons. Not that I am bitter or anything.&lt;/p&gt;
 &lt;h1&gt;Okay, okay... but I still don't get it.&lt;/h1&gt;
@@ -18,11 +20,11 @@
 &lt;table align="center"&gt; 
 &lt;tr&gt;
     &lt;td&gt;
-    &lt;img src='images/april_aws.png' alt="April" height="35%" width="85%" align="center"&gt;
+    &lt;img src='images/april_aws.png' alt="April" style="width: 95%; height: auto "align="center"&gt;
     &lt;/td&gt;
 &lt;/tr&gt;&lt;tr&gt;
     &lt;td&gt;
-    &lt;img src="images/may_aws.png" height="38%" alt='May' width="85%" align="center"&gt;
+    &lt;img src="images/may_aws.png" height="38%" alt='May' style="width: 95%; height: auto " align="center"&gt;
     &lt;/td&gt;
 &lt;/tr&gt;&lt;/table&gt;
 
@@ -31,7 +33,7 @@
 &lt;p&gt;I don't feel like I am using AWS excessively even. But perhaps it was all worth it: &lt;/p&gt;
 &lt;div align="center"&gt;
 &lt;a href="https://www.kaggle.com/jakublangr"&gt;
-&lt;img src="images/kaggle_status.png" style="align-content: center"&gt; &lt;br&gt; 
+&lt;img src="images/kaggle_status.png" style="align-content: center; width: 65%; height: auto"&gt; &lt;br&gt; 
 &lt;/a&gt; Top .929%, aww yeah! 
 &lt;/div&gt;
 

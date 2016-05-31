@@ -10,8 +10,9 @@ Summary: My trip to the <1% of data scientists. Or in the the world of competiti
 For those of you that are not compete data nerds, I occasionally venture into the world of [Kaggle](http://www.kaggle.com): a competitive data science website where everyone from the top Data Science experts to the people who are just starting out compete against each other in the hopes of getting money (statistically unlikely), fame and massive amounts of fake nerd points (very important).
 
 #My life on Kaggle
-
-![my life](http://s3.amazonaws.com/theoatmeal-img/comics/working_home/6.png)
+<div align="center">
+<img src="http://s3.amazonaws.com/theoatmeal-img/comics/working_home/6.png" alt='my life on Kaggle' style="width: 95%; height: auto ">
+</div>
 
 I have so far participated in four different competitions: [Liberty Property Inspection Prediction](https://www.kaggle.com/c/liberty-mutual-group-property-inspection-prediction), [Springleaf Marketing Response](https://www.kaggle.com/c/springleaf-marketing-response), [BNP Paribas Claims Management](https://www.kaggle.com/c/bnp-paribas-cardif-claims-management) and [Santander Customer Satisfaction](https://www.kaggle.com/c/santander-customer-satisfaction). All of these were fairly different competitions and I have learned loads of different things. 
  
@@ -41,11 +42,11 @@ Hi, I'm Jakub and I am a data addict. I have spent two weeks off AWS Console... 
 <table align="center"> 
 <tr>
 	<td>
-	<img src='images/april_aws.png' alt="April" height="35%" width="85%" align="center">
+	<img src='images/april_aws.png' alt="April" style="width: 95%; height: auto "align="center">
 	</td>
 </tr><tr>
 	<td>
-	<img src="images/may_aws.png" height="38%" alt='May' width="85%" align="center">
+	<img src="images/may_aws.png" height="38%" alt='May' style="width: 95%; height: auto " align="center">
 	</td>
 </tr></table>
 
@@ -55,7 +56,7 @@ I don't feel like I am using AWS excessively even. But perhaps it was all worth 
 
 <div align="center">
 <a href="https://www.kaggle.com/jakublangr">
-<img src="images/kaggle_status.png" style="align-content: center"> <br> 
+<img src="images/kaggle_status.png" style="align-content: center; width: 65%; height: auto"> <br> 
 </a> Top .929%, aww yeah! 
 </div>
 
