@@ -4,7 +4,7 @@ Tags: R, education, python, reviews
 Category: technical
 Slug: moocs-part1
 Author: Jakub Langr
-Summary:  I said I will stop at finishing 14 online courses... and I am doing three MOOCs again. Or a review of my online learning journey, projects I have done, reviews of great and good courses, my (brief) take on practices. **UPDATED**.
+Summary:  I said I will stop at finishing 14 online courses... and I am doing three MOOCs again. Review of my learning journey, projects I have done, reviews of great and good courses, my (brief) take on practices. **UPDATED**.
 
 It has been quite a while since I started my first MOOC at Coursera. I think now is the time to reflect on the courses I have finished, what I have learned as well as what to recommend to my fellow MOOCers. I will try to broadly classify (and score, because if you are anything like me, you occasionally dislike the imprecision of natural language) the courses I have finished and then I will try to give my take on MOOCs in general.
 

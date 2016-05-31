@@ -4,27 +4,47 @@ from __future__ import unicode_literals
 
 AUTHOR = u'Jakub Langr'
 SITENAME = u"Jakub Langr's Blog"
-SITEURL = ''
-THEME = "pelican-themes/svbtle"
+SITEURL = 'jakublangr.com'
+THEME = "themes/twenty"
 
 TIMEZONE = 'Europe/London'
+
+COVER_IMG_URL = 'DSC_0030.jpg'
+PROFILE_IMAGE_URL = 'cover_img.jpg'
+TAGLINE = 'Data n stuff'
+
+SIDEBAR_IMAGES = ['cover_img.jpg']
 
 DEFAULT_LANG = u'en'
 
 # Social widget
-SOCIAL =  (('Pelican', 'http://docs.notmyidea.org/alexis/pelican/'),
-          ('Python.org', 'http://python.org'),)
+# SOCIAL =  (('Pelican', 'http://docs.notmyidea.org/alexis/pelican/'),
+#          ('Python.org', 'http://python.org'),)
 
 # Blogroll
-LINKS = (('LinkedIn', 'http://linkedin.com/in/jakublangr'),
+SOCIAL = (('LinkedIn', 'http://linkedin.com/in/jakublangr'),
           ('GitHub', 'https://github.com/jakubLangr'),
-          ('Mail','mailto:james.langr@gmail.com'),
-          ('About', '/about.html'),
-          ('R Bloggers', 'http://r-bloggers.com'))
+          ('envelope','mailto:james.langr@gmail.com'),
+          ('Info', '/about.html'),
+          ('blog', 'http://r-bloggers.com'))
 
-DEFAULT_PAGINATION = 10
+DEFAULT_PAGINATION = 6
 
 DEFAULT_DATE_FORMAT = ('%d/%m/%Y')
+
+STATIC_PATHS = ['images',
+                'fonts',
+                'css',
+                'js',
+                ]
+
+import sys
+sys.path.append('.')
+from utils import filters
+JINJA_FILTERS = { 'sidebar': filters.sidebar, 'pretty_date': filters.pretty_date }
+
+#  backdrop specific 
+# PAGINATED_DIRECT_TEMPLATES = ('categories', 'archives')
 
 GOOGLE_ANALYTICS = 'UA-55040887-1'
 GOOGLE_ANALYTICS_DOMAIN = 'jakublangr.com'
