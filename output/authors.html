@@ -1,91 +1,59 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
-    <script src="/js/jquery.min.js"></script>
-    <script src="/js/jquery.dropotron.min.js"></script>
-    <script src="/js/skel.min.js"></script>
-    <script src="/js/skel-layers.min.js"></script>
-    <script src="/js/init.js"></script>
-    <link rel="stylesheet" href="/css/pygment.css" />
-    <noscript>
-        <link rel="stylesheet" href="/css/skel.css" />
-        <link rel="stylesheet" href="/css/style.css" />
-        <link rel="stylesheet" href="/css/style-noscript.css" />
-    </noscript>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-    <link  href="http://fonts.googleapis.com/css?family=Anonymous+Pro:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css" >
-    <!--[if lte IE 8]><link rel="stylesheet" href="/css/ie/v8.css" /><![endif]-->
-    <!--[if lte IE 9]><link rel="stylesheet" href="/css/ie/v9.css" /><![endif]-->
-        <link href="http://www.jakublangr.com/feed/index.html" type="application/atom+xml" rel="alternate" title="Jakub Langr's Blog-Feed" />
-
-    <title>Jakub Langr's Blog - Authors</title>
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width">
+        <title>Jakub Langr's personal website - Authors</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+
+        <!--[if IE]>
+            <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
 </head>
 
-<body class="no-sidebar loading">
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">Jakub Langr's personal website </a></h1>
+                <nav><ul>
+                    <li><a href="/category/about.html">About</a></li>
+                    <li><a href="/category/non-technical.html">non-technical</a></li>
+                    <li><a href="/category/technical.html">technical</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
 
-
-
-    <!-- Header -->
-    <header id="header" >
-        <h1 class="logo">
-            <a href=".">Jakub Langr's Blog </span></a>
-        </h1>
-        <nav id="nav">
-            <ul>
-                <!-- <li class="current"><a href="index.html">Welcome</a></li> -->
-                <li class="submenu">
-                    <a href="./">Blog</a>
-                    <ul>
-                            <li >
-                                <a href="./category/about/">About</a>
-                            </li>
-                            <li >
-                                <a href="./category/non-technical/">non-technical</a>
-                            </li>
-                            <li >
-                                <a href="./category/technical/">technical</a>
-                            </li>
-                    </ul>
-                </li>
-                <li><a href="#" class="button special">Sign Up</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <h1>Authors on Jakub Langr's Blog</h1>
-
-    <ul>        <li><a href="./author/jakub-langr.html">Jakub Langr</a> (11)</li>
+<section id="content" class="body">
+    <h1>Authors on Jakub Langr's personal website</h1>
+    <ul>
+        <li><a href="/author/jakub-langr.html">Jakub Langr</a> (10)</li>
     </ul>
+</section>
 
-<!-- Footer -->
-<footer id="footer">
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="http://getpelican.com/">Pelican</a></li>
+                            <li><a href="http://python.org/">Python.org</a></li>
+                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
 
-    <ul class="icons">
-        <li>
-          <a href="http://linkedin.com/in/jakublangr" class="icon circle fa fa-LinkedIn"><span class="label">LinkedIn</span></a>
-        </li>
-        <li>
-          <a href="https://github.com/jakubLangr" class="icon circle fa fa-GitHub"><span class="label">GitHub</span></a>
-        </li>
-        <li>
-          <a href="mailto:james.langr@gmail.com" class="icon circle fa fa-envelope"><span class="label">envelope</span></a>
-        </li>
-        <li>
-          <a href="/about.html" class="icon circle fa fa-Info"><span class="label">Info</span></a>
-        </li>
-        <li>
-          <a href="http://r-bloggers.com" class="icon circle fa fa-blog"><span class="label">blog</span></a>
-        </li>
-    </ul>
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
 
-    <span class="copyright">&copy; Untitled. All rights reserved. Design: <a href="http://html5up.net">HTML5 UP</a>.</span>
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
 
-</footer>
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
 </body>
 </html>
