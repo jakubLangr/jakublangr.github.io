@@ -18,17 +18,21 @@
   </header>
 -->
   <!-- One -->
+  <!--
   <section class="wrapper style2 container special-alt">
     <div class="row half">
       <div class="8u">
 
         <header>
-          <h2>Ok, but I have <strong>lots</strong> of fun stuff on here: data nerdery, dank conferences, taking up space. Waddaya say?</h2>
+          <h2>Ok, I have <strong>lots</strong> of fun stuff on here: data nerdery, dank conferences and my life on the edge.</h2>
         </header>
-        <p> Also some sick fake latin text. Yo, check this out: sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu comteger ut fermentum lorem. Lorem ipsum dolor sit amet. Sed tristique purus vitae volutpat ultrices. eu elit eget commodo. Sed tristique purus vitae volutpat ultrices</p>
+        <p> ... generally trying to be more interesting than your average personal website. Also some sick fake latin text. Yo, check this out: sed tristique purus vitae volutpat ultrices. But enough about that. We should ask the real questions: like why is this website so weird? Quite frankly, it is because I was bored doing it and I wrote this just so that I can do the following joke:</p>
         <footer>
           <ul class="buttons">
             <li><a href="#" class="button"> I regret everything! </a></li>
+          </ul>
+          <ul class='buttons'>
+          <li><a href='about.html' class='button'> I am intrigued </a></li>
           </ul>
         </footer>
 
@@ -48,6 +52,8 @@
     </div>
   </section>
 
+  -->
+
   <!-- Two -->
   <section class="wrapper style1 container special">
     <div class="row">
@@ -60,18 +66,19 @@
           <header>
             <a href="{{ SITEURL }}/{{ article.url }}" rel='bookmark'><h3>{{ article.title }}</h3></a>
           </header>
-          <p> {{ article.summary[:253] | striptags }}
+          <p> {{ article.summary[:274] | striptags }}
           <!-- {{ article.content[:196]|striptags }} --> </p>
-          <footer>
               <ul class="buttons">
                   <li><a href="{{ SITEURL }}/{{ article.url }}" class="button small">Read More</a></li>
               </ul>
-          </footer>
         </section>
+
+        {% if loop.index is divisibleby(3) %}
+         <br> <br> <br>
+        {% endif %}
 
       </div>
       {% endfor %}
-
     </div> <!-- /.row -->
 
     {% include 'pagination.html' %}

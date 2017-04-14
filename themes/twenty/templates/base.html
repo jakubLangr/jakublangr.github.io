@@ -57,7 +57,7 @@
                         {% for cat, null in categories %}
                             {% if cat != 'blog' %}
                             <li {% if cat == category %}class="active"{% endif %}>
-                                <a href="{{ SITEURL }}/category/{{ cat|lower }}/">{{ cat }}</a>
+                                <a href="{{ SITEURL }}/category/{{ cat|lower }}.html">{{ cat }}</a>
                             </li>
                             {% endif %}
                         {% endfor %}
