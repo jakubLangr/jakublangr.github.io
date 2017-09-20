@@ -459,11 +459,11 @@ In terms of future theoretical breakthroughs, the most fruitful areas are likely
 &lt;p&gt;So that's it from now. As always, if you have a comment/question, I'd love to hear from you!&lt;/p&gt;</content><category term="datascience ML technical"></category></entry><entry><title>On MOOCs: Projects, Practice and Perspective</title><link href="jakublangr.com/moocs-part1.html" rel="alternate"></link><published>2015-01-23T21:00:00+00:00</published><updated>2015-01-23T21:00:00+00:00</updated><author><name>Jakub Langr</name></author><id>tag:None,2015-01-23:jakublangr.com/moocs-part1.html</id><summary type="html">&lt;p&gt;I said I will stop at finishing 14 online courses... and I am doing three MOOCs again. Review of my learning journey, projects I have done, reviews of great and good courses, my (brief) take on practices. &lt;strong&gt;UPDATED&lt;/strong&gt;.&lt;/p&gt;</summary><content type="html">&lt;p&gt;It has been quite a while since I started my first MOOC at Coursera. I think now is the time to reflect on the courses I have finished, what I have learned as well as what to recommend to my fellow MOOCers. I will try to broadly classify (and score, because if you are anything like me, you occasionally dislike the imprecision of natural language) the courses I have finished and then I will try to give my take on MOOCs in general.&lt;/p&gt;
 &lt;h1&gt;1. Awesome Courses&lt;/h1&gt;
 &lt;h2&gt;&lt;a href="https://www.coursera.org/course/sna"&gt;Social Network Analysis&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;This course by &lt;a href="http://www.ladamic.com/"&gt;Lada Adamic&lt;/a&gt; was definitely one of the most awesome courses regardless of platform, country or institution that I have been involved in. Not only was Lada willing to have Google Hangout sessions with the course participants, but the course was excellently done: we have worked with &lt;a href="http://gephi.github.io/"&gt;Gephi&lt;/a&gt;, programmed in &lt;a href="https://ccl.northwestern.edu/netlogo/"&gt;NetLogo&lt;/a&gt; and used the &lt;a href="http://cran.r-project.org/web/packages/sna/sna.pdf"&gt;R SNA package&lt;/a&gt;(or at least I did in my projects). The course was a great balance of (social) network analysis, problem sets and optional programming assignments. You can view mine &lt;a href="https://dl.dropboxusercontent.com/u/30848031/US_Contributions.pdf"&gt;here&lt;/a&gt; (though bear in mind, I have done almost 2 years ago so it is not something I am particularly proud of). &lt;/p&gt;
+&lt;p&gt;This course by &lt;a href="http://www.ladamic.com/"&gt;Lada Adamic&lt;/a&gt; was definitely one of the most awesome courses regardless of platform, country or institution that I have been involved in. Not only was Lada willing to have Google Hangout sessions with the course participants, but the course was excellently done: we have worked with &lt;a href="http://gephi.github.io/"&gt;Gephi&lt;/a&gt;, programmed in &lt;a href="https://ccl.northwestern.edu/netlogo/"&gt;NetLogo&lt;/a&gt; and used the &lt;a href="http://cran.r-project.org/web/packages/sna/sna.pdf"&gt;R SNA package&lt;/a&gt;(or at least I did in my projects). The course was a great balance of (social) network analysis, problem sets and optional programming assignments. You can view mine &lt;a href="Public/US_Contributions.pdf"&gt;here&lt;/a&gt; (though bear in mind, I have done almost 2 years ago so it is not something I am particularly proud of). &lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Score&lt;/strong&gt;: 10/10&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Skills learned:&lt;/strong&gt; R, Gephi, NetLogo, different metrics characterizing a graph&lt;/p&gt;
 &lt;h2&gt;&lt;a href="https://www.coursera.org/course/dataanalysis"&gt;Data Analysis&lt;/a&gt; and &lt;a href="https://www.coursera.org/course/compdata"&gt;Computing for Data Analysis&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Long before Coursera introduced the 'Data Science specialization' (that in my opinion seems way too superficial), Coursera was offering these two amazing Courses that together were actually undiluted first year graduate bioinformatics courses for students at Johns Hopkins University. The problem with a lot of the later MOOCs is that they were starting to get too simple to actually teach me anything and so the pool of people who was actually taking these courses was a lot worse. I think the latter is also an issue, because half of the learning experience is the community. Like the people putting interesting thoughts on the forums or the moderators (or in this case, the community itself) trying to prevent cheating (mostly unintentional, I hope, why else would you do a MOOC?) and so on. I have been taking this courses with statistics PhDs and other people with amazing insights and experience and I think that is probably why the learning experience was so amazing and all the four projects including &lt;a href="https://dl.dropboxusercontent.com/u/30848031/blog/Cellphone_data_Prediction.pdf"&gt;the final one&lt;/a&gt; were something that gave me a solid grounding for the Social Network Analysis MOOC to use R as well as for my &lt;a href="http://goo.gl/sEUFMa"&gt;internship in the summer of 2013&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Long before Coursera introduced the 'Data Science specialization' (that in my opinion seems way too superficial), Coursera was offering these two amazing Courses that together were actually undiluted first year graduate bioinformatics courses for students at Johns Hopkins University. The problem with a lot of the later MOOCs is that they were starting to get too simple to actually teach me anything and so the pool of people who was actually taking these courses was a lot worse. I think the latter is also an issue, because half of the learning experience is the community. Like the people putting interesting thoughts on the forums or the moderators (or in this case, the community itself) trying to prevent cheating (mostly unintentional, I hope, why else would you do a MOOC?) and so on. I have been taking this courses with statistics PhDs and other people with amazing insights and experience and I think that is probably why the learning experience was so amazing and all the four projects including &lt;a href="Public/blog/Cellphone_data_Prediction.pdf"&gt;the final one&lt;/a&gt; were something that gave me a solid grounding for the Social Network Analysis MOOC to use R as well as for my &lt;a href="http://goo.gl/sEUFMa"&gt;internship in the summer of 2013&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Score&lt;/strong&gt;: 9/10&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Skills learned:&lt;/strong&gt; Through exploration of R basics, statistics, basic machine learning, data preparation&lt;/p&gt;
 &lt;h2&gt;&lt;a href="https://www.edx.org/course/introduction-probability-science-mitx-6-041x-0#.VMPxF4ptN5Q"&gt;Science of Uncertainty, Introduction to Probability&lt;/a&gt;&lt;/h2&gt;
@@ -550,7 +550,7 @@ E[Y] = \sum_{a=2}^{b=12} y f(y) \,\,\,\,\,\,\,\,\, \,\,\,\,\,\,\,\,\, \,\,\,\,\,
 \,\,\,\,\,\,\,\,\, \,\,\,\,\,\,\,\,\, \,\,\,\,\,\,\,\,\, \,\,\,\,\,\,\,\,\, \,\,\,\,\,\,\,\,\, \,\,\,\,\,\,\,\,\,
 $$&lt;/p&gt;
 &lt;p&gt;In theory, we can even have a distribution where the expected value is impossible, such as the one below: (for a concrete example imagine student's ratings of a &lt;em&gt;really&lt;/em&gt; controversial class on a scale from -15 to +15, where the two groups are equally split and the average rating is about zero)&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://dl.dropboxusercontent.com/u/30848031/blog/download.png" alt="Distribution" align="center" style="width: 620px;"/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="Public/blog/download.png" alt="Distribution" align="center" style="width: 620px;"/&gt;&lt;/p&gt;
 &lt;p&gt;If you look at the formula for expectation above it is all very nice and mathematical. We have our best guess that makes sense, but is far from guaranteeing that we are actually walk back home with a lot of money. But what if you could observe rolls of two dice would they be perfectly distributed according to the distribution that we have specified? Well, no. Dicemakers probably tried to make them as balanced as possible, but probably every pair of dice has certain numbers that will come less or more commonly than simple combinatorics would suggest. This deviations might be due to tiny imperfections on the table, the dice themselves or many other factors. If you find statistically significant relationships, we might be able to derive a marginally better model. But it is only going to do as well as the strength of relationships. Moreover, if we find these associations and do not really understand why -- e.g. we just observe, they might backfire, because if maybe we found some irregularities on the table and then we start throwing on other parts of the table, we will start losing more. Our model did not generalize "out of sample" (on what we did not observe) well.&lt;/p&gt;
 &lt;p&gt;Now bring this back to social science. Some people choose to think of the economy as some sort of machine, which suggests determinism. Let's accept that for a second. &lt;/p&gt;
 &lt;p&gt;Even if we do we have two problems: &lt;/p&gt;
@@ -574,7 +574,7 @@ $$&lt;/p&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;(For those interested, I include a smaller version of the dataset I was working with after exporting from GDELT &lt;a href="https://dl.dropboxusercontent.com/u/30848031/blog/sample.csv"&gt;here&lt;/a&gt;.)&lt;/p&gt;
+&lt;p&gt;(For those interested, I include a smaller version of the dataset I was working with after exporting from GDELT &lt;a href="Public/blog/sample.csv"&gt;here&lt;/a&gt;.)&lt;/p&gt;
 &lt;p&gt;The assumption of this endeavor is that if I include non-English media (and perhaps the less main-stream ones too) by using GDELT's information rather than Google, which will always give me traditional sources, I can get a better sense of what is going on. Thanks to the the law of large numbers, I should not get too many false positives from spurious sources, so my overall analysis should remain robust and even more objective than relying on sources such as CNN or BBC alone. One additional advantage GDELT has is that it is updated every 24 hours. In theory, this analysis could be automated so that it updates itself every 24 hours. (Actually, it should not be &lt;em&gt;that&lt;/em&gt; much more work ... but given the size of GDELT, I would have to start paying for using the BigQuery service that often.)&lt;/p&gt;
 &lt;p&gt;As with any more substantive project, there was a lot of data cleaning and obstacles. Namely: &lt;/p&gt;
 &lt;ol&gt;
@@ -594,25 +594,25 @@ For some events it is hard, if not impossible, to correctly specify precise coor
 &lt;p&gt;With this dataset in hand, I made several maps where I plotted each event as a point sized according to its Goldstein score and set relatively low transparency so that all hotspots appear in bright red. I plotted this dataset by month, and here's March 2013 till July 2013. We see that at the end of this period, there's was violence spearing from its initial hotspots. &lt;/p&gt;
 &lt;h3&gt;March and April 2013&lt;/h3&gt;
 &lt;table&gt;&lt;tr&gt;
-&lt;td&gt;&lt;img src="https://dl.dropboxusercontent.com/u/30848031/blog/201303.png" alt="Map of Syria" align="left" style="width: 310px;"/&gt;&lt;/td&gt;
-&lt;td&gt;&lt;img src="https://dl.dropboxusercontent.com/u/30848031/blog/201304.png" alt="Map of Syria" align="right" style="width: 310px;"/&gt;&lt;/td&gt;
+&lt;td&gt;&lt;img src="Public/blog/201303.png" alt="Map of Syria" align="left" style="width: 310px;"/&gt;&lt;/td&gt;
+&lt;td&gt;&lt;img src="Public/blog/201304.png" alt="Map of Syria" align="right" style="width: 310px;"/&gt;&lt;/td&gt;
 &lt;/tr&gt;&lt;/table&gt;
 
 &lt;h3&gt;May and July 2013&lt;/h3&gt;
 &lt;table&gt;&lt;tr&gt;
-&lt;td&gt;&lt;img src="https://dl.dropboxusercontent.com/u/30848031/blog/201305.png" alt="Map of Syria" align="left" style="width: 310px;"/&gt;&lt;/td&gt;
-&lt;td&gt;&lt;img src="https://dl.dropboxusercontent.com/u/30848031/blog/201307.png" alt="Map of Syria" align="right" style="width: 310px;"/&gt;&lt;/td&gt;
+&lt;td&gt;&lt;img src="Public/blog/201305.png" alt="Map of Syria" align="left" style="width: 310px;"/&gt;&lt;/td&gt;
+&lt;td&gt;&lt;img src="Public/blog/201307.png" alt="Map of Syria" align="right" style="width: 310px;"/&gt;&lt;/td&gt;
 &lt;/tr&gt;&lt;/table&gt;
 
 &lt;p&gt;Now, if we look at the period August till November, we see that there's a lot more violence then. But to some extent we have to bear in mind that this dataset includes &lt;em&gt;all&lt;/em&gt; rebels and not just ISIS. &lt;/p&gt;
 &lt;h3&gt;August 2013&lt;/h3&gt;
-&lt;p&gt;&lt;img src="https://dl.dropboxusercontent.com/u/30848031/blog/201308.png" alt="Map of Syria" align="center" style="width: 620px;"/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="Public/blog/201308.png" alt="Map of Syria" align="center" style="width: 620px;"/&gt;&lt;/p&gt;
 &lt;h3&gt;September 2013&lt;/h3&gt;
-&lt;p&gt;&lt;img src="https://dl.dropboxusercontent.com/u/30848031/blog/201309.png" alt="Map of Syria" align="center" style="width: 620px;"/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="Public/blog/201309.png" alt="Map of Syria" align="center" style="width: 620px;"/&gt;&lt;/p&gt;
 &lt;h3&gt;October 2013&lt;/h3&gt;
-&lt;p&gt;&lt;img src="https://dl.dropboxusercontent.com/u/30848031/blog/201310.png" alt="Map of Syria" align="center" style="width: 620px;"/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="Public/blog/201310.png" alt="Map of Syria" align="center" style="width: 620px;"/&gt;&lt;/p&gt;
 &lt;h3&gt;November 2013&lt;/h3&gt;
-&lt;p&gt;&lt;img src="https://dl.dropboxusercontent.com/u/30848031/blog/201311.png" alt="Map of Syria" align="center" style="width: 620px;"/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="Public/blog/201311.png" alt="Map of Syria" align="center" style="width: 620px;"/&gt;&lt;/p&gt;
 &lt;p&gt;Moreover, we have to consider the connected events: &lt;/p&gt;
 &lt;script type="text/javascript" src="//www.google.com/trends/embed.js?hl=en-US&amp;q=Syria,+Chemical+Weapons&amp;date=1/2013+12m&amp;cmpt=q&amp;content=1&amp;cid=TIMESERIES_GRAPH_0&amp;export=5&amp;w=500&amp;h=330"&gt;&lt;/script&gt;
 
@@ -621,20 +621,20 @@ For some events it is hard, if not impossible, to correctly specify precise coor
 &lt;p&gt;The following months were similarly violent and few in the West seemed to care. &lt;/p&gt;
 &lt;h3&gt;December 2013 and January 2014&lt;/h3&gt;
 &lt;table&gt;&lt;tr&gt;
-&lt;td&gt;&lt;img src="https://dl.dropboxusercontent.com/u/30848031/blog/201312.png" alt="Map of Syria" align="left" style="width: 310px;"/&gt;&lt;/td&gt;
-&lt;td&gt;&lt;img src="https://dl.dropboxusercontent.com/u/30848031/blog/201401.png" alt="Map of Syria" align="right" style="width: 310px;"/&gt;&lt;/td&gt;
+&lt;td&gt;&lt;img src="Public/blog/201312.png" alt="Map of Syria" align="left" style="width: 310px;"/&gt;&lt;/td&gt;
+&lt;td&gt;&lt;img src="Public/blog/201401.png" alt="Map of Syria" align="right" style="width: 310px;"/&gt;&lt;/td&gt;
 &lt;/tr&gt;&lt;/table&gt;
 
 &lt;h3&gt;February and March 2014&lt;/h3&gt;
 &lt;table&gt;&lt;tr&gt;
-&lt;td&gt;&lt;img src="https://dl.dropboxusercontent.com/u/30848031/blog/201402.png" alt="Map of Syria" align="left" style="width: 310px;"/&gt;&lt;/td&gt;
-&lt;td&gt;&lt;img src="https://dl.dropboxusercontent.com/u/30848031/blog/201403.png" alt="Map of Syria" align="right" style="width: 310px;"/&gt;&lt;/td&gt;
+&lt;td&gt;&lt;img src="Public/blog/201402.png" alt="Map of Syria" align="left" style="width: 310px;"/&gt;&lt;/td&gt;
+&lt;td&gt;&lt;img src="Public/blog/201403.png" alt="Map of Syria" align="right" style="width: 310px;"/&gt;&lt;/td&gt;
 &lt;/tr&gt;&lt;/table&gt;
 
 &lt;h3&gt;April and May 2014&lt;/h3&gt;
 &lt;table&gt;&lt;tr&gt;
-&lt;td&gt;&lt;img src="https://dl.dropboxusercontent.com/u/30848031/blog/201404.png" alt="Map of Syria" align="left" style="width: 310px;"/&gt;&lt;/td&gt;
-&lt;td&gt;&lt;img src="https://dl.dropboxusercontent.com/u/30848031/blog/201405.png" alt="Map of Syria" align="right" style="width: 310px;"/&gt;&lt;/td&gt;
+&lt;td&gt;&lt;img src="Public/blog/201404.png" alt="Map of Syria" align="left" style="width: 310px;"/&gt;&lt;/td&gt;
+&lt;td&gt;&lt;img src="Public/blog/201405.png" alt="Map of Syria" align="right" style="width: 310px;"/&gt;&lt;/td&gt;
 &lt;/tr&gt;&lt;/table&gt;
 
 &lt;p&gt;If we plot the Google trend graph again, since the start of Syrian Civil War in March 2011, we see that the attention Syria got around the times of the use of chemical weapons is unparalleled. This is hardly surprising, but what is notable is that there a &lt;a href="http://www.cbsnews.com/news/syria-chemical-weapons-attack-blamed-on-assad-but-wheres-the-evidence/"&gt;disagreement regarding who actually used them&lt;/a&gt;, though I think that at least some of these attacks were sure to be made by the government. &lt;/p&gt;
@@ -647,14 +647,14 @@ For some events it is hard, if not impossible, to correctly specify precise coor
 &lt;p&gt;Still, violence was hovering around the same level:&lt;/p&gt;
 &lt;h3&gt;June and July 2014&lt;/h3&gt;
 &lt;table&gt;&lt;tr&gt;
-&lt;td&gt;&lt;img src="https://dl.dropboxusercontent.com/u/30848031/blog/201406.png" alt="Map of Syria" align="left" style="width: 310px;"/&gt;&lt;/td&gt;
-&lt;td&gt;&lt;img src="https://dl.dropboxusercontent.com/u/30848031/blog/201407.png" alt="Map of Syria" align="right" style="width: 310px;"/&gt;&lt;/td&gt;
+&lt;td&gt;&lt;img src="Public/blog/201406.png" alt="Map of Syria" align="left" style="width: 310px;"/&gt;&lt;/td&gt;
+&lt;td&gt;&lt;img src="Public/blog/201407.png" alt="Map of Syria" align="right" style="width: 310px;"/&gt;&lt;/td&gt;
 &lt;/tr&gt;&lt;/table&gt;
 
 &lt;h3&gt;August and September 2014&lt;/h3&gt;
 &lt;table&gt;&lt;tr&gt;
-&lt;td&gt;&lt;img src="https://dl.dropboxusercontent.com/u/30848031/blog/201408.png" alt="Map of Syria" align="left" style="width: 310px;"/&gt;&lt;/td&gt;
-&lt;td&gt;&lt;img src="https://dl.dropboxusercontent.com/u/30848031/blog/201409.png" alt="Map of Syria" align="right" style="width: 310px;"/&gt;&lt;/td&gt;
+&lt;td&gt;&lt;img src="Public/blog/201408.png" alt="Map of Syria" align="left" style="width: 310px;"/&gt;&lt;/td&gt;
+&lt;td&gt;&lt;img src="Public/blog/201409.png" alt="Map of Syria" align="right" style="width: 310px;"/&gt;&lt;/td&gt;
 &lt;/tr&gt;&lt;/table&gt;
 
 &lt;h1&gt;Conclusion&lt;/h1&gt;
