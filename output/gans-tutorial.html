@@ -157,7 +157,8 @@ synthetic_dogs = make_compete(generator, discriminator,
 <p><br></p>
 <p>The amazing thing about this is that in theory, we don't even need to have the data labelled for that task to generate those examples (though it would help a lot). So we could have labelled training data for whether something is a being a good or a bad boy (for both cats and dogs) and we can train the G to create new examples of cats or dogs (based on one parameter of the latent space), both good or bad (based on another parameter of the latent space). Let's say that good or badness of a dog is something we can see from the picture (e.g. it is a bad boy every time it is destroying property, good otherwise). We can then discover parameters in the latent space for both of these features and generate even examples of cat-dog or dog-cat by interpolating between these two values.</p>
 <p>Another example is that we can download loads of unlabelled data of faces of celebrities and make the G generate faces and manipulate the latent space so that we get clear examples of male or female and then use it to train another classifier to detect male or female images (with no labelled data of any kind!), which is exactly what I have done. One question that might be still going through your head is 'how do we get this latent space representations of these different attributes?': that, however, is probably beyond the scope of this article unfortunately.</p>
-<p>Phew, look at the time: I was hoping to present some actual code so that people can try this on their own, but unfortunately, I felt that this blog post is already long enough so I will leave the code till next time. If there's interest or you would love to see something urgently, drop me a line.</p></p>
+<p>Phew, look at the time: I was hoping to present some actual code so that people can try this on their own, but unfortunately, I felt that this blog post is already long enough so I will leave the code till next time. If there's interest or you would love to see something urgently, drop me a line.</p>
+<p><strong>In case you are interested in the actual code, check out the <a href="http://jakublangr.com/gans-code.html">second part of this tutorial</a>.</strong></p></p>
           </section>
         </div>
 
@@ -166,6 +167,22 @@ synthetic_dogs = make_compete(generator, discriminator,
     <!-- Two -->
     <section class="wrapper style1 container special">
         <div class="row">
+          <div class="4u">
+
+            <section>
+              <span class="icon feature fa-"></span>
+              <header>
+                <a href="./gans-code.html" rel='bookmark'><h3>Coding for GANS & (Semi)-Learning</h3></a>
+              </header>
+              <p>Intro I'll jump straight into what we have explained on a high-level last time. The code is also available on <a href="https://gi</p>
+              <footer>
+                  <ul class="buttons">
+                      <li><a href="./gans-code.html" class="button small">Read More</a></li>
+                  </ul>
+              </footer>
+            </section>
+
+          </div>
           <div class="4u">
 
             <section>
@@ -193,22 +210,6 @@ synthetic_dogs = make_compete(generator, discriminator,
               <footer>
                   <ul class="buttons">
                       <li><a href="./ai-2016-review.html" class="button small">Read More</a></li>
-                  </ul>
-              </footer>
-            </section>
-
-          </div>
-          <div class="4u">
-
-            <section>
-              <span class="icon feature fa-"></span>
-              <header>
-                <a href="./kaggle-2016.html" rel='bookmark'><h3>Kaggle Struggle</h3></a>
-              </header>
-              <p>For those of you that are not compete data nerds, I occasionally venture into the world of Kaggle: a competitive data science website where everyone from the</p>
-              <footer>
-                  <ul class="buttons">
-                      <li><a href="./kaggle-2016.html" class="button small">Read More</a></li>
                   </ul>
               </footer>
             </section>

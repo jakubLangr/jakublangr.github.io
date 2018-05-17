@@ -22,7 +22,7 @@ We roughly discussed the idea beforehand, but as my head was full of Mathematica
 
 After finishing my exam on Thursday and doing chores until my departure from Oxford shortly after noon, I was quite freaked out: I still haven't really unpacked and I was already going places. But the trip was cool: I was flying from London City Airport for the first time, which was quite exiting. 
 
-<img src="https://dl.dropboxusercontent.com/u/30848031/blog/IMAG0752.jpg" alt="Destination: #hackZurich" align="center" style="width: 620px;"/>
+<img src="Public/blog/IMAG0752.jpg" alt="Destination: #hackZurich" align="center" style="width: 620px;"/>
 
 Despite not knowing anything about Zurich, I perfectly navigated and caught the pre-planned (from about a week ago!) train straight to the hackathon venue, which made my day. Hackathon itself was held at a [TechnoPark](http://technopark.ch), which seemed to be a quite modern open space for start-ups and small companies. Upon arrival, I got my badge and bag of goodies that I still haven't fully explored, because there's just _so much stuff._  (Yay!) 
 
@@ -39,18 +39,18 @@ You think that was bad? Check out where some of these poor souls have been sleep
 <img src="https://pbs.twimg.com/media/BztdrGDCEAMmoY6.jpg:large" align="center" style="width: 620px;" alt="People sleeping on the floor.">
 
 <table><tr>
-	<td><img src="https://dl.dropboxusercontent.com/u/30848031/blog/IMAG0772.jpg" alt="Finders, sleepers" align="right" style="width: 310px;"/><td>
-	<td><img src="https://dl.dropboxusercontent.com/u/30848031/blog/IMAG0777.jpg" alt="Finders, sleepers" align="right" style="width: 310px;"/></td>
+	<td><img src="Public/blog/IMAG0772.jpg" alt="Finders, sleepers" align="right" style="width: 310px;"/><td>
+	<td><img src="Public/blog/IMAG0777.jpg" alt="Finders, sleepers" align="right" style="width: 310px;"/></td>
 </tr></table>
 
 Despite my effort to stow myself away I was woken up several times by people sneaking through my corridor to find an even more obscure corridor to sleep in, which sometimes looked quite weird, not to mention awkward, especially if you make eye contact. Anyways, I woke up by 8:30 am to sounds of some radio (__rage__) and since I was up and I got breakfast and started working. Morning was quite productive, but after a while we got quite tired and hungry and so we went on a walking tour of Zurich that organizers kindly organized for us.
 
 <table><tr>
-	<td><img src="https://dl.dropboxusercontent.com/u/30848031/blog/IMAG0762.jpg" alt="Finders, sleepers" align="right" style="width: 310px;"/><td>1
-	<td><img src="https://dl.dropboxusercontent.com/u/30848031/blog/IMAG0765.jpg" alt="Finders, sleepers" align="right" style="width: 310px;"/></td>
+	<td><img src="Public/blog/IMAG0762.jpg" alt="Finders, sleepers" align="right" style="width: 310px;"/><td>1
+	<td><img src="Public/blog/IMAG0765.jpg" alt="Finders, sleepers" align="right" style="width: 310px;"/></td>
 </tr><tr>
-	<td><img src="https://dl.dropboxusercontent.com/u/30848031/blog/IMAG0767.jpg" alt="Finders, sleepers" align="right" style="width: 310px;"/><td>1
-	<td><img src="https://dl.dropboxusercontent.com/u/30848031/blog/IMAG0771.jpg" alt="Finders, sleepers" align="right" style="width: 310px;"/></td>
+	<td><img src="Public/blog/IMAG0767.jpg" alt="Finders, sleepers" align="right" style="width: 310px;"/><td>1
+	<td><img src="Public/blog/IMAG0771.jpg" alt="Finders, sleepers" align="right" style="width: 310px;"/></td>
 </tr></table>
 
 I have to say Zurich is quite an amazing city. It has a very picturesque, small-town feel and it really feels too fairly-taily to be true.  <br>

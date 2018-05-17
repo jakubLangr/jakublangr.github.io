@@ -40,7 +40,7 @@ $$
 
 In theory, we can even have a distribution where the expected value is impossible, such as the one below: (for a concrete example imagine student's ratings of a _really_ controversial class on a scale from -15 to +15, where the two groups are equally split and the average rating is about zero)
 
-<img src="https://dl.dropboxusercontent.com/u/30848031/blog/download.png" alt="Distribution" align="center" style="width: 620px;"/>
+<img src="Public/blog/download.png" alt="Distribution" align="center" style="width: 620px;"/>
 
 
 If you look at the formula for expectation above it is all very nice and mathematical. We have our best guess that makes sense, but is far from guaranteeing that we are actually walk back home with a lot of money. But what if you could observe rolls of two dice would they be perfectly distributed according to the distribution that we have specified? Well, no. Dicemakers probably tried to make them as balanced as possible, but probably every pair of dice has certain numbers that will come less or more commonly than simple combinatorics would suggest. This deviations might be due to tiny imperfections on the table, the dice themselves or many other factors. If you find statistically significant relationships, we might be able to derive a marginally better model. But it is only going to do as well as the strength of relationships. Moreover, if we find these associations and do not really understand why -- e.g. we just observe, they might backfire, because if maybe we found some irregularities on the table and then we start throwing on other parts of the table, we will start losing more. Our model did not generalize "out of sample" (on what we did not observe) well.

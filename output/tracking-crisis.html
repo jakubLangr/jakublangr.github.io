@@ -95,7 +95,7 @@
 </pre></div>
 
 
-<p>(For those interested, I include a smaller version of the dataset I was working with after exporting from GDELT <a href="https://dl.dropboxusercontent.com/u/30848031/blog/sample.csv">here</a>.)</p>
+<p>(For those interested, I include a smaller version of the dataset I was working with after exporting from GDELT <a href="Public/blog/sample.csv">here</a>.)</p>
 <p>The assumption of this endeavor is that if I include non-English media (and perhaps the less main-stream ones too) by using GDELT's information rather than Google, which will always give me traditional sources, I can get a better sense of what is going on. Thanks to the the law of large numbers, I should not get too many false positives from spurious sources, so my overall analysis should remain robust and even more objective than relying on sources such as CNN or BBC alone. One additional advantage GDELT has is that it is updated every 24 hours. In theory, this analysis could be automated so that it updates itself every 24 hours. (Actually, it should not be <em>that</em> much more work ... but given the size of GDELT, I would have to start paying for using the BigQuery service that often.)</p>
 <p>As with any more substantive project, there was a lot of data cleaning and obstacles. Namely: </p>
 <ol>
@@ -115,25 +115,25 @@ For some events it is hard, if not impossible, to correctly specify precise coor
 <p>With this dataset in hand, I made several maps where I plotted each event as a point sized according to its Goldstein score and set relatively low transparency so that all hotspots appear in bright red. I plotted this dataset by month, and here's March 2013 till July 2013. We see that at the end of this period, there's was violence spearing from its initial hotspots. </p>
 <h3>March and April 2013</h3>
 <table><tr>
-<td><img src="https://dl.dropboxusercontent.com/u/30848031/blog/201303.png" alt="Map of Syria" align="left" style="width: 310px;"/></td>
-<td><img src="https://dl.dropboxusercontent.com/u/30848031/blog/201304.png" alt="Map of Syria" align="right" style="width: 310px;"/></td>
+<td><img src="Public/blog/201303.png" alt="Map of Syria" align="left" style="width: 310px;"/></td>
+<td><img src="Public/blog/201304.png" alt="Map of Syria" align="right" style="width: 310px;"/></td>
 </tr></table>
 
 <h3>May and July 2013</h3>
 <table><tr>
-<td><img src="https://dl.dropboxusercontent.com/u/30848031/blog/201305.png" alt="Map of Syria" align="left" style="width: 310px;"/></td>
-<td><img src="https://dl.dropboxusercontent.com/u/30848031/blog/201307.png" alt="Map of Syria" align="right" style="width: 310px;"/></td>
+<td><img src="Public/blog/201305.png" alt="Map of Syria" align="left" style="width: 310px;"/></td>
+<td><img src="Public/blog/201307.png" alt="Map of Syria" align="right" style="width: 310px;"/></td>
 </tr></table>
 
 <p>Now, if we look at the period August till November, we see that there's a lot more violence then. But to some extent we have to bear in mind that this dataset includes <em>all</em> rebels and not just ISIS. </p>
 <h3>August 2013</h3>
-<p><img src="https://dl.dropboxusercontent.com/u/30848031/blog/201308.png" alt="Map of Syria" align="center" style="width: 620px;"/></p>
+<p><img src="Public/blog/201308.png" alt="Map of Syria" align="center" style="width: 620px;"/></p>
 <h3>September 2013</h3>
-<p><img src="https://dl.dropboxusercontent.com/u/30848031/blog/201309.png" alt="Map of Syria" align="center" style="width: 620px;"/></p>
+<p><img src="Public/blog/201309.png" alt="Map of Syria" align="center" style="width: 620px;"/></p>
 <h3>October 2013</h3>
-<p><img src="https://dl.dropboxusercontent.com/u/30848031/blog/201310.png" alt="Map of Syria" align="center" style="width: 620px;"/></p>
+<p><img src="Public/blog/201310.png" alt="Map of Syria" align="center" style="width: 620px;"/></p>
 <h3>November 2013</h3>
-<p><img src="https://dl.dropboxusercontent.com/u/30848031/blog/201311.png" alt="Map of Syria" align="center" style="width: 620px;"/></p>
+<p><img src="Public/blog/201311.png" alt="Map of Syria" align="center" style="width: 620px;"/></p>
 <p>Moreover, we have to consider the connected events: </p>
 <script type="text/javascript" src="//www.google.com/trends/embed.js?hl=en-US&q=Syria,+Chemical+Weapons&date=1/2013+12m&cmpt=q&content=1&cid=TIMESERIES_GRAPH_0&export=5&w=500&h=330"></script>
 
@@ -142,20 +142,20 @@ For some events it is hard, if not impossible, to correctly specify precise coor
 <p>The following months were similarly violent and few in the West seemed to care. </p>
 <h3>December 2013 and January 2014</h3>
 <table><tr>
-<td><img src="https://dl.dropboxusercontent.com/u/30848031/blog/201312.png" alt="Map of Syria" align="left" style="width: 310px;"/></td>
-<td><img src="https://dl.dropboxusercontent.com/u/30848031/blog/201401.png" alt="Map of Syria" align="right" style="width: 310px;"/></td>
+<td><img src="Public/blog/201312.png" alt="Map of Syria" align="left" style="width: 310px;"/></td>
+<td><img src="Public/blog/201401.png" alt="Map of Syria" align="right" style="width: 310px;"/></td>
 </tr></table>
 
 <h3>February and March 2014</h3>
 <table><tr>
-<td><img src="https://dl.dropboxusercontent.com/u/30848031/blog/201402.png" alt="Map of Syria" align="left" style="width: 310px;"/></td>
-<td><img src="https://dl.dropboxusercontent.com/u/30848031/blog/201403.png" alt="Map of Syria" align="right" style="width: 310px;"/></td>
+<td><img src="Public/blog/201402.png" alt="Map of Syria" align="left" style="width: 310px;"/></td>
+<td><img src="Public/blog/201403.png" alt="Map of Syria" align="right" style="width: 310px;"/></td>
 </tr></table>
 
 <h3>April and May 2014</h3>
 <table><tr>
-<td><img src="https://dl.dropboxusercontent.com/u/30848031/blog/201404.png" alt="Map of Syria" align="left" style="width: 310px;"/></td>
-<td><img src="https://dl.dropboxusercontent.com/u/30848031/blog/201405.png" alt="Map of Syria" align="right" style="width: 310px;"/></td>
+<td><img src="Public/blog/201404.png" alt="Map of Syria" align="left" style="width: 310px;"/></td>
+<td><img src="Public/blog/201405.png" alt="Map of Syria" align="right" style="width: 310px;"/></td>
 </tr></table>
 
 <p>If we plot the Google trend graph again, since the start of Syrian Civil War in March 2011, we see that the attention Syria got around the times of the use of chemical weapons is unparalleled. This is hardly surprising, but what is notable is that there a <a href="http://www.cbsnews.com/news/syria-chemical-weapons-attack-blamed-on-assad-but-wheres-the-evidence/">disagreement regarding who actually used them</a>, though I think that at least some of these attacks were sure to be made by the government. </p>
@@ -168,14 +168,14 @@ For some events it is hard, if not impossible, to correctly specify precise coor
 <p>Still, violence was hovering around the same level:</p>
 <h3>June and July 2014</h3>
 <table><tr>
-<td><img src="https://dl.dropboxusercontent.com/u/30848031/blog/201406.png" alt="Map of Syria" align="left" style="width: 310px;"/></td>
-<td><img src="https://dl.dropboxusercontent.com/u/30848031/blog/201407.png" alt="Map of Syria" align="right" style="width: 310px;"/></td>
+<td><img src="Public/blog/201406.png" alt="Map of Syria" align="left" style="width: 310px;"/></td>
+<td><img src="Public/blog/201407.png" alt="Map of Syria" align="right" style="width: 310px;"/></td>
 </tr></table>
 
 <h3>August and September 2014</h3>
 <table><tr>
-<td><img src="https://dl.dropboxusercontent.com/u/30848031/blog/201408.png" alt="Map of Syria" align="left" style="width: 310px;"/></td>
-<td><img src="https://dl.dropboxusercontent.com/u/30848031/blog/201409.png" alt="Map of Syria" align="right" style="width: 310px;"/></td>
+<td><img src="Public/blog/201408.png" alt="Map of Syria" align="left" style="width: 310px;"/></td>
+<td><img src="Public/blog/201409.png" alt="Map of Syria" align="right" style="width: 310px;"/></td>
 </tr></table>
 
 <h1>Conclusion</h1>
@@ -192,6 +192,22 @@ For some events it is hard, if not impossible, to correctly specify precise coor
     <!-- Two -->
     <section class="wrapper style1 container special">
         <div class="row">
+          <div class="4u">
+
+            <section>
+              <span class="icon feature fa-"></span>
+              <header>
+                <a href="./gans-code.html" rel='bookmark'><h3>Coding for GANS & (Semi)-Learning</h3></a>
+              </header>
+              <p>Intro I'll jump straight into what we have explained on a high-level last time. The code is also available on <a href="https://gi</p>
+              <footer>
+                  <ul class="buttons">
+                      <li><a href="./gans-code.html" class="button small">Read More</a></li>
+                  </ul>
+              </footer>
+            </section>
+
+          </div>
           <div class="4u">
 
             <section>
@@ -219,22 +235,6 @@ For some events it is hard, if not impossible, to correctly specify precise coor
               <footer>
                   <ul class="buttons">
                       <li><a href="./ai-2016-review.html" class="button small">Read More</a></li>
-                  </ul>
-              </footer>
-            </section>
-
-          </div>
-          <div class="4u">
-
-            <section>
-              <span class="icon feature fa-"></span>
-              <header>
-                <a href="./kaggle-2016.html" rel='bookmark'><h3>Kaggle Struggle</h3></a>
-              </header>
-              <p>For those of you that are not compete data nerds, I occasionally venture into the world of Kaggle: a competitive data science website where everyone from the</p>
-              <footer>
-                  <ul class="buttons">
-                      <li><a href="./kaggle-2016.html" class="button small">Read More</a></li>
                   </ul>
               </footer>
             </section>

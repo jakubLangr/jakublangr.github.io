@@ -95,3 +95,4 @@ Another example is that we can download loads of unlabelled data of faces of cel
 
 Phew, look at the time: I was hoping to present some actual code so that people can try this on their own, but unfortunately, I felt that this blog post is already long enough so I will leave the code till next time. If there's interest or you would love to see something urgently, drop me a line.
 
+**In case you are interested in the actual code, check out the [second part of this tutorial](http://jakublangr.com/gans-code.html).**

@@ -10,15 +10,15 @@ A year has passed since I started to make predictions for this fascinating proje
 
 First and foremost, I would love to start with [evaluation of my own lessons](hello-world.html): I think that overall I ended up over-correcting for the biases I have read about, which is a fascinating lesson. I already mentioned this the [first time I was writing](hello-world.html) about Good Judgment Project (GJP). At least based on my rudimentary understanding the calibration and observation, it seems that normally people have the opposite bias and the curve is flipped around the 45 degree line (the picture below is from the report I received from Good Judgment Project).
 
-<img src="https://dl.dropboxusercontent.com/u/30848031/blog/calibration_curve.png" alt="(Calibration)" align='right' height='300px' weight='300px' />
+<img src="Public/blog/calibration_curve.png" alt="(Calibration)" align='right' height='300px' weight='300px' />
 
 My second point about randomness was just due to my un-rigorous understanding of randomness that I think I now understand: the problem is that something is random given a certain distribution (so we cannot make a better guess than the observed distribution for any particular observation). My third lesson about conditional probability still remains fair, which is: it is difficult to make it correctly, but as Philip Tetlock correctly pointed out, this is the way forward, because it allows us to get exactly the probabilities we care about: if we do X what will the world do? (Because we do not care about if Iran will build a nuclear bomb, we want to know IF we do nothing will Iran build a nuclear bomb?) 
 sting as the project I have been using much during GJP--but they will "soon" be announcing what they are doing next, but who knows what that will entail. 
 
 So when the results rolled in they were not too bad, I ended up being the 71st percentile, with my imputed scores dragging me down a little (this was necessary, because you could not answer all the questions, though maybe I also picked questions I understood better). 
 
-<img src="https://dl.dropboxusercontent.com/u/30848031/blog/mean_brier.png" height='400px' width='800px' align='center' />
-<img src="https://dl.dropboxusercontent.com/u/30848031/blog/density_imputed_comparison.png" height='400px' width='800px' align='center' />
+<img src="Public/blog/mean_brier.png" height='400px' width='800px' align='center' />
+<img src="Public/blog/density_imputed_comparison.png" height='400px' width='800px' align='center' />
 
 So I think the overall results were quite decent, but I certainly I have loads to learn! While Philip Tetlock certainly tries to help us mere mortals in the [the political forecasting by giving us better insight in the Edge online seminar](http://edge.org/conversation/philip_tetlock-edge-master-class-2015-a-short-course-in-superforecasting-class-iii). I have not watched all of them, but they seem amazing so far! 
 

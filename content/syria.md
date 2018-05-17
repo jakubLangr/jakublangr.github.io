@@ -24,7 +24,7 @@ SELECT * FROM [gdelt-bq:full.events] WHERE (
 
 ```
 
-(For those interested, I include a smaller version of the dataset I was working with after exporting from GDELT [here](https://dl.dropboxusercontent.com/u/30848031/blog/sample.csv).)
+(For those interested, I include a smaller version of the dataset I was working with after exporting from GDELT [here](Public/blog/sample.csv).)
 
 The assumption of this endeavor is that if I include non-English media (and perhaps the less main-stream ones too) by using GDELT's information rather than Google, which will always give me traditional sources, I can get a better sense of what is going on. Thanks to the the law of large numbers, I should not get too many false positives from spurious sources, so my overall analysis should remain robust and even more objective than relying on sources such as CNN or BBC alone. One additional advantage GDELT has is that it is updated every 24 hours. In theory, this analysis could be automated so that it updates itself every 24 hours. (Actually, it should not be _that_ much more work ... but given the size of GDELT, I would have to start paying for using the BigQuery service that often.)
 
@@ -50,34 +50,34 @@ With this dataset in hand, I made several maps where I plotted each event as a p
 ### March and April 2013
 
 <table><tr>
-<td><img src="https://dl.dropboxusercontent.com/u/30848031/blog/201303.png" alt="Map of Syria" align="left" style="width: 310px;"/></td>
-<td><img src="https://dl.dropboxusercontent.com/u/30848031/blog/201304.png" alt="Map of Syria" align="right" style="width: 310px;"/></td>
+<td><img src="Public/blog/201303.png" alt="Map of Syria" align="left" style="width: 310px;"/></td>
+<td><img src="Public/blog/201304.png" alt="Map of Syria" align="right" style="width: 310px;"/></td>
 </tr></table>
 
 ### May and July 2013
 
 <table><tr>
-<td><img src="https://dl.dropboxusercontent.com/u/30848031/blog/201305.png" alt="Map of Syria" align="left" style="width: 310px;"/></td>
-<td><img src="https://dl.dropboxusercontent.com/u/30848031/blog/201307.png" alt="Map of Syria" align="right" style="width: 310px;"/></td>
+<td><img src="Public/blog/201305.png" alt="Map of Syria" align="left" style="width: 310px;"/></td>
+<td><img src="Public/blog/201307.png" alt="Map of Syria" align="right" style="width: 310px;"/></td>
 </tr></table>
 
 Now, if we look at the period August till November, we see that there's a lot more violence then. But to some extent we have to bear in mind that this dataset includes _all_ rebels and not just ISIS. 
 
 ### August 2013
 
-<img src="https://dl.dropboxusercontent.com/u/30848031/blog/201308.png" alt="Map of Syria" align="center" style="width: 620px;"/>
+<img src="Public/blog/201308.png" alt="Map of Syria" align="center" style="width: 620px;"/>
 
 ### September 2013
 
-<img src="https://dl.dropboxusercontent.com/u/30848031/blog/201309.png" alt="Map of Syria" align="center" style="width: 620px;"/>
+<img src="Public/blog/201309.png" alt="Map of Syria" align="center" style="width: 620px;"/>
 
 ### October 2013
 
-<img src="https://dl.dropboxusercontent.com/u/30848031/blog/201310.png" alt="Map of Syria" align="center" style="width: 620px;"/>
+<img src="Public/blog/201310.png" alt="Map of Syria" align="center" style="width: 620px;"/>
 
 ### November 2013
 
-<img src="https://dl.dropboxusercontent.com/u/30848031/blog/201311.png" alt="Map of Syria" align="center" style="width: 620px;"/>
+<img src="Public/blog/201311.png" alt="Map of Syria" align="center" style="width: 620px;"/>
 
 
 Moreover, we have to consider the connected events: 
@@ -93,22 +93,22 @@ The following months were similarly violent and few in the West seemed to care.
 ### December 2013 and January 2014
 
 <table><tr>
-<td><img src="https://dl.dropboxusercontent.com/u/30848031/blog/201312.png" alt="Map of Syria" align="left" style="width: 310px;"/></td>
-<td><img src="https://dl.dropboxusercontent.com/u/30848031/blog/201401.png" alt="Map of Syria" align="right" style="width: 310px;"/></td>
+<td><img src="Public/blog/201312.png" alt="Map of Syria" align="left" style="width: 310px;"/></td>
+<td><img src="Public/blog/201401.png" alt="Map of Syria" align="right" style="width: 310px;"/></td>
 </tr></table>
 
 ### February and March 2014
 
 <table><tr>
-<td><img src="https://dl.dropboxusercontent.com/u/30848031/blog/201402.png" alt="Map of Syria" align="left" style="width: 310px;"/></td>
-<td><img src="https://dl.dropboxusercontent.com/u/30848031/blog/201403.png" alt="Map of Syria" align="right" style="width: 310px;"/></td>
+<td><img src="Public/blog/201402.png" alt="Map of Syria" align="left" style="width: 310px;"/></td>
+<td><img src="Public/blog/201403.png" alt="Map of Syria" align="right" style="width: 310px;"/></td>
 </tr></table>
 
 ### April and May 2014
 
 <table><tr>
-<td><img src="https://dl.dropboxusercontent.com/u/30848031/blog/201404.png" alt="Map of Syria" align="left" style="width: 310px;"/></td>
-<td><img src="https://dl.dropboxusercontent.com/u/30848031/blog/201405.png" alt="Map of Syria" align="right" style="width: 310px;"/></td>
+<td><img src="Public/blog/201404.png" alt="Map of Syria" align="left" style="width: 310px;"/></td>
+<td><img src="Public/blog/201405.png" alt="Map of Syria" align="right" style="width: 310px;"/></td>
 </tr></table>
 
 If we plot the Google trend graph again, since the start of Syrian Civil War in March 2011, we see that the attention Syria got around the times of the use of chemical weapons is unparalleled. This is hardly surprising, but what is notable is that there a [disagreement regarding who actually used them](http://www.cbsnews.com/news/syria-chemical-weapons-attack-blamed-on-assad-but-wheres-the-evidence/), though I think that at least some of these attacks were sure to be made by the government. 
@@ -126,15 +126,15 @@ Still, violence was hovering around the same level:
 ### June and July 2014
 
 <table><tr>
-<td><img src="https://dl.dropboxusercontent.com/u/30848031/blog/201406.png" alt="Map of Syria" align="left" style="width: 310px;"/></td>
-<td><img src="https://dl.dropboxusercontent.com/u/30848031/blog/201407.png" alt="Map of Syria" align="right" style="width: 310px;"/></td>
+<td><img src="Public/blog/201406.png" alt="Map of Syria" align="left" style="width: 310px;"/></td>
+<td><img src="Public/blog/201407.png" alt="Map of Syria" align="right" style="width: 310px;"/></td>
 </tr></table>
 
 ### August and September 2014
 
 <table><tr>
-<td><img src="https://dl.dropboxusercontent.com/u/30848031/blog/201408.png" alt="Map of Syria" align="left" style="width: 310px;"/></td>
-<td><img src="https://dl.dropboxusercontent.com/u/30848031/blog/201409.png" alt="Map of Syria" align="right" style="width: 310px;"/></td>
+<td><img src="Public/blog/201408.png" alt="Map of Syria" align="left" style="width: 310px;"/></td>
+<td><img src="Public/blog/201409.png" alt="Map of Syria" align="right" style="width: 310px;"/></td>
 </tr></table>
 
 # Conclusion

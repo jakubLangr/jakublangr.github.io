@@ -65,7 +65,7 @@ One of the plots here can help elucidate why my team might have been all over th
 
 ## Decomposed time-series plot
 
-<img src="https://dl.dropboxusercontent.com/u/30848031/blog/gjp_modelling_ts_decomposition.svg" alt="Timeseries decomposition of ice-area" align="center" style="width: 620px;"/>
+<img src="Public/blog/gjp_modelling_ts_decomposition.svg" alt="Timeseries decomposition of ice-area" align="center" style="width: 620px;"/>
 
 One interesting element of the decomposition is the trend, which I was expecting to see fairly clear evidence of global warming, but instead I really found out "just" evidence of climate change. Though, of course, I am no climatologist, so perhaps that interesting dip in the year 2000 had some other (spurious?) reasons. 
 
