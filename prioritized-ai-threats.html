@@ -1,0 +1,417 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.dropotron.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/skel-layers.min.js"></script>
+    <script src="/js/init.js"></script>
+    <link rel="stylesheet" href="/css/pygment.css" />
+    <noscript>
+        <link rel="stylesheet" href="/css/skel.css" />
+        <link rel="stylesheet" href="/css/style.css" />
+        <link rel="stylesheet" href="/css/style-noscript.css" />
+    </noscript>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link  href="http://fonts.googleapis.com/css?family=Anonymous+Pro:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css" >
+    <!--[if lte IE 8]><link rel="stylesheet" href="/css/ie/v8.css" /><![endif]-->
+    <!--[if lte IE 9]><link rel="stylesheet" href="/css/ie/v9.css" /><![endif]-->
+        <link href="http://www.jakublangr.com/feed/index.html" type="application/atom+xml" rel="alternate" title="Jakub Langr's Blog-Feed" />
+
+    <title>Prioritised list of AI threats | Jakub Langr's Blog  Business, AI & Shower Thoughts</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width">
+</head>
+
+<body class=" loading">
+
+
+
+    <!-- Header -->
+    <header id="header" >
+        <h1 class="logo">
+            <a href=".">Jakub Langr's Blog </span></a>
+        </h1>
+        <nav id="nav">
+            <ul>
+                <!-- <li class="current"><a href="index.html">Welcome</a></li> -->
+                <li class="submenu">
+                    <a href="./">Blog</a>
+                    <ul>
+                            <li >
+                                <a href="./category/about.html">About</a>
+                            </li>
+                            <li class="active">
+                                <a href="./category/non-technical.html">non-technical</a>
+                            </li>
+                            <li >
+                                <a href="./category/technical.html">technical</a>
+                            </li>
+                    </ul>
+                </li>
+                <li><a href="#" class="button special">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<!-- Main -->
+<article id="main">
+
+  <header class="special container">
+    <span class="icon fa-"></span>
+    <h2>Prioritised list of AI threats</h2>
+    <!-- add page sub title here -->
+    <p>Posted on 30/01/2018 by Jakub Langr</p>
+    <p></p>
+  </header>
+
+  <!-- One -->
+    <section class="wrapper style4 container">
+
+      <!-- Content -->
+        <div class="content">
+          <section>
+            <!-- <a href="#" class="image feature"><img src="images/pic04.jpg" alt="" /></a> -->
+            <h3>Posted in <a href="./category/non-technical.html">non-technical</a></h3>
+            <p class="tags">
+                <a href="./tag/ai-artificial-intelligence.html">AI artificial intelligence</a>
+</p>
+            <p><h3>Prioritized list of AI threats: care about what you Musk</h3>
+<p>(I apologise for the bad joke, but the original name of the article was “SELECT
+FROM ai_threats ORDER BY danger DESC” and even though I cannot <em>possibly imagine
+</em>anything more exciting than a SQL query, I thought it detracted exactly the
+types of readers I wanted to engage the most.)</p>
+<p>Recently, I witnessed a conversation on LinkedIn between two professionals who
+both work in AI — albeit as non technical staff. This conversation was about
+<a href="https://research.googleblog.com/2017/05/using-machine-learning-to-explore.html">Google’s
+AutoML</a>,
+a system that can automatically optimise itself to achieve better performance at
+a given task. The tragedy stems from the wording that the Google research blog
+has used: The article calls the two networks controller and a child. Then the
+article went on to explain that AI designed can outperform the human made ones.</p>
+<p>Needless to say the term child has caused a mild panic as it has been reported
+by several
+<a href="http://www.independent.co.uk/life-style/gadgets-and-tech/news/google-child-ai-bot-nasnet-automl-machine-learning-artificial-intelligence-a8093201.html">mainstream</a>
+<a href="https://www.dailystar.co.uk/news/latest-news/664713/google-artificial-intelligence-ai-child-NASNet-AutoML">media</a>
+<a href="http://www.dailymail.co.uk/sciencetech/article-5146963/Google-supercomputer-creates-AI-child.html">outlets</a>
+such as <a href="https://www.thesun.co.uk/tech/5072741/google-nasnet-ai-child-reinforcement-learning/">the
+Sun</a>
+and
+<a href="http://www.ibtimes.co.uk/googles-ai-clones-itself-smarter-more-powerful-man-made-one-1643413">similar</a>.
+This panic stemmed from the framing along the lines of ‘AI creates its own
+children that outperform humans’, but this inaccuracy is all too often because
+AI researchers and AI practitioners do not do not participate in these debates.
+Using the terms such as “child” and describing the output of this network as
+smarter than what humans would design is sure to make for some good headlines.
+However, describing what happened as “algorithm uses a set of predefined rules
+to achieve a slightly better performance” is nowhere near as scary but it is
+probably more accurate.</p>
+<p>The example above is more funny than anything else, but I think demonstrates a
+deeper point that the AI discussion can stray far off from where the real
+concerns are for the couple of years to come.</p>
+<p>As much as I appreciate the public interest in AI safety, the interest of people
+with limited technical experience and understanding of AI is ultimately lead to
+a reframing of the debate that I think is actively unhelpful or even harmful to
+the ultimate goal.</p>
+<p>As an AI practitioner, about to release an educational resource on <a href="http://jakublangr.com/gans-code.html">Generative
+Adversarial Networks</a>, I feel the need to
+frame this discussion in the way that I see it. Without a doubt, there will be
+subjective judgements but given the state of the discussion I feel like this is
+important contribution nonetheless.</p>
+<p>I’ll start off with the most controversial part: <a href="https://twitter.com/fchollet/status/945581226424983554">in line with Francois
+Chollet</a>, a staff
+researcher at Google and the author of one of the most popular deep learning
+frameworks, I believe that artificial general intelligence is still very far
+off. Therefore worrying about super intelligence is maybe not irrelevant but it
+is definitely not urgent.</p>
+<p>Applied historians and AI researchers have long talked about this idea of
+intelligence explosion. I’m not completely sure to whom I should credit this
+line of reasoning but I first <a href="https://www.youtube.com/watch?v=wtxoNap_UBc">heard it from Dr Joanna Bryson lecturing at
+Oxford Martin School</a>. The lecture
+is great and you should definitely listen to it, but the gist is: ultimately it
+does not make sense to worry about artificial intelligence explosion. AI will do
+much more damage simply by augmenting malicious human actors and helping them
+reach scale.</p>
+<p>Intuitively this makes sense: same as with nuclear weapons, AI is ultimately
+just a technology and it depends how it’s going to be used by humans. This
+coupled with the fact that in actual fact most AI is what some call “idiot
+savants” and therefore <a href="https://www.fastcodesign.com/90156089/trippy-stickers-trick-computers-into-thinking-a-banana-is-a-toaster">catastrophically failing in even minor cases of
+deviation from the original
+task</a>,
+leads us to the inevitable conclusion that superintelligence destroying humanity
+is very unlikely to be a concern in the <a href="https://www.facebook.com/nipsfoundation/videos/1552446408179926/">“decades to
+come”</a>.</p>
+<p>So what then is in my opinion worth worrying about?</p>
+<ol>
+<li><strong>Russia or other nation states augmented by AI</strong></li>
+</ol>
+<p>The first on this list is something that we have already seen. Except in the
+future, just by applying existing, enterprise technology, this can be made much
+more scalable and therefore dangerous. Not to mention that <a href="https://www.cnbc.com/2017/07/21/china-ai-world-leader-by-2030.html">China will invest
+$150 billion into
+AI</a>.
+(Though, to be fair, China has, compared to Russia, shown much less appetite to
+get involved in OECD countries’ politics.)</p>
+<p>In the age of <a href="https://en.wikipedia.org/wiki/Hybrid_warfare">hybrid warfare</a>,
+<a href="https://www.theguardian.com/world/2007/may/17/topstories3.russia">cyber attacks against nation
+states</a> and
+<a href="https://en.wikipedia.org/wiki/Stuxnet">cybernetic sabotage of nuclear
+programs</a>, we are faced with a lot of
+questions in the world that is in theory completely untraceable. The mounting
+allegations of Russian meddling with the American election results certainly do
+not help. What’s worse is that an assault this fundamental on the world’s most
+powerful democracy <a href="http://www.homelandsecuritynewswire.com/dr20171009-social-media-is-first-tool-of-21stcentury-warfare-and-it-s-cheaper-than-f35-sen-warner">has allegedly cost a quarter of what a F-35 fighter jet
+would
+cost</a>.</p>
+<p>If you’re anywhere else in the world and think that somehow the downfall of
+America will not mean anything to you, think again. Not only is there evidence
+of <a href="https://techcrunch.com/2017/11/15/study-russian-twitter-bots-sent-45k-brexit-tweets-close-to-vote/">Russian interference in the Brexit vote by the usage of a massive
+sophisticated network of Twitter bots trying to sow discord into the British
+society</a>,
+but there is also evidence of Russian meddling in the Dutch, German, French and
+British election.</p>
+<p>Now if that doesn’t scare you, there is also substantial evidence that Cambridge
+Analytica — Robert Mercer and other shadowy figures funded organisation — <a href="https://www.theguardian.com/politics/2017/mar/04/nigel-oakes-cambridge-analytica-what-role-brexit-trump">is
+ramping up its capacity to use data analytics and AI to influence the population
+in the US and the
+UK</a>.</p>
+<p>Finally if you examine the dynamics of these AI augmented attempts to stir
+discord, they do so across every pre-existing social divide on both sides of the
+fence. For example, foreign bots <a href="https://www.washingtonpost.com/world/national-security/lawmaker-russian-trolls-trying-to-sow-discord-in-nfl-kneeling-debate/2017/09/27/5f46dce0-a3b0-11e7-ade1-76d061d56efa_story.html?utm_term=.4092dbceb812">have been detected in America both supporting
+the NFL players and opposing
+them</a>,
+criticising Trump and supporting him, as well as taking advantage of gender,
+sexuality and identity issues to further divide American society.</p>
+<p>Do not get me wrong all these are in principle solvable, mostly again by AI, but
+currently neither tech companies nor government are putting enough of an effort
+to truly address them. And even if you believe that the paragraphs about are
+just some crazy conspiracy theory, you have to recognise that this is at least
+plausible and that we currently do not have any monitoring in place to prevent
+this.</p>
+<p><strong>2. AI destroying social fabric</strong></p>
+<p><a href="https://www.elitedaily.com/news/world/study-people-check-cell-phones-minutes-150-times-day">Remember that an average person checks their phone about 150 times a day and
+think about what this does to ability to have social
+interaction.</a>
+Also the perfect ever obedient technology is a really poor mental model for our
+children on how to interact with the world and especially other humans. Make no
+mistake: the software and hardware products you buy today are loaded with AI
+that constantly learns how to capture your attention.</p>
+<p>This is not even mentioning that spending a lot of time on Facebook makes us
+less happy; <a href="https://www.cbsnews.com/news/early-facebook-investor-roger-mcnamee-urges-company-to-fix-their-product/">anger and outrage drives most of interactions on Facebook because
+those illicit higher response
+rates</a>;
+and the looming fear of automation is making many fair for their jobs there for
+making them more anxious. This is not even diving into the problem of <a href="https://www.scientificamerican.com/article/fake-online-news-spreads-through-social-echo-chambers/">online
+echo chambers, which is a massive problem as the linked article
+describes</a>.</p>
+<p>Moreover, when you think about the <a href="https://waitbutwhy.com/2017/04/neuralink.html">human colossus
+</a>and its most advanced
+intelligence product: corporations, we run into another quagmire. This <a href="https://twitter.com/mcclure111/status/939968291363225602">tweet
+</a>summarises it well:
+“Just super amazing how people immediately see the problem with “what if an AI
+were designed to create paperclips at all costs” but don’t see a red flag in
+“we’re going to design our entire society around a mechanical social process
+that maximizes for short-term capital growth”. Coporations are the original
+super intelligence, because they aggregate knowledge of dozens of humans in
+pursuit of one goal.</p>
+<p>The solution for now definitely is to just t<a href="https://soundcloud.com/best-of-tech-startups/dfj-thought-leaders-making-technology-less-manipulative-tristan-harris-time-well-spent">hink about whether all the time you
+spend with technology is time well
+spent</a>
+and in the long run start thinking about the psychological effects automation
+and universal basic income.</p>
+<p><strong>3. Non-state actors augmented by AI</strong></p>
+<p>The third angle has to do much less with nation-states or corporations and much
+more how independent people or groups of individuals can act. I will only give
+you a glimpse of what I mean as I believe this one is less urgent and we’ll keep
+shortening with decreasing importance.</p>
+<p>Plus I’ve already mostly explained and a lot of the bears a thing as similar as
+in the nation state example except now or dealing with much more decentralised
+group with much fewer resources. <a href="https://www.weforum.org/agenda/2016/11/the-4th-industrial-revolution-and-international-security/">But people are only thinking about it in terms
+of the security
+ramifications</a>
+and autonomous weapons.</p>
+<p>I generally believe the nation states will be able to co-ordinate via UN or
+otherwise to maybe ban development but most likely usage of <a href="http://autonomousweapons.org">autonomous weapons
+technology</a>. I do not believe, however, that the
+non state actors will adhere to the same standards when it comes to the
+s<a href="http://autonomousweapons.org/slaughterbots/">laughter bots</a> and similar.</p>
+<p>This is already happening in tiny doses; groups like Anonymous and platforms
+like Silk Road have demonstrated government’s incapacity to deal with actors
+that fall outside their scope. Especially if their host government proves
+uncooperative. So we may have to deal with things like cyber-terrorism, hackers
+at an unprecedented scale and automated political propaganda from non-state
+actors.</p>
+<p><strong>4. Super intelligence</strong></p>
+<p>Originally, I wanted to put super intelligence as fifth but then a few of my
+friends under the influence of Google Deepmind’s safety team convinced me
+otherwise. I will not argue about the timing of super intelligence; much has
+been written about this topic by others.</p>
+<p>I will just say that there are <a href="https://medium.com/@francois.chollet/the-impossibility-of-intelligence-explosion-5be4a9eda6ec">many researchers who believe not even if we
+achieve singularity soon there will be limited impact on the
+world</a>.
+Anecdotally, just think about the smartest kid in your High School class. How
+far have they made it? Has their intelligence helped them so much? In fact, is
+it even possible to construct a consistently more intelligent approach when we
+consider <a href="https://en.wikipedia.org/wiki/No_free_lunch_in_search_and_optimization">that in optimization there is no free
+lunch</a>?</p>
+<p>Perhaps the argument here is that the growth of AI is exponential and so evolved
+AI is to a human as say a human is to a horse. Horse will never be an inventor.
+So it is quantitatively so much better that it is qualitatively different.
+However this I also take an issue with, because people typically use biological
+systems as an obvious parallel to AI without much justification. The growth of
+AI is not like the growth of a human from a child to an adult. AI can solve many
+problems with superhuman performance but a seemingly similar problem will be
+virtually impossible.</p>
+<p>Furthermore, although there are reasons that is super intelligence might have
+the capacity to harm humans, remember that despite billions of dollars of
+investment Siri still barely understand what you mean. Let’s say we completely
+must do speech recognition in speech in synthesis in the next year (extremely
+optimistic) and in the two years after that we manage to productionize this. In
+the next five, we solve perception and in the five after that unsupervised
+understanding and in the 10 after that common sense reasoning. But all (1–3) of
+the above are things that are potentially happening <em>right now</em>. Does it still
+seem that urgent?</p>
+<p>But overall, I would love to pose to anyone this challenge: how do you even
+imagine super intelligence to destroy humanity? Why would it even care?</p>
+<p><strong>5. AI just making mistakes or cutting corners</strong></p>
+<p>These two problems are closely interlinked, because I don’t believe that anyone
+wants to write AI that will make mistakes. But as I said this point is very
+close fifth. Ultimately I believe that the chances are 50–50 that even if we get
+to singularity, we will simply not know whether this is going to be completely
+purposeful. In fact, we still <a href="https://arxiv.org/abs/1611.03530">do not really understand why deep learning works
+completely</a>.</p>
+<p>Ultimately, AI researchers and practitioners will be under pressure from their
+managers, sponsors or other stakeholders and therefore forced to cut corners. To
+be fair to the public debate, I think this is the one point where spreading
+awareness — however rudimentary — is extremely useful.</p>
+<p>So overall as much as AI safety seems like a <a href="https://twitter.com/fchollet/status/945581226424983554">fun problem that a lot of
+philosophers were waiting for a long time, we should avoid judging the
+technology by its
+narrative</a>; at least for
+the time being.</p>
+<p>It took me about 2 days to write this article. In this time, the initial story
+<a href="https://twitter.com/OriolVinyalsML/status/954243674182967296">has happened
+again</a>, which just
+shows, in my opinion, how frequent those popular misinterpretations tend to be.</p>
+<p>Want to join the conversation? See more at
+<a href="http://jakublangr.com/">jakublangr.com</a> or <a href="https://twitter.com/langrjakub">tweet at
+me</a>!</p></p>
+          </section>
+        </div>
+
+    </section>
+
+    <!-- Two -->
+    <section class="wrapper style1 container special">
+        <div class="row">
+          <div class="4u">
+
+            <section>
+              <span class="icon feature fa-"></span>
+              <header>
+                <a href="./prioritized-ai-threats.html" rel='bookmark'><h3>Prioritised list of AI threats</h3></a>
+              </header>
+              <p>Prioritized list of AI threats: care about what you Musk (I apologise for the bad joke, but the original name of the article was “SELECT FROM ai_threats ORDER BY danger DESC” and even</p>
+              <footer>
+                  <ul class="buttons">
+                      <li><a href="./prioritized-ai-threats.html" class="button small">Read More</a></li>
+                  </ul>
+              </footer>
+            </section>
+
+          </div>
+          <div class="4u">
+
+            <section>
+              <span class="icon feature fa-"></span>
+              <header>
+                <a href="./gans-code.html" rel='bookmark'><h3>Coding for GANS & (Semi)-Learning</h3></a>
+              </header>
+              <p>Intro I'll jump straight into what we have explained on a high-level last time. The code is also available on <a href="https://gi</p>
+              <footer>
+                  <ul class="buttons">
+                      <li><a href="./gans-code.html" class="button small">Read More</a></li>
+                  </ul>
+              </footer>
+            </section>
+
+          </div>
+          <div class="4u">
+
+            <section>
+              <span class="icon feature fa-"></span>
+              <header>
+                <a href="./gans-tutorial.html" rel='bookmark'><h3>GANs & Semi-Supervised Learning</h3></a>
+              </header>
+              <p>In my last blog post we looked what are some of the promising areas in AI and one of the areas that was mentioned many, many times by research</p>
+              <footer>
+                  <ul class="buttons">
+                      <li><a href="./gans-tutorial.html" class="button small">Read More</a></li>
+                  </ul>
+              </footer>
+            </section>
+
+          </div>
+        </div>
+    </section>
+  </article>
+
+  <div id="comments">
+      <h2 class="space-above">Comments</h2>
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+          var disqus_identifier = "prioritized-ai-threats.html";
+          (function() {
+              var dsq = document.createElement('script');
+              dsq.type = 'text/javascript';
+              dsq.async = true;
+              dsq.src = 'http://jakublangr.disqus.com/embed.js';
+              (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+      </script>
+      <noscript>Please enable JavaScript to view <a href="http://disqus.com/?ref_noscript">comments</a>.</noscript>
+  </div>
+
+
+<!-- Footer -->
+<footer id="footer">
+
+    <ul class="icons">
+        <li>
+          <a href="http://linkedin.com/in/jakublangr" class="icon circle fa fa-LinkedIn"><span class="label">LinkedIn</span></a>
+        </li>
+        <li>
+          <a href="https://github.com/jakubLangr" class="icon circle fa fa-GitHub"><span class="label">GitHub</span></a>
+        </li>
+        <li>
+          <a href="http://twitter.com/LangrJakub" class="icon circle fa fa-Twitter"><span class="label">Twitter</span></a>
+        </li>
+        <li>
+          <a href="mailto:james.langr@gmail.com" class="icon circle fa fa-envelope"><span class="label">envelope</span></a>
+        </li>
+        <li>
+          <a href="/about.html" class="icon circle fa fa-Info"><span class="label">Info</span></a>
+        </li>
+        <li>
+          <a href="http://r-bloggers.com" class="icon circle fa fa-blog"><span class="label">blog</span></a>
+        </li>
+    </ul>
+
+    <span class="copyright">&copy; Untitled. All rights reserved. Design: <a href="http://html5up.net">HTML5 UP</a>.</span>
+
+    <!-- Google Analytics -->
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-55040887-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!-- End Google Analytics -->
+
+</footer>
+</body>
+</html>
