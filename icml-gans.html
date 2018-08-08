@@ -82,31 +82,32 @@
 </p>
             <p><p>In all seriousness, however, I do respect greatly all the amazing work that  the researchers at ICML have presented. I would not be capable of anywhere near their level of work so kudos to them for pushing the field forward!</p>
 <p>ICML overall was an awesome experience. But this piece is not going to be about my thoughts, impressions or experiences. The industry of slowly slipping into academic conferences I thought I might take it one step further and present what are the most interesting results for the practitioners perspective that came up at  this conference.</p>
-<p>This means I will be discounting some of the academic  contributions if I do not see how they could apply to someone whose ultimate goal is not first and foremost to publish. This also means that I will be using more accessible language and will not go into into any given paper.  I will try to present this in a more accessible way, which also means I will here and there contribute some opinions and thoughts that some of you may disagree with. My hope here is that this will be useful especially to the newcomers to the field to give them some context from the about 50 papers that I have read in preparation for this conference. </p>
-<p>Very frequently the explanations will be quick and dirty  as exemplified  by the fact that  not every single papers strictly speaking in generative adversarial network. So here it goes.</p>
-<p>As part of my training budget at <a href="mudano.com">Mudano</a>, I chose to go to ICML, a top 3 conference in Machine Learning. It was a very enriching and unique experience.  but in order to get  the most out of the conference I decided to keep track of most papers I have encountered. These are then presented chronologically as they appeared in the conference.  I'm not including Saturday and Sunday which were mostly about workshops. [1] </p>
+<p>This means I will be discounting some of the academic  contributions if I do not see how they could apply to someone whose ultimate goal is not first and foremost to publish. This also means that I will be using more accessible language and will not go into any given paper.  I will try to present this in a more accessible way, which also means I will here and there contribute some opinions and thoughts that some of you may disagree with. My hope here is that this will be useful especially to the newcomers to the field to give them some context from the about 50 papers that I have read in preparation for this conference. </p>
+<p>Very frequently the explanations will be quick and dirty  as exemplified by the fact that not every single paper is strictly speaking a generative adversarial network. So here it goes.</p>
+<p>As part of my training budget at <a href="http://mudano.com">Mudano</a>, I chose to go to ICML, a top 3 conference in Machine Learning. It was a very enriching and unique experience. But in order to get the most out of the conference I decided to keep track of most papers I have encountered. These are then presented chronologically as they appeared in the conference. I'm not including Saturday and Sunday which were mostly about workshops. [1]</p>
+<hr>
 <p>Wednesday 11th</p>
-<p><a href="http://medianetlab.ee.ucla.edu/papers/ICML_RadialGAN.pdf">RadialGAN</a>
-The promise of GANs has always partially lied in semi-supervised learning and data augmentation. This work basically allows us to leverage multiple datasets from several sources to typically obtain better performance, even if some of the datasets are not of high quality or related to the task at hand. This is done by first translating the dataset into some shared latent space and then translating this space back to the target domain for the task at hand.</p>
+<h1><a href="http://medianetlab.ee.ucla.edu/papers/ICML_RadialGAN.pdf">RadialGAN</a></h1>
+<p>The promise of GANs has always partially lied in semi-supervised learning and data augmentation. This work basically allows us to leverage multiple datasets from several sources to typically obtain better performance, even if some of the datasets are not of high quality or related to the task at hand. This is done by first translating the dataset into some shared latent space and then translating this space back to the target domain for the task at hand.</p>
 <p>My thoughts: I really like this paper. Potentially very useful in the industry. Also very clear presentation.</p>
 <div align="center">
 <img src="images/gans/radial_gan.png" alt="Radial GAN" align='center'
  style="width: 95%; height: auto " />
 </div>
 
-<p><a href="http://mlg.eng.cam.ac.uk/adrian/ICML18-Discovering.pdf">Discovering Interpretable Representations for Both Deep Generative and Discriminative Models</a>
-This is basically a human-in-the-loop Active Learning way of making sure we can interpret the latent space most (human)-meaningfully. Potentially decreases the accuracy, but allows us to say which dimensions of the latent space are affecting what properties.</p>
+<h1><a href="http://mlg.eng.cam.ac.uk/adrian/ICML18-Discovering.pdf">Discovering Interpretable Representations for Both Deep Generative and Discriminative Models</a></h1>
+<p>This is basically a human-in-the-loop Active Learning way of making sure we can interpret the latent space most (human)-meaningfully. Potentially decreases the accuracy, but allows us to say which dimensions of the latent space are affecting what properties.</p>
 <p>My thoughts: Potentially interesting, because frequently figuring out how the latent space translates to the generated samples is non-trivial. Presentation was not very clear.</p>
-<p><a href="https://avg.is.tuebingen.mpg.de/publications/meschedericml2018">Which Training Methods for GANs do actually Converge?</a>
-In this paper, Lars et al. present a way--starting from a toy example--to impose a specific class of gradient penalties on the GANs throughout training. They show results matching state of the art (SOTA) even with older architectures. The authors furthermore demonstrate some interesting properties in the local stability around the Nash Equilibrium of the GAN. Code is also available in the link above. </p>
+<h1><a href="https://avg.is.tuebingen.mpg.de/publications/meschedericml2018">Which Training Methods for GANs do actually Converge?</a></h1>
+<p>In this paper, Lars et al. present a way--starting from a toy example--to impose a specific class of gradient penalties on the GANs throughout training. They show results matching state of the art (SOTA) even with older architectures. The authors furthermore demonstrate some interesting properties in the local stability around the Nash Equilibrium of the GAN. Code is also available in the link above. </p>
 <div align="center">
 <img src="images/gans/convergene.png" alt="GAN convergence" align='center'
  style="width: 95%; height: auto " />
 </div>
 
 <p>My thoughts: Quite an impressive feat. This technique is quite complicated, but taking the time to understand is probably worth the time. Others have looked at similar ideas. But in this case, results really speak for themselves. PGGAN-quality results without progressive growing!</p>
-<p><a href="http://proceedings.mlr.press/v80/tao18b/tao18b.pdf">Chi-square Generative Adversarial Network</a>
-This work connects so far three disconnected approaches to GANs--see the picture below. </p>
+<h1><a href="http://proceedings.mlr.press/v80/tao18b/tao18b.pdf">Chi-square Generative Adversarial Network</a></h1>
+<p>This work connects so far three disconnected approaches to GANs--see the picture below. </p>
 <p>My thoughts: My take on this is work is that this is probably an important piece of theory, but the use for practitioners is likely somewhat limited. Apart from the  Integral Probability
 Metrics (IPM) and MMD area, I have not really dived deep into the other areas and overlaps. Seems a bit too convoluted for practitioners.</p>
 <div align="center">
@@ -114,15 +115,15 @@ Metrics (IPM) and MMD area, I have not really dived deep into the other areas an
  style="width: 95%; height: auto " />
 </div>
 
-<p><a href="https://core.ac.uk/display/129356887">A Classification-Based Study of Covariate Shift in GAN Distributions</a>
-This is a cool study of detecting mode collapse. This generally makes sense especially for academics trying to detect problems with training. But we now can finally start talking about the effect of these gaps. </p>
+<h1><a href="https://core.ac.uk/display/129356887">A Classification-Based Study of Covariate Shift in GAN Distributions</a></h1>
+<p>This is a cool study of detecting mode collapse. This generally makes sense especially for academics trying to detect problems with training. But we now can finally start talking about the effect of these gaps. </p>
 <p>My thoughts: I think there's loads of value in having a consistent / unique benchmark. But there are metrics that I've liked better, but this could probably be used as an ensemble.</p>
 <div align="center">
 <img src="images/gans/covariate_shift_gans.png" alt="Covariate Shift in GANs" align='center'
  style="width: 95%; height: auto " />
 </div>
 
-<p><a href="http://proceedings.mlr.press/v80/bojchevski18a/bojchevski18a.pdf">NetGAN: Generating Graphs via Random Walks</a></p>
+<h1><a href="http://proceedings.mlr.press/v80/bojchevski18a/bojchevski18a.pdf">NetGAN: Generating Graphs via Random Walks</a></h1>
 <p>Thoughts: Generally interesting work showing that GANs can be applied to generate even graphs that are for many reasons more complicated. Achieves state of the art according to link prediction accuracy. </p>
 <div align="center">
 <img src="images/gans/net_gan.png" alt="NetGAN" align='center'
@@ -130,7 +131,7 @@ This is a cool study of detecting mode collapse. This generally makes sense espe
 </div>
 
 <p>Thursday 12th</p>
-<p><a href="http://proceedings.mlr.press/v80/khrulkov18a/khrulkov18a.pdf">Geometry Score: A Method For Comparing Generative Adversarial Networks</a></p>
+<h1><a href="http://proceedings.mlr.press/v80/khrulkov18a/khrulkov18a.pdf">Geometry Score: A Method For Comparing Generative Adversarial Networks</a></h1>
 <p>This work shows that using topological analysis we can construct a general metric to evaluate how much of the original dataset we have managed to cover. Using an approximation, we can calculate how much of the diversity is in our generated dataset.</p>
 <p>Thoughts: I am actually really excited by this work as it allows us to evaluate GANs in <em>any</em> domain and inspect it for mode collapse. So far, generic evaluation methods have been completely missing. Maybe we will even see a measure of quality one day.</p>
 <div align="center">
@@ -138,7 +139,7 @@ This is a cool study of detecting mode collapse. This generally makes sense espe
  style="width: 95%; height: auto " />
 </div>
 
-<p><a href="http://proceedings.mlr.press/v80/bojanowski18a/bojanowski18a.pdf">Optimizing the Latent Space of Generative Networks</a></p>
+<h1><a href="http://proceedings.mlr.press/v80/bojanowski18a/bojanowski18a.pdf">Optimizing the Latent Space of Generative Networks</a></h1>
 <p>This paper deviates from the typical GAN set up, but sets out to create a model that would be able to generate better samples. Here, we focus on the issue of mode collapse and generating samples that are not the same, but are similar enough.</p>
 <p>Thoughts: I have a bit of mixed feelings about the paper. On one hand, I think that the presentation was surprisingly opinionated--unusual for academics--and I did not agree with a lot of the statements. On the other hand, the informal poster discussion was actually really good and informative. In this discussion, one of the researchers made an interesting point that mode collapse is the reasons why GANs work. That's a fascinating assertion and I would love to see whether that is true. The funny thing about this paper is that when I was researching it, I found out that it narrowly got rejected from ICLR so the authors republished to ICML.</p>
 <div align="center">
@@ -146,94 +147,95 @@ This is a cool study of detecting mode collapse. This generally makes sense espe
  style="width: 95%; height: auto " />
 </div>
 
-<p><a href="http://proceedings.mlr.press/v80/cao18a/cao18a.pdf">Adversarial Learning with Local Coordinate Coding</a>
-This paper attempts to solve a similar problem as the previous paper but making the latent space more complex. The presentation was not very clear, but the gist is exploring the manifold assumption--which states that there exists a mapping from some low dimensional latent space onto the complex manifold (e.g. images). All GANs ultimately rely on this assumption, but if you think about this mapping, it seems odd that you could represent all the images from such a low space. For some reason, this paper does not compare to the state of the art methods.</p>
+<h1><a href="http://proceedings.mlr.press/v80/cao18a/cao18a.pdf">Adversarial Learning with Local Coordinate Coding</a></h1>
+<p>This paper attempts to solve a similar problem as the previous paper but making the latent space more complex. The presentation was not very clear, but the gist is exploring the manifold assumption--which states that there exists a mapping from some low dimensional latent space onto the complex manifold (e.g. images). All GANs ultimately rely on this assumption, but if you think about this mapping, it seems odd that you could represent all the images from such a low space. For some reason, this paper does not compare to the state of the art methods.</p>
 <div align="center">
 <img src="images/gans/llc.png" alt="Local Coordinate Coding" align='center'
  style="width: 95%; height: auto " />
 </div>
 
-<p><a href="http://proceedings.mlr.press/v80/achlioptas18a/achlioptas18a.pdf">Learning Representations and Generative Models for 3D Point Clouds</a>
-Who does not love 3D point clouds? So awesome. In this paper, the authors create a more powerful model to generate 3D point clouds of generic objects. While there is still a lot of work to be done, it looks awesome. </p>
+<h1><a href="http://proceedings.mlr.press/v80/achlioptas18a/achlioptas18a.pdf">Learning Representations and Generative Models for 3D Point Clouds</a></h1>
+<p>Who does not love 3D point clouds? So awesome. In this paper, the authors create a more powerful model to generate 3D point clouds of generic objects. While there is still a lot of work to be done, it looks awesome. </p>
 <div align="center">
 <img src="images/gans/3d_gan.png" alt="Generative Model for 3D point clouds" align='center'
  style="width: 95%; height: auto " />
 </div>
 
-<p><a href="http://proceedings.mlr.press/v80/pan18c/pan18c.pdf">Theoretical Analysis of Image-to-Image Translation with Adversarial Learning</a>
-This paper analyzes the paired translation GANs and says that essentially there is two components to the loss for paired image-to-image translation. The identity loss that ensures the image is correct and then the adversarial loss, which ensures the image is sharp.</p>
+<h1><a href="http://proceedings.mlr.press/v80/pan18c/pan18c.pdf">Theoretical Analysis of Image-to-Image Translation with Adversarial Learning</a></h1>
+<p>This paper analyzes the paired translation GANs and says that essentially there is two components to the loss for paired image-to-image translation. The identity loss that ensures the image is correct and then the adversarial loss, which ensures the image is sharp.</p>
 <p>Thoughts: Interesting theoretical work, but probably not for practitioners just yet. Also there are no pictures in the paper so here's at least a blurry one (sorry!) from the poster session.</p>
 <div align="center">
 <img src="images/gans/poster.jpg" alt="Image-to-Image Analysis" align='center'
  style="width: 95%; height: auto " />
 </div>
 
-<p><a href="http://proceedings.mlr.press/v80/johnson18a/johnson18a.pdf">Composite Functional Gradient Learning of Generative Adversarial Models</a>
-Thoughts: This paper introduces a more complicated training regime that seems to be theoretically supported, but then goes and creates an approximate version that adds an if statement to the training procedure, which to me smells of ad-hoc. The results surpass state of the art, but I generally like methods that add less complexity.</p>
+<h1><a href="http://proceedings.mlr.press/v80/johnson18a/johnson18a.pdf">Composite Functional Gradient Learning of Generative Adversarial Models</a></h1>
+<p>Thoughts: This paper introduces a more complicated training regime that seems to be theoretically supported, but then goes and creates an approximate version that adds an if statement to the training procedure, which to me smells of ad-hoc. The results surpass state of the art, but I generally like methods that add less complexity.</p>
 <div align="center">
 <img src="images/gans/composite_gan.png" alt="Composite GAN" align='center'
  style="width: 95%; height: auto " />
 </div>
 
-<p><a href="http://proceedings.mlr.press/v80/sajjadi18a/sajjadi18a.pdf">Tempered Adversarial Networks</a>
-The high level idea behind this paper is interesting. Similar to PGGAN, authors think that the problem that GANs are presented with from the outset is a bit too hard. So instead, the authors create a network that deforms the images a bit so that the generator has an easier job. A decayed version of this, beats the state of the art.</p>
-<p><a href="http://proceedings.mlr.press/v80/bang18a/bang18a.pdf">Improved Training of Generative Adversarial Networks using Representative Features</a>
-This paper basically concatenates an autoencoded version of the generated image that gets passed to the discriminator as help. The author’s poster was incredibly clear in describing the architecture, but unfortunately, the pictures seem to have disappeared from my phone.</p>
+<h1><a href="http://proceedings.mlr.press/v80/sajjadi18a/sajjadi18a.pdf">Tempered Adversarial Networks</a></h1>
+<p>The high level idea behind this paper is interesting. Similar to PGGAN, authors think that the problem that GANs are presented with from the outset is a bit too hard. So instead, the authors create a network that deforms the images a bit so that the generator has an easier job. A decayed version of this, beats the state of the art.</p>
+<h1><a href="http://proceedings.mlr.press/v80/bang18a/bang18a.pdf">Improved Training of Generative Adversarial Networks using Representative Features</a></h1>
+<p>This paper basically concatenates an autoencoded version of the generated image that gets passed to the discriminator as help. The author’s poster was incredibly clear in describing the architecture, but unfortunately, the pictures seem to have disappeared from my phone.</p>
 <p>Their results are better than the state of the art, but not by much, so I am not sure whether it is actually that much of a breakthrough.</p>
 <div align="center">
 <img src="images/gans/rep_feat_gan.png" alt="Representative Features GAN" align='center'
  style="width: 95%; height: auto " />
 </div>
 
-<p><a href="http://proceedings.mlr.press/v80/liu18d/liu18d.pdf">A Two-Step Computation of the Exact GAN Wasserstein Distance</a>
-This paper introduced linear programming to compute the exact Wasserstein distance tractably and then use that to improve the training. The problem with the Wasserstein distance is that when you think about how combinatorially complex it is for even simple point clouds, computing the exact distance seems pretty complicated. This paper achieves that and beats state of the art.</p>
+<h1><a href="http://proceedings.mlr.press/v80/liu18d/liu18d.pdf">A Two-Step Computation of the Exact GAN Wasserstein Distance</a></h1>
+<p>This paper introduced linear programming to compute the exact Wasserstein distance tractably and then use that to improve the training. The problem with the Wasserstein distance is that when you think about how combinatorially complex it is for even simple point clouds, computing the exact distance seems pretty complicated. This paper achieves that and beats state of the art.</p>
 <p>The dataset that this paper uses as benchmarks are both quite simple and limited (MNIST, CIFAR-10), so I would love to see how well this method does on e.g. Celeb-A HQ or IMAGENET-1000.</p>
-<p><a href="https://arxiv.org/abs/1802.08768">Is Generator Conditioning Causally Related to GAN Performance?</a>
-Some as with some other papers, I have read this paper ages ago, but the authors did a great job of succinctly summarizing the results, especially for the poster. Basically, they use Jacobian clamping to curb the Generator updates and therefore achieve a much more stable training. The performance is not substantially improved, but the increase in stability is worth it.</p>
+<h1><a href="https://arxiv.org/abs/1802.08768">Is Generator Conditioning Causally Related to GAN Performance?</a></h1>
+<p>Some as with some other papers, I have read this paper ages ago, but the authors did a great job of succinctly summarizing the results, especially for the poster. Basically, they use Jacobian clamping to curb the Generator updates and therefore achieve a much more stable training. The performance is not substantially improved, but the increase in stability is worth it.</p>
 <p>As a practitioner, if you have problems with GAN stability, this is the paper to try.</p>
-<p><a href="http://proceedings.mlr.press/v80/yoon18a/yoon18a.pdf">GAIN: Missing Data Imputation using Generative Adversarial Nets</a>
-This paper is probably one of the most interesting papers for practitioners, because it deals with a problem that a lot of us encounter--missing data. It creates a GAN-setup with a hint mechanism to basically smartly infer the missing values to match the distribution. We know GANs are good at creating synthetic distributions. The hint mechanism is necessary, because the problem for the discriminator is too hard--there are many combinatorially valid permutations of partially missing / real data to make this intractable. </p>
+<h1><a href="http://proceedings.mlr.press/v80/yoon18a/yoon18a.pdf">GAIN: Missing Data Imputation using Generative Adversarial Nets</a></h1>
+<p>This paper is probably one of the most interesting papers for practitioners, because it deals with a problem that a lot of us encounter--missing data. It creates a GAN-setup with a hint mechanism to basically smartly infer the missing values to match the distribution. We know GANs are good at creating synthetic distributions. The hint mechanism is necessary, because the problem for the discriminator is too hard--there are many combinatorially valid permutations of partially missing / real data to make this intractable. </p>
 <p>I have already pitched this paper to some of my colleagues. Enough said.</p>
-<p><a href="http://proceedings.mlr.press/v80/ilyas18a/ilyas18a.pdf">Black-box Adversarial Attacks with Limited Queries and Information</a>
-This is one of the few realistic adversarial attack papers. Technically no GAN / generative modelling involved--other than the perturbations I guess--but very interesting, realistic ways of doing adversarial attacks.</p>
+<h1><a href="http://proceedings.mlr.press/v80/ilyas18a/ilyas18a.pdf">Black-box Adversarial Attacks with Limited Queries and Information</a></h1>
+<p>This is one of the few realistic adversarial attack papers. Technically no GAN / generative modelling involved--other than the perturbations I guess--but very interesting, realistic ways of doing adversarial attacks.</p>
 <p>I still don't think Deep Learning models are widespread enough and that there's enough trust in them for this to cause any real harm, but this paper <a href="https://www.youtube.com/watch?v=kgTocVLNvYI">engages with the real issues.</a></p>
-<p><a href="http://proceedings.mlr.press/v80/seward18a/seward18a.pdf">First Order Generative Adversarial Networks</a>
-The idea behind this paper is that in a case of gradient penalties (such as WGAN-GP) rather than optimizing for the WGAN loss and then adding the penalty, you optimize for the loss <em>with</em> the penalty directly. Authors say that there are pathological cases when optimizing for loss and <em>then</em> adding the penalty makes the <em>generated distribution itself</em> less close to the target distribution. There were some informal grilling (not by me) / proofs of this around the poster but I won't hold the authors to it, haha.</p>
-<p><a href="https://deepmind.com/blog/learning-to-generate-images/gans/">Synthesizing Programs for Images using Reinforced Adversarial Learning</a>
-Here, I am not linking the paper itself but rather an excellent blog post by DeepMind, which does a great job of explaining this paper.
+<h1><a href="http://proceedings.mlr.press/v80/seward18a/seward18a.pdf">First Order Generative Adversarial Networks</a></h1>
+<p>The idea behind this paper is that in a case of gradient penalties (such as WGAN-GP) rather than optimizing for the WGAN loss and then adding the penalty, you optimize for the loss <em>with</em> the penalty directly. Authors say that there are pathological cases when optimizing for loss and <em>then</em> adding the penalty makes the <em>generated distribution itself</em> less close to the target distribution. There were some informal grilling (not by me) / proofs of this around the poster but I won't hold the authors to it, haha.</p>
+<h1><a href="https://deepmind.com/blog/learning-to-generate-images/gans/">Synthesizing Programs for Images using Reinforced Adversarial Learning</a></h1>
+<p>Here, I am not linking the paper itself but rather an excellent blog post by DeepMind, which does a great job of explaining this paper.
 TL;DR: GAN to generate brushstrokes using Photoshop-like API does a good job of learning to arbitrarily draw.</p>
-<p><a href="http://proceedings.mlr.press/v80/amodio18a/amodio18a.pdf">MAGAN: Aligning Biological Manifolds</a>
-Okay, so here I am now pretty sure that MAGAN stands for Manifold Alignment GAN (though never stated in the presentation), but when I first saw it being presented by an American, I thought it had some political connotations, haha. This GAN basically ensures that we align two manifolds always with the same correspondence (rather than stochastically as is the case with other algorithms) by adding in a correspondence loss. </p>
+<h1><a href="http://proceedings.mlr.press/v80/amodio18a/amodio18a.pdf">MAGAN: Aligning Biological Manifolds</a></h1>
+<p>Okay, so here I am now pretty sure that MAGAN stands for Manifold Alignment GAN (though never stated in the presentation), but when I first saw it being presented by an American, I thought it had some political connotations, haha. This GAN basically ensures that we align two manifolds always with the same correspondence (rather than stochastically as is the case with other algorithms) by adding in a correspondence loss. </p>
 <p>Interesting tidbit, in a "question" after the talk someone alleged that there already was a paper at last NIPS doing exactly this. Author was unaware of this paper. Your thoughts?</p>
-<p><a href="http://proceedings.mlr.press/v80/chapfuwa18a/chapfuwa18a.pdf">Adversarial Time-to-Event Modeling</a>
-In a similar domain as the GAIN paper, except now focused on time-series and basically getting a better probability distribution (basically being able to infer it automagically) for time distribution of certain events--such as complications in hospital settings.</p>
+<h1><a href="http://proceedings.mlr.press/v80/chapfuwa18a/chapfuwa18a.pdf">Adversarial Time-to-Event Modeling</a></h1>
+<p>In a similar domain as the GAIN paper, except now focused on time-series and basically getting a better probability distribution (basically being able to infer it automagically) for time distribution of certain events--such as complications in hospital settings.</p>
 <p>Potentially very useful for people working with time-series.</p>
-<p><a href="http://proceedings.mlr.press/v80/hoffman18a/hoffman18a.pdf">CyCADA: Cycle-Consistent Adversarial Domain Adaptation</a>
-This paper deals with an issue that loads of practitioners find out over and over a-GAN: our models do not generalize (excuse the joke). Frequently, you may take a model that was e.g. trained on ImageNet, deploy it and see that it does very poorly. Just because the real world is a lot more complicated than ImageNet even if we only care about the ImageNet classes. CyCADA extends CycleGAN to basically be able to do domain to domain translation with correct semantics and thereby potentially enabling building e.g. self-driving cars in safe, scalable computer-generated environment and then translating the ML system into the real world.</p>
+<h1><a href="http://proceedings.mlr.press/v80/hoffman18a/hoffman18a.pdf">CyCADA: Cycle-Consistent Adversarial Domain Adaptation</a></h1>
+<p>This paper deals with an issue that loads of practitioners find out over and over a-GAN: our models do not generalize (excuse the joke). Frequently, you may take a model that was e.g. trained on ImageNet, deploy it and see that it does very poorly. Just because the real world is a lot more complicated than ImageNet even if we only care about the ImageNet classes. CyCADA extends CycleGAN to basically be able to do domain to domain translation with correct semantics and thereby potentially enabling building e.g. self-driving cars in safe, scalable computer-generated environment and then translating the ML system into the real world.</p>
 <p>Really interesting! Will definitely try.</p>
 <div align="center">
 <img src="images/gans/cycada.png" alt="Cycle-Consistent Domain Adaptation" align='center'
  style="width: 95%; height: auto " />
 </div>
 
-<p><a href="http://proceedings.mlr.press/v80/ostrovski18a/ostrovski18a.pdf">Autoregressive Quantile Networks for Generative Modeling</a>
-So technically there is nothing GAN in this paper. "Just" autoregressive models, but they achieve results comparable to the state of the art in GANs. Really impressive work, but as with every autoregressive model this setup, will have trouble scaling. After the talk, authors proposed using an autoencoder to scale this up, but that brings a whole set of other challenges.</p>
+<h1><a href="http://proceedings.mlr.press/v80/ostrovski18a/ostrovski18a.pdf">Autoregressive Quantile Networks for Generative Modeling</a></h1>
+<p>So technically there is nothing GAN in this paper. "Just" autoregressive models, but they achieve results comparable to the state of the art in GANs. Really impressive work, but as with every autoregressive model this setup, will have trouble scaling. After the talk, authors proposed using an autoencoder to scale this up, but that brings a whole set of other challenges.</p>
 <p>Interesting approach, but similar (though lower quality) works have been presented and have never gotten over the 32x32 pixel limit, which is also the case here. Until that is solved (and many have tried), not so sure whether this is really scalable; also note GANs are already at 1024x1024.</p>
-<p><a href="http://proceedings.mlr.press/v80/lucas18a/lucas18a.pdf">Mixed batches and symmetric discriminators for GAN training</a>
-Unlike regular GAN, this paper uses mixed batches of real and synthetic data to make the discriminator even better. As the authors say in the summary "a simple architectural
+<h1><a href="http://proceedings.mlr.press/v80/lucas18a/lucas18a.pdf">Mixed batches and symmetric discriminators for GAN training</a></h1>
+<p>Unlike regular GAN, this paper uses mixed batches of real and synthetic data to make the discriminator even better. As the authors say in the summary "a simple architectural
 trick makes it possible to provably recover all functions of the batch as an unordered set".</p>
 <p>I genuinely love the paper, because it is an elegant idea and the summary actually summarizes the paper. Whether or not this become the dominant framework is yet to be seen, but I think the way the authors reference other architectures is a bit odd (they got them all from one paper).</p>
-<p><a href="http://proceedings.mlr.press/v80/pu18a/pu18a.pdf">JointGAN: Multi-Domain Joint Distribution Learning with Generative Adversarial Nets</a>
-Here, the authors have an architecture similar to CycleGAN, but rather than to infer solely the conditional distributions, it jointly learns the marginal probability distributions for each domain. We start from noise for generation of X and then condition on the X in generation of Y from the marginal. </p>
+<h1><a href="http://proceedings.mlr.press/v80/pu18a/pu18a.pdf">JointGAN: Multi-Domain Joint Distribution Learning with Generative Adversarial Nets</a></h1>
+<p>Here, the authors have an architecture similar to CycleGAN, but rather than to infer solely the conditional distributions, it jointly learns the marginal probability distributions for each domain. We start from noise for generation of X and then condition on the X in generation of Y from the marginal. </p>
 <p>I have found the presentation to be a bit unclear, but the results seem really interesting. The text generation seems really impressive, but then the authors said this was actually done by an autoencoder from a latent space that the GAN generated.</p>
-<p><a href="http://proceedings.mlr.press/v80/almahairi18a/almahairi18a.pdf">Augmented CycleGAN: Learning Many-to-Many Mappings from Unpaired Data</a>
-This is a really neat extension to CycleGAN in its standard form by injecting latent space during the first and the second generation. Recall that Cycle-consistency loss is measured as diff(X1, X2), where X1 -&gt; Y -&gt; X2. Basically the authors give us extra variables to use to create samples that have certain qualities. For example, if we have an outline of a shoe in the Y domain we can generate a sample in the X domain, where the same type of shoe is blue or orange or whatever we choose. </p>
+<h1><a href="http://proceedings.mlr.press/v80/almahairi18a/almahairi18a.pdf">Augmented CycleGAN: Learning Many-to-Many Mappings from Unpaired Data</a></h1>
+<p>This is a really neat extension to CycleGAN in its standard form by injecting latent space during the first and the second generation. Recall that Cycle-consistency loss is measured as diff(X1, X2), where X1 -&gt; Y -&gt; X2. Basically the authors give us extra variables to use to create samples that have certain qualities. For example, if we have an outline of a shoe in the Y domain we can generate a sample in the X domain, where the same type of shoe is blue or orange or whatever we choose. </p>
 <p>If you like CycleGAN, but want more control over the translation, you will love this.</p>
-<p><a href="http://proceedings.mlr.press/v80/li18d/li18d.pdf">On the Limitations of First-Order Approximation in GAN Dynamics</a>
-This is a pure theory paper that just reasons mostly on the level of simple examples. The key takeaway is an explanation why multiple discriminator updates probably make sense. This paper takes it to the extreme and shows good convergence properties in the case of optimal discriminator. But other than that, probably not of interest to practitioners at the moment. </p>
-<p>So that wraps up ICML for the generative adversarial networks papers I hope that you found this useful and if you'd like me to produce were from NIPS where I am going in December (or a write up on how to get the most out of a conference) please let me know.</p>
-<p>Want to join the conversation? See more at <a href="jakublangr.com">jakublangr.com</a> or tweet <a href="https://twitter.com/langrjakub">@langrjakub</a>! I am also writing a book about <a href="https://www.manning.com/books/gans-in-action?a_aid=gans-action&amp;a_bid=fd02700a">Generative Adversarial Networks, which you can check out here</a>. </p>
-<p>[1] (I went to the reproducible machine learning one which should hopefully be at least somewhat familiar to most machine learning practitioners. But if there is interest I can read that up too)</p></p>
+<h1><a href="http://proceedings.mlr.press/v80/li18d/li18d.pdf">On the Limitations of First-Order Approximation in GAN Dynamics</a></h1>
+<p>This is a pure theory paper that just reasons mostly on the level of simple examples. The key takeaway is an explanation why multiple discriminator updates probably make sense. This paper takes it to the extreme and shows good convergence properties in the case of optimal discriminator. But other than that, probably not of interest to practitioners at the moment. </p>
+<hr>
+<p>So that wraps up ICML for the generative adversarial networks papers. I hope that you found this useful and if you'd like me to produce were from NIPS where I am going in December (or a write up on how to get the most out of a conference) please let me know.</p>
+<p>Want to join the conversation? See more at <a href="http://jakublangr.com">jakublangr.com</a> or tweet <a href="https://twitter.com/langrjakub">@langrjakub</a>! I am also writing a book about <a href="https://www.manning.com/books/gans-in-action?a_aid=gans-action&amp;a_bid=fd02700a">Generative Adversarial Networks, which you can check out here</a>. </p>
+<p>[1] I went to the reproducible machine learning one which should hopefully be at least somewhat familiar to most machine learning practitioners. But if there is interest I can read that up too.</p></p>
           </section>
         </div>
 
