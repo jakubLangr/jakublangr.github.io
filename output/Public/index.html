@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+@font-face{
+    font-family:"AvanteGarde";
+    src: url(assets/Avgardn.ttf) format("truetype");
+}
+.body{
+	font-family:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "HelveticaNeue", "HelveticaNeueLT", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+</style>
+<title> Good Assessment by Design </title>
+<body>
+<script type="text/javascript" src="d3/d3.v3.js"></script>
+<script src="d3/topojson.v1.min.js"></script>
+
+<div align="center"> <h2 class="body"> Good Assessment by Design </h2>
+<span class="body"> This is a map showing all the countries that were considered for the Good Assessement by Design Report. The most common metric was PISA, which shows the countries in dark gray. The differently colored countries also partook in PISA, but also national-level data was considered. </span>
+</div>
+<script>
+
+/*			NOTES
+Notes – PISA Map
+1. Change color for PISA
+2. Phasing in for the graph
+3. 
+- For printed documents as well as for a powerpoint presentation
+
+*/
+
+// Setting up 
+
+var width = 1280,    height = 400;
+
+var projection = d3.geo.equirectangular()
+	.translate([width*24/55, height/2]);
+
+var path = d3.geo.path()
+    .projection(projection); 
+
+var svg = d3.select("body").append("svg")
+    .attr("width", width)
+    .attr("height", height);
+
+var countryData = {
+	USB : "6fdede",
+	USK : "6fdede",
+	HKG : "FA1E67",
+	SGP : "20852D",
+	AUZ : "4DE3B1",
+	ENG : "2BF08D",
+	WLS : "2BF08D",
+	SCT : "575CEB",
+	IMN : "2BF08D",
+	NIR : "2BF08D",
+	CAN : "F09C92",
+	ATB : "ffffff"
+};
+
+var PISA = {
+	ALB : true , ARG : true , AUT : true , AZE : true , BFR : true, BRA : true , BGR : true, CHX : true, COL : true, CZE : true, DNK : true, EST : true, FIN : true, FXX : true, DEU : true, GRC : true, HUN : true, ISL : true, IDN : true, IRL : true, ISR : true, ITX : true, JPH : true, JOR : true, KOX : true, KOR : true, KAZ : true, LVA : true, LIE : true, LTU : true, LUX : true, MAC : true, MKD : true, MEX : true, MNE : true, NLX : true, NZN : true, NZS : true, NOW : true, PAN : true, PER : true, POL : true, PRX : true, QAT : true, ROU : true, RUS : true, STB : true, SVK : true, SVN : true, SWE : true, CHE : true, THA : true, TTD : true, TUR : true, TUN : true, URY : true, VNM : true, HRV: true, ESX : true, BWR: true, RUE : true, RUA : true, SRS : true
+};
+
+// Rendering code
+
+var world = d3.json("worldMap.json", function(error, worldMap) {
+  svg.selectAll(".subunit")
+      .data(topojson.feature(worldMap, worldMap.objects.subunits).features)
+    .enter().append("path")
+      .attr("class", function(d) { return "subunit " + d.id; })
+   	  .style("fill", function(d) {
+
+   	  	if (countryData.hasOwnProperty(d.id)) {
+   	  		return countryData[d.id]
+   	  	}
+
+   	 	if (PISA[d.id]) {
+   	  		return "#F7EC72"
+   	  	} else {
+			return "#aaa"
+   	  	}
+
+   	  })
+      .attr("d", path)
+      .style("fill-opacity",.2)
+  	  .transition()
+  	  .delay(function(d, i) {return 500 + i*5;})
+  	  .duration(1000)
+	  .style("fill-opacity",1)
+});
+
+
+var dataset =  [ "HKG" , "SGP" ];
+
+svg.selectAll("circle")
+		.data(dataset)
+		.enter()
+		.append("circle")
+		.attr("cx", 850)
+		.attr("cy", 140)
+		.attr("r", 10)
+		.style("fill","#FA1E67")
+		.style("fill-opacity",.2)
+		.transition()
+			.delay(1800)
+			.duration(4000)
+			.style("fill-opacity",.7)
+			.sort(0);
+
+svg.selectAll("body")
+		.data(dataset)
+		.enter()
+		.append("circle")
+		.attr("cx", 830)
+		.attr("cy", 195)
+		.attr("r", 10)
+		.style("fill","#20852D")
+		.style("fill-opacity",.2)
+		.transition()
+			.delay(1800)
+			.duration(4000)
+			.style("fill-opacity",.7)
+			.sort(0);
+
+
+
+// svg.append("path")
+// 	.datum(topojson.feature(world, world.objects.places))
+// 		.enter().append("path")
+// 		.attr("d", path)
+// 		.attr("class","place")
+// 		.stlye("fill", "#D8F571");
+
+// Can I use the arcs to define the pins?
+
+// Hong Kong and Singapore
+
+// HK : [ 22.3000 , 114.1667 ] 
+
+// Add legend
+
+var vis = d3.select("body")
+   .append("svg:svg")
+     .attr("class", "chart")
+     .attr("width", 900)
+     .attr("height", 400);
+
+ // Row 1
+
+vis.append("svg:rect")
+	.attr("fill", "#aaa")
+	.attr("x", 150)
+	.attr("y", 0)
+	.attr("width", 20)
+	.attr("height", 20);
+
+vis.append("svg:text")
+	.attr("x", 180)
+	.attr("y", 15)
+	.text("No national data");
+
+vis.append("svg:rect")
+	.attr("fill", "#F7EC72")
+	.attr("x", 150)
+	.attr("y", 25)
+	.attr("width", 20)
+	.attr("height", 20);
+
+vis.append("svg:text")
+	.attr("x", 180)
+	.attr("y", 40)
+	.text("PISA");
+
+vis.append("svg:rect")
+	.attr("fill", "#6fdede")
+	.attr("x", 150)
+	.attr("y", 50)
+	.attr("width", 20)
+	.attr("height", 20);
+
+vis.append("svg:text")
+	.attr("x", 180)
+	.attr("y", 65)
+	.text("Massachussetts");
+
+// Row 2
+
+vis.append("svg:rect")
+	.attr("fill", "#F09C92")
+	.attr("x", 300)
+	.attr("y", 0)
+	.attr("width", 20)
+	.attr("height", 20);
+
+vis.append("svg:text")
+	.attr("x", 330)
+	.attr("y", 15)
+	.text("Ontario");
+
+vis.append("svg:rect")
+	.attr("fill", "#4DE3B1")
+	.attr("x", 300)
+	.attr("y", 25)
+	.attr("width", 20)
+	.attr("height", 20);
+
+vis.append("svg:text")
+	.attr("x", 330)
+	.attr("y", 40)
+	.text("New South Wales");
+
+vis.append("svg:rect")
+	.attr("fill", "#575CEB")
+	.attr("x", 300)
+	.attr("y", 50)
+	.attr("width", 20)
+	.attr("height", 20);
+
+vis.append("svg:text")
+	.attr("x", 330)
+	.attr("y", 65)
+	.text("Scotland"); 
+
+// Row 3
+
+vis.append("svg:rect")
+	.attr("fill", "#FA1E67")
+	.attr("x", 470)
+	.attr("y", 0)
+	.attr("width", 20)
+	.attr("height", 20);
+
+vis.append("svg:text")
+	.attr("x", 500)
+	.attr("y", 15)
+	.text("Hong Kong");
+
+vis.append("svg:rect")
+	.attr("fill", "#2BF08D")
+	.attr("x", 470)
+	.attr("y", 25)
+	.attr("width", 20)
+	.attr("height", 20);
+
+vis.append("svg:text")
+	.attr("x", 500)
+	.attr("y", 40)
+	.text("England, Wales");
+
+vis.append("svg:rect")
+	.attr("fill", "#20852D")
+	.attr("x", 470)
+	.attr("y", 50)
+	.attr("width", 20)
+	.attr("height", 20);
+
+vis.append("svg:text")
+	.attr("x", 500)
+	.attr("y", 65)
+	.text("Singapore"); 
+
+</script>
+
+<!-- <table border="0px"> 
+	<td>
+		<tr style="color: #777777"> </tr> <tr> PISA </tr>
+	</td>
+</table> -->
+
+</body>
