@@ -90,7 +90,7 @@
 The promise of GANs has always partially lied in semi-supervised learning and data augmentation. This work basically allows us to leverage multiple datasets from several sources to typically obtain better performance, even if some of the datasets are not of high quality or related to the task at hand. This is done by first translating the dataset into some shared latent space and then translating this space back to the target domain for the task at hand.</p>
 <p>My thoughts: I really like this paper. Potentially very useful in the industry. Also very clear presentation.</p>
 <div align="center">
-<img src="images/radial_gan.png" alt="Radial GAN" align='center'
+<img src="images/gans/radial_gan.png" alt="Radial GAN" align='center'
  style="width: 95%; height: auto " />
 </div>
 
@@ -100,7 +100,7 @@ This is basically a human-in-the-loop Active Learning way of making sure we can 
 <p><a href="https://avg.is.tuebingen.mpg.de/publications/meschedericml2018">Which Training Methods for GANs do actually Converge?</a>
 In this paper, Lars et al. present a way--starting from a toy example--to impose a specific class of gradient penalties on the GANs throughout training. They show results matching state of the art (SOTA) even with older architectures. The authors furthermore demonstrate some interesting properties in the local stability around the Nash Equilibrium of the GAN. Code is also available in the link above. </p>
 <div align="center">
-<img src="images/convergene.png" alt="GAN convergence" align='center'
+<img src="images/gans/convergene.png" alt="GAN convergence" align='center'
  style="width: 95%; height: auto " />
 </div>
 
@@ -110,7 +110,7 @@ This work connects so far three disconnected approaches to GANs--see the picture
 <p>My thoughts: My take on this is work is that this is probably an important piece of theory, but the use for practitioners is likely somewhat limited. Apart from the  Integral Probability
 Metrics (IPM) and MMD area, I have not really dived deep into the other areas and overlaps. Seems a bit too convoluted for practitioners.</p>
 <div align="center">
-<img src="images/chi_square.png" alt="Chi Square GAN" align='center'
+<img src="images/gans/chi_square.png" alt="Chi Square GAN" align='center'
  style="width: 95%; height: auto " />
 </div>
 
@@ -118,14 +118,14 @@ Metrics (IPM) and MMD area, I have not really dived deep into the other areas an
 This is a cool study of detecting mode collapse. This generally makes sense especially for academics trying to detect problems with training. But we now can finally start talking about the effect of these gaps. </p>
 <p>My thoughts: I think there's loads of value in having a consistent / unique benchmark. But there are metrics that I've liked better, but this could probably be used as an ensemble.</p>
 <div align="center">
-<img src="images/covariate_shift_gans.png" alt="Covariate Shift in GANs" align='center'
+<img src="images/gans/covariate_shift_gans.png" alt="Covariate Shift in GANs" align='center'
  style="width: 95%; height: auto " />
 </div>
 
 <p><a href="http://proceedings.mlr.press/v80/bojchevski18a/bojchevski18a.pdf">NetGAN: Generating Graphs via Random Walks</a></p>
 <p>Thoughts: Generally interesting work showing that GANs can be applied to generate even graphs that are for many reasons more complicated. Achieves state of the art according to link prediction accuracy. </p>
 <div align="center">
-<img src="images/Net_gan.png" alt="NetGAN" align='center'
+<img src="images/gans/net_gan.png" alt="NetGAN" align='center'
  style="width: 95%; height: auto " />
 </div>
 
@@ -134,7 +134,7 @@ This is a cool study of detecting mode collapse. This generally makes sense espe
 <p>This work shows that using topological analysis we can construct a general metric to evaluate how much of the original dataset we have managed to cover. Using an approximation, we can calculate how much of the diversity is in our generated dataset.</p>
 <p>Thoughts: I am actually really excited by this work as it allows us to evaluate GANs in <em>any</em> domain and inspect it for mode collapse. So far, generic evaluation methods have been completely missing. Maybe we will even see a measure of quality one day.</p>
 <div align="center">
-<img src="images/geometry_score.png" alt="Geometry Score" align='center'
+<img src="images/gans/geometry_score.png" alt="Geometry Score" align='center'
  style="width: 95%; height: auto " />
 </div>
 
@@ -142,21 +142,21 @@ This is a cool study of detecting mode collapse. This generally makes sense espe
 <p>This paper deviates from the typical GAN set up, but sets out to create a model that would be able to generate better samples. Here, we focus on the issue of mode collapse and generating samples that are not the same, but are similar enough.</p>
 <p>Thoughts: I have a bit of mixed feelings about the paper. On one hand, I think that the presentation was surprisingly opinionated--unusual for academics--and I did not agree with a lot of the statements. On the other hand, the informal poster discussion was actually really good and informative. In this discussion, one of the researchers made an interesting point that mode collapse is the reasons why GANs work. That's a fascinating assertion and I would love to see whether that is true. The funny thing about this paper is that when I was researching it, I found out that it narrowly got rejected from ICLR so the authors republished to ICML.</p>
 <div align="center">
-<img src="images/glo.png" alt="Generative Latent-space Optimization" align='center'
+<img src="images/gans/glo.png" alt="Generative Latent-space Optimization" align='center'
  style="width: 95%; height: auto " />
 </div>
 
 <p><a href="http://proceedings.mlr.press/v80/cao18a/cao18a.pdf">Adversarial Learning with Local Coordinate Coding</a>
 This paper attempts to solve a similar problem as the previous paper but making the latent space more complex. The presentation was not very clear, but the gist is exploring the manifold assumption--which states that there exists a mapping from some low dimensional latent space onto the complex manifold (e.g. images). All GANs ultimately rely on this assumption, but if you think about this mapping, it seems odd that you could represent all the images from such a low space. For some reason, this paper does not compare to the state of the art methods.</p>
 <div align="center">
-<img src="images/llc.png" alt="Local Coordinate Coding" align='center'
+<img src="images/gans/llc.png" alt="Local Coordinate Coding" align='center'
  style="width: 95%; height: auto " />
 </div>
 
 <p><a href="http://proceedings.mlr.press/v80/achlioptas18a/achlioptas18a.pdf">Learning Representations and Generative Models for 3D Point Clouds</a>
 Who does not love 3D point clouds? So awesome. In this paper, the authors create a more powerful model to generate 3D point clouds of generic objects. While there is still a lot of work to be done, it looks awesome. </p>
 <div align="center">
-<img src="images/3d_gan.png" alt="Generative Model for 3D point clouds" align='center'
+<img src="images/gans/3d_gan.png" alt="Generative Model for 3D point clouds" align='center'
  style="width: 95%; height: auto " />
 </div>
 
@@ -164,14 +164,14 @@ Who does not love 3D point clouds? So awesome. In this paper, the authors create
 This paper analyzes the paired translation GANs and says that essentially there is two components to the loss for paired image-to-image translation. The identity loss that ensures the image is correct and then the adversarial loss, which ensures the image is sharp.</p>
 <p>Thoughts: Interesting theoretical work, but probably not for practitioners just yet. Also there are no pictures in the paper so here's at least a blurry one (sorry!) from the poster session.</p>
 <div align="center">
-<img src="images/poster.png" alt="Image-to-Image Analysis" align='center'
+<img src="images/gans/poster.jpg" alt="Image-to-Image Analysis" align='center'
  style="width: 95%; height: auto " />
 </div>
 
 <p><a href="http://proceedings.mlr.press/v80/johnson18a/johnson18a.pdf">Composite Functional Gradient Learning of Generative Adversarial Models</a>
 Thoughts: This paper introduces a more complicated training regime that seems to be theoretically supported, but then goes and creates an approximate version that adds an if statement to the training procedure, which to me smells of ad-hoc. The results surpass state of the art, but I generally like methods that add less complexity.</p>
 <div align="center">
-<img src="images/composite_gan.png" alt="Composite GAN" align='center'
+<img src="images/gans/composite_gan.png" alt="Composite GAN" align='center'
  style="width: 95%; height: auto " />
 </div>
 
@@ -181,7 +181,7 @@ The high level idea behind this paper is interesting. Similar to PGGAN, authors 
 This paper basically concatenates an autoencoded version of the generated image that gets passed to the discriminator as help. The author’s poster was incredibly clear in describing the architecture, but unfortunately, the pictures seem to have disappeared from my phone.</p>
 <p>Their results are better than the state of the art, but not by much, so I am not sure whether it is actually that much of a breakthrough.</p>
 <div align="center">
-<img src="images/rep_feat_gan.png" alt="Representative Features GAN" align='center'
+<img src="images/gans/rep_feat_gan.png" alt="Representative Features GAN" align='center'
  style="width: 95%; height: auto " />
 </div>
 
@@ -199,7 +199,7 @@ This is one of the few realistic adversarial attack papers. Technically no GAN /
 <p>I still don't think Deep Learning models are widespread enough and that there's enough trust in them for this to cause any real harm, but this paper <a href="https://www.youtube.com/watch?v=kgTocVLNvYI">engages with the real issues.</a></p>
 <p><a href="http://proceedings.mlr.press/v80/seward18a/seward18a.pdf">First Order Generative Adversarial Networks</a>
 The idea behind this paper is that in a case of gradient penalties (such as WGAN-GP) rather than optimizing for the WGAN loss and then adding the penalty, you optimize for the loss <em>with</em> the penalty directly. Authors say that there are pathological cases when optimizing for loss and <em>then</em> adding the penalty makes the <em>generated distribution itself</em> less close to the target distribution. There were some informal grilling (not by me) / proofs of this around the poster but I won't hold the authors to it, haha.</p>
-<p><a href="https://deepmind.com/blog/learning-to-generate-images/">Synthesizing Programs for Images using Reinforced Adversarial Learning</a>
+<p><a href="https://deepmind.com/blog/learning-to-generate-images/gans/">Synthesizing Programs for Images using Reinforced Adversarial Learning</a>
 Here, I am not linking the paper itself but rather an excellent blog post by DeepMind, which does a great job of explaining this paper.
 TL;DR: GAN to generate brushstrokes using Photoshop-like API does a good job of learning to arbitrarily draw.</p>
 <p><a href="http://proceedings.mlr.press/v80/amodio18a/amodio18a.pdf">MAGAN: Aligning Biological Manifolds</a>
@@ -212,7 +212,7 @@ In a similar domain as the GAIN paper, except now focused on time-series and bas
 This paper deals with an issue that loads of practitioners find out over and over a-GAN: our models do not generalize (excuse the joke). Frequently, you may take a model that was e.g. trained on ImageNet, deploy it and see that it does very poorly. Just because the real world is a lot more complicated than ImageNet even if we only care about the ImageNet classes. CyCADA extends CycleGAN to basically be able to do domain to domain translation with correct semantics and thereby potentially enabling building e.g. self-driving cars in safe, scalable computer-generated environment and then translating the ML system into the real world.</p>
 <p>Really interesting! Will definitely try.</p>
 <div align="center">
-<img src="images/cycada.png" alt="Cycle-Consistent Domain Adaptation" align='center'
+<img src="images/gans/cycada.png" alt="Cycle-Consistent Domain Adaptation" align='center'
  style="width: 95%; height: auto " />
 </div>
 
