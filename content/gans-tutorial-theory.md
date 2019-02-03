@@ -35,7 +35,7 @@ So Semi-Supervised Learning (SSL) then means using different techniques to someh
 
 In other words, imagine now we are trying to label cats or dogs, in this case G will learn how to generate images at first and subsequently get better at making the images more like cats or dogs. 
 
-Then we put the G and D to basically compete against each other to produce the best results: hopefully every time G gets better D has to get better to match (though we have to make sure one of them is not too much better than the other). This was one of the core driving principles behind [AlphaGo](https://en.wikipedia.org/wiki/AlphaGo#Algorithm) as well. Basically, we get the D to produce images and G to critique them. So G would send an array of images to D and D would output 0 or 1--real or fake back to G. G would then try to come up with better examples based on which fooled D and vice versa. Schematically, it may look something like this:
+Then we put the G and D to basically compete against each other to produce the best results: hopefully every time G gets better D has to get better to match (though we have to make sure one of them is not too much better than the other). This was one of the core driving principles behind [AlphaGo](https://en.wikipedia.org/wiki/AlphaGo#Algorithm) as well. Basically, we get the G to produce images and D to critique them. So G would send an array of images to D and D would output 0 or 1--real or fake back to G. G would then try to come up with better examples based on which fooled D and vice versa. Schematically, it may look something like this:
 
 
 <div align="center">
