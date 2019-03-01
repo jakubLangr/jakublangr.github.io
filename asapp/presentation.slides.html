@@ -16,8 +16,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <!-- General and theme style sheets -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/css/reveal.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/css/theme/simple.css" id="theme">
+<link rel="stylesheet" href="reveal.js/css/reveal.css">
+<link rel="stylesheet" href="reveal.js/css/theme/simple.css" id="theme">
 
 <!-- If the query includes 'print-pdf', include the PDF print sheet -->
 <script>
@@ -25,14 +25,14 @@ if( window.location.search.match( /print-pdf/gi ) ) {
         var link = document.createElement( 'link' );
         link.rel = 'stylesheet';
         link.type = 'text/css';
-        link.href = 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/css/print/pdf.css';
+        link.href = 'reveal.js/css/print/pdf.css';
         document.getElementsByTagName( 'head' )[0].appendChild( link );
 }
 
 </script>
 
 <!--[if lt IE 9]>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/lib/js/html5shiv.js"></script>
+<script src="reveal.js/lib/js/html5shiv.js"></script>
 <![endif]-->
 
 <!-- Loading the mathjax macro -->
@@ -13252,8 +13252,8 @@ by Jakub Langr</p>
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Executive-Summary">Executive Summary<a class="anchor-link" href="#Executive-Summary">&#182;</a></h1><ul>
-<li>Machine Learning shows notable potential in this appliction (~$15k) for the 500 loans evaluated (see later slides for explanaition of this value</li>
-<li>Significant investments into data quality and data warehouses would payoff—especially if more applicaitons are to be deployed</li>
+<li>Machine Learning shows notable potential in this application (~$15k) for the 500 loans evaluated (see later slides for explanation of this value</li>
+<li>Significant investments into data quality and data warehouses would payoff—especially if more applications are to be deployed</li>
 <li>There are many more directions data science can take this dataset—from traditional business analytics to GDPR compliance—but they would require more contextual knowledge</li>
 <li>Part of the value of this exercise are the data quality issues we have documented (see appendix)</li>
 </ul>
@@ -13264,7 +13264,7 @@ by Jakub Langr</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Explaining-fundamentals">Explaining fundamentals<a class="anchor-link" href="#Explaining-fundamentals">&#182;</a></h2><p>The presentation will first explain the <strong>Business value</strong> and then provide teh technical detail, in the following areas.</p>
+<h2 id="Explaining-fundamentals">Explaining fundamentals<a class="anchor-link" href="#Explaining-fundamentals">&#182;</a></h2><p>The presentation will first explain the <strong>Business value</strong> and then provide the technical detail, in the following areas.</p>
 <p>We followed a simple process to get to where we are currently:</p>
 <ol>
 <li>We loaded the raw data into memory and visualized data </li>
@@ -13284,7 +13284,7 @@ by Jakub Langr</p>
 <li>We were provided with a dataset of 515 loans to classify.</li>
 <li>The first potentially valuable use-case is to automate the work of the loan workers</li>
 <li>Initial hypothesis is that we can mirror loan officer choices sufficiently enough of the the time to do about as well as humans</li>
-<li>Potential savings: <code># num loan cases</code> <em> <code># hours spent per case</code> </em> <code># hourly loan officer pay</code> (NB: fully loaded cost to the business, not hourly salary)  </li>
+<li>Potential savings: <code># num loan cases</code>  <strong>x</strong> <code># hours spent per case</code> <strong>x</strong> <code># hourly loan officer pay</code> (NB: fully loaded cost to the business, not hourly salary)  </li>
 <li>Assumed business value: <code>515 * 1 * 30</code> = <strong>$15,450</strong></li>
 <li>Please note that our ML algorithm may—in actual fact—be doing much better (or much worse) than real officers, because we do not see the default rates, but just decisions that humans have made</li>
 </ul>
@@ -13295,7 +13295,7 @@ by Jakub Langr</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Technical-Slides">Technical Slides<a class="anchor-link" href="#Technical-Slides">&#182;</a></h1><p>We have loaded the cases into memory and merged the four different datasources togehter.</p>
+<h1 id="Technical-Slides">Technical Slides<a class="anchor-link" href="#Technical-Slides">&#182;</a></h1><p>We have loaded the cases into memory and merged the four different data sources together.</p>
 <p>There were a number of issues:</p>
 <ol>
 <li>All TSVs did not follow the standard convention for Tab Separated Values to be separated by <code>\t</code></li>
@@ -13578,10 +13578,10 @@ function r(t,e){if(!o.canUseDOM||e&&!("addEventListener"in document))return!1;va
 <ol>
 <li>business case</li>
 <li>evidence of efficacy </li>
-<li>lack of bias so far
-We can talk about the next practical steps in deployment—impact on the day-to-day operations. Here we see the class distribution (predicted by the model). Remember that the business would need to honor this distribution of loans. Is that something that is acceptable?
-<img src="class_distribution.png" alt=""></li>
+<li>lack of bias so far</li>
 </ol>
+<p>We can talk about the next practical steps in deployment—impact on the day-to-day operations. Here we see the class distribution (predicted by the model). Remember that the business would need to honor this distribution of loans. Is that something that is acceptable?
+<img src="class_distribution.png" alt=""></p>
 
 </div>
 </div>
@@ -13592,7 +13592,7 @@ We can talk about the next practical steps in deployment—impact on the day-to-
 <h1 id="Conclusion">Conclusion<a class="anchor-link" href="#Conclusion">&#182;</a></h1><ul>
 <li>The aim of this presentation is to demonstrate potential of machine learning, not the specifics. </li>
 <li>There is up to <code>$15k</code> of upside for this project alone and it will only scale linearly with the number of cases (e.g. at 100k cases processed the revenue is <code>$3M</code>) </li>
-<li>It is difficult to assess whether the project would be an overall net-benefit to the organization, because it is unclear from the data alone how effective are the loan offciers.</li>
+<li>It is difficult to assess whether the project would be an overall net-benefit to the organization, because it is unclear from the data alone how effective are the loan officers.</li>
 <li>Investments in Data Quality would allow for more applications</li>
 </ul>
 <p><strong>Thank you.</strong></p>
@@ -13626,8 +13626,8 @@ require(
       waitSeconds: 15
     },
     [
-      "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/lib/js/head.min.js",
-      "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/js/reveal.js"
+      "reveal.js/lib/js/head.min.js",
+      "reveal.js/js/reveal.js"
     ],
 
     function(head, Reveal){
@@ -13642,9 +13642,9 @@ require(
 
             // Optional libraries used to extend on reveal.js
             dependencies: [
-                { src: "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/lib/js/classList.js",
+                { src: "reveal.js/lib/js/classList.js",
                   condition: function() { return !document.body.classList; } },
-                { src: "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/plugin/notes/notes.js",
+                { src: "reveal.js/plugin/notes/notes.js",
                   async: true,
                   condition: function() { return !!document.body.classList; } }
             ]
