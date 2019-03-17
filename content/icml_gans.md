@@ -182,7 +182,7 @@ I still don't think Deep Learning models are widespread enough and that there's 
 ###[<b>First Order Generative Adversarial Networks](http://proceedings.mlr.press/v80/seward18a/seward18a.pdf)</b>
 The idea behind this paper is that in a case of gradient penalties (such as WGAN-GP) rather than optimizing for the WGAN loss and then adding the penalty, you optimize for the loss _with_ the penalty directly. Authors say that there are pathological cases when optimizing for loss and _then_ adding the penalty makes the _generated distribution itself_ less close to the target distribution. There were some informal grilling (not by me) / proofs of this around the poster but I won't hold the authors to it, haha.
 
-###[<b>Synthesizing Programs for Images using Reinforced Adversarial Learning](https://deepmind.com/blog/learning-to-generate-images/gans/)</b>
+###[<b>Synthesizing Programs for Images using Reinforced Adversarial Learning](https://deepmind.com/blog/learning-to-generate-images/)</b>
 Here, I am not linking the paper itself but rather an excellent blog post by DeepMind, which does a great job of explaining this paper.
 TL;DR: GAN to generate brushstrokes using Photoshop-like API does a good job of learning to arbitrarily draw.
 

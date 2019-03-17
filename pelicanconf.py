@@ -16,6 +16,7 @@ TAGLINE = ' Business, AI & Shower Thoughts'
 SIDEBAR_IMAGES = ['cover_img.jpg']
  
 DEFAULT_LANG = u'en'
+PATH = 'output/'
  
 # Social widget
 # SOCIAL =  (('Pelican', 'http://docs.notmyidea.org/alexis/pelican/'),
