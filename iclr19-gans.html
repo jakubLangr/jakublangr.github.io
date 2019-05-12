@@ -1,0 +1,234 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.dropotron.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/skel-layers.min.js"></script>
+    <script src="/js/init.js"></script>
+    <link rel="stylesheet" href="/css/pygment.css" />
+    <noscript>
+        <link rel="stylesheet" href="/css/skel.css" />
+        <link rel="stylesheet" href="/css/style.css" />
+        <link rel="stylesheet" href="/css/style-noscript.css" />
+    </noscript>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link  href="http://fonts.googleapis.com/css?family=Anonymous+Pro:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css" >
+    <!--[if lte IE 8]><link rel="stylesheet" href="/css/ie/v8.css" /><![endif]-->
+    <!--[if lte IE 9]><link rel="stylesheet" href="/css/ie/v9.css" /><![endif]-->
+        <link href="http://www.jakublangr.com/feed/index.html" type="application/atom+xml" rel="alternate" title="Jakub Langr's Blog-Feed" />
+
+    <title>GANs & applied ML @ ICLR 2019 | Jakub Langr's Blog  Business, AI & Shower Thoughts</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width">
+</head>
+
+<body class=" loading">
+
+
+
+    <!-- Header -->
+    <header id="header" >
+        <h1 class="logo">
+            <a href=".">Jakub Langr's Blog </span></a>
+        </h1>
+        <nav id="nav">
+            <ul>
+                <!-- <li class="current"><a href="index.html">Welcome</a></li> -->
+                <li class="submenu">
+                    <a href="./">Blog</a>
+                    <ul>
+                            <li >
+                                <a href="./category/about.html">About</a>
+                            </li>
+                            <li >
+                                <a href="./category/non-technical.html">non-technical</a>
+                            </li>
+                            <li class="active">
+                                <a href="./category/technical.html">technical</a>
+                            </li>
+                    </ul>
+                </li>
+                <li><a href="#" class="button special">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<!-- Main -->
+<article id="main">
+
+  <header class="special container">
+    <span class="icon fa-"></span>
+    <h2>GANs & applied ML @ ICLR 2019</h2>
+    <!-- add page sub title here -->
+    <p>Posted on 11/05/2019 by Jakub Langr</p>
+    <p></p>
+  </header>
+
+  <!-- One -->
+    <section class="wrapper style4 container">
+
+      <!-- Content -->
+        <div class="content">
+          <section>
+            <!-- <a href="#" class="image feature"><img src="images/pic04.jpg" alt="" /></a> -->
+            <h3>Posted in <a href="./category/technical.html">technical</a></h3>
+            <p class="tags">
+                <a href="./tag/ai-artificial-intelligence.html">AI artificial intelligence</a>
+</p>
+            <p><p>I have just returned from ICLR 2019 in New Orleans and what a fruitful year that was on GAN papers-we saw papers on image synthesis (BigGAN), audio (WaveGAN), feature selection (KnockoffGAN), 3D, text &amp; tabular and many other! The second part of this article is then focused on more practical ML considerations.</p>
+<h1>Fortune favours the prepared</h1>
+<p>Before going to ICLR, I made a list of all the talks &amp; workshops that had something that I wanted to learn. This meant a very busy Monday—where at one point four interesting workshops were running in parallel. It also meant a busy Tuesday where the organizers put 37 GAN papers into the day. This meant starting the poster session early and finishing late. I have kept track of all this using a <a href="https://docs.google.com/spreadsheets/d/1H6Atx9GRflN94fOt1Eil5UqHMWWReWUksjVqqbKhtmU/edit#gid=0">spreadsheet</a>.</p>
+<p>I have included links to all the papers I mention and there are even links to the <a href="https://slideslive.com/iclr">livestreamed workshops</a> as well as the <a href="https://www.facebook.com/pg/iclr.cc/videos/?ref=page_internal">plenary session, which also heavily featured GANs</a>.</p>
+<h2>Generated Adversarial section</h2>
+<p>Here I want to explore the changes specifically just discussing Generative Adversarial Networks (GANs). As many have said, this is an exciting new technology that—unlike most of other ML—has only been around for less than 5 years. In the spirit of the previous <a href="https://towardsdatascience.com/all-icml-gans-generative-papers-2018-62b4521bf92">ICML 2018 article</a>, I talked to academics so you don't have to, but given the volume of the content, it is no longer possible to go through every paper, so I will just pick some main themes.</p>
+<h1>Theme 1: Image synthesis is maturing</h1>
+<p><a href="http://www.iangoodfellow.com/slides/">Ian Goodfellow frequently talks</a> of how deep learning revolutions in 2014, enabled "Cambrian explosion" of downstream machine learning. This is because in any technical field the first order of business is to make a technology work reliably and that enables a whole wealth of downstream applications. </p>
+<p>This has somewhat happened with image synthesis. Now that <a href="https://arxiv.org/abs/1809.11096">BigGAN can reliably generate very diverse high-fidelity images</a>, we can start thinking about applying it for other use-cases. One example is using BigGAN as a way to augment the existing training data (i.e. artificially increasing the number of data points by synthesizing new ones). Now even though there was another paper accepted at ICLR that showed the limitations of this technique (https://openreview.net/forum?id=rJMw747l_4). The sheer fact that this is a proposal that is seriously studied seems like a good sign.</p>
+<p>Another downstream task that we may care about is image synthesis with fewer labels. In the original BigGAN, we are using all labels in ImageNet to synthesize the 1,000 types of objects. <a href="https://arxiv.org/pdf/1903.02271.pdf">However in another ICLR paper</a>, we can see equally high quality pictures with just 10% of the labels and even better results than BigGAN with just 20%.</p>
+<p>Furthermore, ICLR featured <a href="https://openreview.net/forum?id=rkxoNnC5FQ">several</a> <a href="https://openreview.net/forum?id=ryxwJhC9YX">papers</a> that had interesting proposals to achieve more granular control over the generated images so that that giraffe you always wanted (and therefore domain-adapted from all your photos) instead of your stupid car can look just right.</p>
+<p>I am just amazed at how quickly the field is moving that in less than 5 years since the original paper, we have managed to produce 1000 classes of 512x512 images that are realistic enough to be used in downstream applications. In the words of <a href="https://www.youtube.com/channel/UCbfYPyITQ-7l4upoX8nvctg">Károly Zsolnai-Fehér</a>, what a time to be alive!</p>
+<h1>Theme 2: Exotic data types / applications.</h1>
+<p>Another substantial theme in this year's ICLR was the presence of more "exotic" data types and applications. I'll just go through a couple of the more interesting ones. To me, this again seems somewhat indicative of the growing maturity of GANs as a field. </p>
+<ul>
+<li><a href="https://openreview.net/forum?id=ByMVTsR5KQ">WaveGAN</a>: is a conditional synthesis of audio using GANs. </li>
+<li><a href="https://openreview.net/forum?id=S1lvm305YQ">TimbreTron</a>: uses CycleGAN to transfer music from one instrument (domain) to music of another (domain) instrument.</li>
+<li><a href="https://openreview.net/forum?id=S1zk9iRqF7">PateGAN</a>: is a GAN to generate synthetic data with differential privacy guarantees.</li>
+<li><a href="https://openreview.net/forum?id=ByeZ5jC5YQ">KnockoffGAN</a>: is a way to do robust feature selection with GANs.</li>
+<li><a href="https://openreview.net/forum?id=HJxB5sRcFQ">LayoutGAN</a>: way to generate UI wire-frames using GANs.</li>
+<li><a href="https://openreview.net/group?id=ICLR.cc/2019/Workshop/DeepGenStruct">CompositionalGAN</a>: ways to generate realistic looking compositions of 3D objects.</li>
+<li><a href="https://openreview.net/forum?id=SJeXSo09FQ">3D point cloud generation</a>, <a href="">Protein backbone generation</a> &amp; <a href="https://openreview.net/group?id=ICLR.cc/2019/Workshop/DeepGenStruct">Generating labelled graph</a>: these papers are outside of my area of expertise and papers in this broad area featured at ICML 2018 as well, but it is great to see that the work is continuing.</li>
+</ul>
+<h1>Theme 3: Theoretical advances</h1>
+<p>As always, there were many papers dealing with some aspect of training (<a href="https://openreview.net/forum?id=S1GkToR5tm">rejection sampling</a>, <a href="https://openreview.net/forum?id=S1erHoR5t7">relativistic GAN</a>, <a href="https://openreview.net/forum?id=HyxPx3R9tm">variational discriminator bottleneck</a>) or some theoretical property of generative models (e.g. <a href="https://openreview.net/forum?id=SyMhLo0qKQ">latent space interpolations</a> or <a href="https://arxiv.org/pdf/1802.05701.pdf">invertibility of GANs</a>). </p>
+<p>While academics tend to love this area, at ICML '18, the results were somewhat mixed. I felt that many papers introduced a <em>huge</em> amount of extra complexity to derive some properties that I did not think are hugely interesting or do not expect them to become the de facto standard the same way e.g. Wasserstein GAN or gradient penalties are.</p>
+<p>Fortunately, at ICLR that was not the case. All three techniques from above plus <a href="https://openreview.net/forum?id=SJgw_sRqFQ">averaging during training</a> all look like simple, effective techniques that could easily become the standard pattern for the future state of the art.</p>
+<h2>Applied Machine Learning</h2>
+<p>As someone who still frequently has to worry about how I am going to productionize the systems I am building. I was very pleasantly surprised that even the workshop organizers from ICLR thought this was important. So I was trying to capture all the interesting content from the following workshops:</p>
+<ul>
+<li><a href="https://sites.google.com/view/icml-reproducibility-workshop/home">Reproducibility in ML</a>: this ended up being a pretty useful workshop in the end. But there was about a grand total of 7 people when I was there, so I wonder what that says about the state of our field. Generally, I regard reproducibility to be an incredibly important topic, because reproducibility is really the <strong>level 0</strong> of understanding how deployed ML systems behave. So all this talk about fairness &amp; bias is almost pointless if we do not get this right.</li>
+<li><a href="https://debug-ml-iclr2019.github.io/">Debugging ML</a>: This was pretty useful workshop, but a lot of the presentations sadly either did not release code or were very academic. I will definitely try to investigate <a href="https://dawn.cs.stanford.edu//2019/03/11/modelassertions/">Model Assertions</a>, as the idea makes a lot of sense to me. Overall, debugging again is extremely key for us to ensure that we somewhat understood how the models are building. Everything from adversarial examples to neural nets being able to fit randomly assigned labels are all indicators that we need more tools to understand deep learning.</li>
+<li><a href="https://lld-workshop.github.io/">Learning from limited labelled data</a>: This is incredibly interesting as little data is a frequent business reality. I was encouraged by the fact that Christopher Re was involved, however, I do not feel that for me there were any particularly strong takeaways.</li>
+<li><a href="https://deep-gen-struct.github.io/">Generating highly structured data</a>: Despite Bengio's crowded talk in the beginning, I did not find the oral presentations to be <em>that</em> useful, though I highly recommend checking out the accepted papers.</li>
+</ul>
+<h2>Conclusion</h2>
+<p>Overall, I am constantly amazed at the rate of progress of ML and academic conferences have their disadvantages, but if you plan &amp; prepare accordingly, you will get much more of them than any other conference I have ever been to.</p></p>
+          </section>
+        </div>
+
+    </section>
+
+    <!-- Two -->
+    <section class="wrapper style1 container special">
+        <div class="row">
+          <div class="4u">
+
+            <section>
+              <span class="icon feature fa-"></span>
+              <header>
+                <a href="./iclr19-gans.html" rel='bookmark'><h3>GANs & applied ML @ ICLR 2019</h3></a>
+              </header>
+              <p>I have just returned from ICLR 2019 in New Orleans and what a fruitful year that was on GAN papers-we saw papers on image synthesis (BigGAN), audio (WaveGAN), feature selection (KnockoffGAN), 3</p>
+              <footer>
+                  <ul class="buttons">
+                      <li><a href="./iclr19-gans.html" class="button small">Read More</a></li>
+                  </ul>
+              </footer>
+            </section>
+
+          </div>
+          <div class="4u">
+
+            <section>
+              <span class="icon feature fa-"></span>
+              <header>
+                <a href="./gan-innovations.html" rel='bookmark'><h3>AI Gets Creative Thanks To GANs Innovations</h3></a>
+              </header>
+              <p>For an Artificial Intelligence (AI) professional, or data scientist, the barrage of AI-marketing can evoke very different feelings than for a general audience. For one thing, the AI indu</p>
+              <footer>
+                  <ul class="buttons">
+                      <li><a href="./gan-innovations.html" class="button small">Read More</a></li>
+                  </ul>
+              </footer>
+            </section>
+
+          </div>
+          <div class="4u">
+
+            <section>
+              <span class="icon feature fa-"></span>
+              <header>
+                <a href="./icml-gans.html" rel='bookmark'><h3>List of ICML GAN Papers</h3></a>
+              </header>
+              <p>In all seriousness, however, I do respect greatly all the amazing work that the researchers at ICML have presented. I would not be capable of anywhere near their level of work so kudos to them</p>
+              <footer>
+                  <ul class="buttons">
+                      <li><a href="./icml-gans.html" class="button small">Read More</a></li>
+                  </ul>
+              </footer>
+            </section>
+
+          </div>
+        </div>
+    </section>
+  </article>
+
+  <div id="comments">
+      <h2 class="space-above">Comments</h2>
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+          var disqus_identifier = "iclr19-gans.html";
+          (function() {
+              var dsq = document.createElement('script');
+              dsq.type = 'text/javascript';
+              dsq.async = true;
+              dsq.src = 'http://jakublangr.disqus.com/embed.js';
+              (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+      </script>
+      <noscript>Please enable JavaScript to view <a href="http://disqus.com/?ref_noscript">comments</a>.</noscript>
+  </div>
+
+
+<!-- Footer -->
+<footer id="footer">
+
+    <ul class="icons">
+        <li>
+          <a href="http://linkedin.com/in/jakublangr" class="icon circle fa fa-LinkedIn"><span class="label">LinkedIn</span></a>
+        </li>
+        <li>
+          <a href="https://github.com/jakubLangr" class="icon circle fa fa-GitHub"><span class="label">GitHub</span></a>
+        </li>
+        <li>
+          <a href="http://twitter.com/LangrJakub" class="icon circle fa fa-Twitter"><span class="label">Twitter</span></a>
+        </li>
+        <li>
+          <a href="mailto:james.langr@gmail.com" class="icon circle fa fa-envelope"><span class="label">envelope</span></a>
+        </li>
+        <li>
+          <a href="/about.html" class="icon circle fa fa-Info"><span class="label">Info</span></a>
+        </li>
+        <li>
+          <a href="http://r-bloggers.com" class="icon circle fa fa-blog"><span class="label">blog</span></a>
+        </li>
+    </ul>
+
+    <span class="copyright">&copy; Untitled. All rights reserved. Design: <a href="http://html5up.net">HTML5 UP</a>.</span>
+
+    <!-- Google Analytics -->
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-55040887-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!-- End Google Analytics -->
+
+</footer>
+</body>
+</html>
