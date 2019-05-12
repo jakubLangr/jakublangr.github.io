@@ -89,36 +89,36 @@
 <p>Despite this mess-up, I joined a project and met my amazing fellow forecasters in my team. At the time of joining, I already knew that I will be putting numeric probabilistic values on how the world might soon turn out to be (e.g. will there be a direct Russia-Ukraine confrontation in Crimea). All of these questions are well-defined using a very sophisticated set of definitions, but making the evaluation criteria very flexible and as to allow GJP Team to 'resolve' each question in the spirit rather than the letter of the question.</p>
 <p>Number of these questions have allowed for use of publicly available datasets and so I would like to offer some code that I used to ease up my work as a forecaster. This particular example is relates to a question that resolved yesterday: If on a certain date the area of ice on the Arctic sea will be more than what it was last year.</p>
 <p>The following R code downloads, cleans and plots some time-series representation of the record ed data of the ice for the past couple of years. It is <em>super-simple</em>, but I was able to do it from question to quantitative probabilities in about 30 minutes, so this is just to demonstrate that even such simple code can help you make a much more solid prediction. This was necessary, because my team's forecasts were all over the place (among 9 forecasters we ranged 5-80%) and statistical modeling is a great way how to deal with data that is normally quite counter-intuitive and complex.</p>
-<div class="highlight"><pre><span></span><span class="kn">library</span><span class="p">(</span><span class="s">&#39;TTR&#39;</span><span class="p">)</span>
-<span class="kn">library</span><span class="p">(</span><span class="s">&#39;reshape&#39;</span><span class="p">)</span>
-<span class="kn">library</span><span class="p">(</span><span class="s">&#39;tseries&#39;</span><span class="p">)</span>
-<span class="kn">library</span><span class="p">(</span><span class="s">&#39;forecast&#39;</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><span class="nf">library</span><span class="p">(</span><span class="s">&#39;TTR&#39;</span><span class="p">)</span>
+<span class="nf">library</span><span class="p">(</span><span class="s">&#39;reshape&#39;</span><span class="p">)</span>
+<span class="nf">library</span><span class="p">(</span><span class="s">&#39;tseries&#39;</span><span class="p">)</span>
+<span class="nf">library</span><span class="p">(</span><span class="s">&#39;forecast&#39;</span><span class="p">)</span>
 
 
 <span class="c1"># Loading, cleaning (missing values are by default assigned value of -9999)</span>
-read.csv<span class="p">(</span><span class="s">&#39;http://www.ijis.iarc.uaf.edu/seaice/extent/plot_v2.csv&#39;</span><span class="p">)</span> <span class="o">-&gt;</span> data
-<span class="kp">replace</span><span class="p">(</span>data<span class="p">,</span>data<span class="o">==</span><span class="s">&#39;-9999&#39;</span><span class="p">,</span><span class="kc">NA</span><span class="p">)</span> <span class="o">-&gt;</span> data
-<span class="kp">colSums</span><span class="p">(</span><span class="kp">is.na</span><span class="p">(</span>data<span class="p">))</span>
+<span class="nf">read.csv</span><span class="p">(</span><span class="s">&#39;http://www.ijis.iarc.uaf.edu/seaice/extent/plot_v2.csv&#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">data</span>
+<span class="nf">replace</span><span class="p">(</span><span class="n">data</span><span class="p">,</span><span class="n">data</span><span class="o">==</span><span class="s">&#39;-9999&#39;</span><span class="p">,</span><span class="kc">NA</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">data</span>
+<span class="nf">colSums</span><span class="p">(</span><span class="nf">is.na</span><span class="p">(</span><span class="n">data</span><span class="p">))</span>
 
 <span class="c1"># Melt changes the columns (there is a column for each year) into just one column &#39;value&#39;</span>
-data_ts <span class="o">&lt;-</span> melt<span class="p">(</span>data<span class="p">[,</span><span class="m">3</span><span class="o">:</span><span class="m">18</span><span class="p">])</span>
-ts <span class="o">=</span> ts<span class="p">(</span>data_ts<span class="p">,</span> deltat<span class="o">=</span><span class="m">1</span><span class="o">/</span><span class="m">365</span><span class="p">)</span>
-data_ts <span class="o">=</span> na.remove<span class="p">(</span>ts<span class="p">[,</span><span class="m">2</span><span class="p">])</span>
+<span class="n">data_ts</span> <span class="o">&lt;-</span> <span class="nf">melt</span><span class="p">(</span><span class="n">data[</span><span class="p">,</span><span class="m">3</span><span class="o">:</span><span class="m">18</span><span class="n">]</span><span class="p">)</span>
+<span class="n">ts</span> <span class="o">=</span> <span class="nf">ts</span><span class="p">(</span><span class="n">data_ts</span><span class="p">,</span> <span class="n">deltat</span><span class="o">=</span><span class="m">1</span><span class="o">/</span><span class="m">365</span><span class="p">)</span>
+<span class="n">data_ts</span> <span class="o">=</span> <span class="nf">na.remove</span><span class="p">(</span><span class="n">ts[</span><span class="p">,</span><span class="m">2</span><span class="n">]</span><span class="p">)</span>
 
 <span class="c1"># Decomposes the time-series plots the decomposition and the forecast (as well as prints it)</span>
-decomposed_ts <span class="o">=</span> decompose<span class="p">(</span>data_ts<span class="p">)</span>
-plot<span class="p">(</span>decomposed_ts<span class="p">)</span>
-ts_forecast <span class="o">=</span> HoltWinters<span class="p">(</span>data_ts<span class="p">,</span>gamma<span class="o">=</span><span class="bp">F</span><span class="p">)</span>
-forecasts <span class="o">=</span> forecast.HoltWinters<span class="p">(</span>ts_forecast<span class="p">,</span>h<span class="o">=</span><span class="m">8</span><span class="p">)</span>
-forecasts
-plot.forecast<span class="p">(</span>forecasts<span class="p">)</span>
-data<span class="p">[</span><span class="m">250</span><span class="o">:</span><span class="m">260</span><span class="p">,</span><span class="kt">c</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="m">2</span><span class="p">,</span><span class="m">18</span><span class="p">)]</span>
+<span class="n">decomposed_ts</span> <span class="o">=</span> <span class="nf">decompose</span><span class="p">(</span><span class="n">data_ts</span><span class="p">)</span>
+<span class="nf">plot</span><span class="p">(</span><span class="n">decomposed_ts</span><span class="p">)</span>
+<span class="n">ts_forecast</span> <span class="o">=</span> <span class="nf">HoltWinters</span><span class="p">(</span><span class="n">data_ts</span><span class="p">,</span><span class="n">gamma</span><span class="o">=</span><span class="bp">F</span><span class="p">)</span>
+<span class="n">forecasts</span> <span class="o">=</span> <span class="nf">forecast.HoltWinters</span><span class="p">(</span><span class="n">ts_forecast</span><span class="p">,</span><span class="n">h</span><span class="o">=</span><span class="m">8</span><span class="p">)</span>
+<span class="n">forecasts</span>
+<span class="nf">plot.forecast</span><span class="p">(</span><span class="n">forecasts</span><span class="p">)</span>
+<span class="n">data[250</span><span class="o">:</span><span class="m">260</span><span class="p">,</span><span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="m">2</span><span class="p">,</span><span class="m">18</span><span class="p">)</span><span class="n">]</span>
 </pre></div>
 
 
 <p>For GJP purposes, the confidence intervals produced by this model are especially useful, because they give you an idea of how confident you can be in your predictions:</p>
-<div class="highlight"><pre><span></span><span class="o">&gt;</span> forecasts 
-Point Forecast Lo <span class="m">80</span> Hi <span class="m">80</span> Lo <span class="m">95</span> Hi <span class="m">95</span> 
+<div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">forecasts</span> 
+<span class="n">Point</span> <span class="n">Forecast</span> <span class="n">Lo</span> <span class="m">80</span> <span class="n">Hi</span> <span class="m">80</span> <span class="n">Lo</span> <span class="m">95</span> <span class="n">Hi</span> <span class="m">95</span> 
 <span class="m">16.73710</span> <span class="m">4981786</span> <span class="m">4920648</span> <span class="m">5042924</span> <span class="m">4888284</span> <span class="m">5075288</span> 
 <span class="m">16.73995</span> <span class="m">4963324</span> <span class="m">4867154</span> <span class="m">5059494</span> <span class="m">4816245</span> <span class="m">5110403</span> 
 <span class="m">16.74279</span> <span class="m">4944862</span> <span class="m">4814956</span> <span class="m">5074768</span> <span class="m">4746188</span> <span class="m">5143536</span> 
@@ -161,6 +161,22 @@ Point Forecast Lo <span class="m">80</span> Hi <span class="m">80</span> Lo <spa
             <section>
               <span class="icon feature fa-"></span>
               <header>
+                <a href="./iclr19-gans.html" rel='bookmark'><h3>GANs & applied ML @ ICLR 2019</h3></a>
+              </header>
+              <p>I have just returned from ICLR 2019 in New Orleans and what a fruitful year that was on GAN papers-we saw papers on image synthesis (BigGAN), audio (WaveGAN), feature selection (KnockoffGAN), 3</p>
+              <footer>
+                  <ul class="buttons">
+                      <li><a href="./iclr19-gans.html" class="button small">Read More</a></li>
+                  </ul>
+              </footer>
+            </section>
+
+          </div>
+          <div class="4u">
+
+            <section>
+              <span class="icon feature fa-"></span>
+              <header>
                 <a href="./gan-innovations.html" rel='bookmark'><h3>AI Gets Creative Thanks To GANs Innovations</h3></a>
               </header>
               <p>For an Artificial Intelligence (AI) professional, or data scientist, the barrage of AI-marketing can evoke very different feelings than for a general audience. For one thing, the AI indu</p>
@@ -183,22 +199,6 @@ Point Forecast Lo <span class="m">80</span> Hi <span class="m">80</span> Lo <spa
               <footer>
                   <ul class="buttons">
                       <li><a href="./icml-gans.html" class="button small">Read More</a></li>
-                  </ul>
-              </footer>
-            </section>
-
-          </div>
-          <div class="4u">
-
-            <section>
-              <span class="icon feature fa-"></span>
-              <header>
-                <a href="./prioritized-ai-threats.html" rel='bookmark'><h3>Prioritised list of AI threats</h3></a>
-              </header>
-              <p>Prioritized list of AI threats: care about what you Musk (I apologise for the bad joke, but the original name of the article was “SELECT FROM ai_threats ORDER BY danger DESC” and even</p>
-              <footer>
-                  <ul class="buttons">
-                      <li><a href="./prioritized-ai-threats.html" class="button small">Read More</a></li>
                   </ul>
               </footer>
             </section>
